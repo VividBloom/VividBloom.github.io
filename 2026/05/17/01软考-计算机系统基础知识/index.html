@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="Hexo Theme Keep">
+    <meta name="author" content="Vivid Bloom">
+    
+    <title>
+        
+            计算机系统基础知识 |
+        
+        Vivid Bloom
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    
+        <link rel="shortcut icon" href="/images/logo.webp">
+    
+    
+<link rel="stylesheet" href="/font/css/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/regular.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/solid.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/brands.min.css">
+
+    
+    <script class="keep-theme-configurations">
+    const KEEP = window.KEEP || {}
+    KEEP.hexo_config = {"hostname":"vividbloom.github.io","root":"/","language":"zh-CN","path":"search.json"}
+    KEEP.theme_config = {"base_info":{"title":"Vivid Bloom","author":"Vivid Bloom","avatar":"/images/logo.webp","logo":"/images/logo.webp","favicon":"/images/logo.webp","mode":"dark"},"menu":{"home":"/","archives":"/archives","tags":"/tags","categories":"/categories","about":"/about"},"first_screen":{"enable":true,"header_transparent":true,"background_img":"/images/bg.jpg","description":"桃之夭夭, 灼灼其华","hitokoto":true,"scroll":{"progress_bar":true,"percent":true}},"social_contact":{"enable":true,"links":{"github":"https://github.com/VividBloom"}},"scroll":{"progress_bar":false,"percent":false,"hide_header":true},"home":{"announcement":null,"category":true,"tag":true,"post_datetime":"updated","post_datetime_format":"ago"},"post":{"author_label":{"enable":true,"auto":false,"custom_label_list":["魔法师"]},"datetime_format":"YYYY-MM-DD HH:mm:ss"},"code_block":{"tools":{"enable":false,"style":"default"},"highlight_theme":"default"},"toc":{"enable":true,"number":true,"expand_all":false,"init_open":true,"layout":"right"},"website_count":{"busuanzi_count":{"enable":false,"site_uv":false,"site_pv":false,"page_pv":false}},"local_search":{"enable":true,"preload":true},"comment":{"enable":true,"use":"gitalk","gitalk":{"github_id":"VividBloom","repository":"https://VividBloom.github.io","client_id":"Ov23liB5vu3L88g0Gs9c","client_secret":"2bdfee6dca08c2f5e6391859dfea4444f2e3673d"}},"rss":{"enable":false},"lazyload":{"enable":true},"cdn":{"enable":false,"provider":"cdnjs"},"pjax":{"enable":false},"footer":{"since":2026,"word_count":false},"inject":{"enable":false,"css":[null],"js":[null]},"cache":{"enable":true},"minify":false,"custom_file_path":null,"scheme":"Muse","darkmode":true,"lightdark":{"enable":false,"check_supports":true},"favicon":{"small":"/images/favicon-16x16-next.png","medium":"/images/favicon-32x32-next.png","apple_touch_icon":"/images/apple-touch-icon-next.png","safari_pinned_tab":"/images/logo.svg"},"custom_logo":null,"creative_commons":{"license":"by-nc-sa","size":"small","sidebar":false,"post":false,"language":null},"open_graph":{"enable":true,"options":null},"menu_settings":{"icons":true,"badges":false},"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"avatar":{"url":null,"rounded":false,"rotated":false},"site_state":true,"social":null,"social_icons":{"enable":true,"icons_only":false,"transition":false},"links_settings":{"icon":"fa fa-globe","layout":"block"},"links":null,"language_switcher":false,"excerpt_description":true,"read_more_btn":true,"post_meta":{"item_text":true,"created_at":true,"updated_at":{"enable":true,"another_day":true},"categories":true},"symbols_count_time":{"separated_meta":true,"item_text_total":false},"tag_icon":false,"reward_settings":{"enable":false,"animation":false},"reward":null,"follow_me":null,"related_posts":{"enable":false,"icon":"fa fa-signs-post"},"post_edit":{"enable":false,"url":"https://github.com/user-name/repo-name/tree/branch-name/subdirectory-name/"},"post_navigation":"left","tagcloud":{"min":12,"max":30,"amount":200,"orderby":"name","order":1},"calendar":{"calendar_id":"<required>","api_key":"<required>","orderBy":"startTime","showLocation":false,"offsetMax":72,"offsetMin":4,"showDeleted":false,"singleEvents":true,"maxResults":250},"preconnect":false,"text_align":{"desktop":"justify","mobile":"justify"},"mobile_layout_economy":false,"theme_color":{"light":"#222","dark":"#222"},"body_scrollbar":{"overlay":false,"stable":false},"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"reading_progress":{"enable":false,"start_at":"left","position":"top","reversed":false,"color":"#37c6c0","height":"3px"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"github_banner":{"enable":false,"permalink":"https://github.com/yourname"},"font":{"enable":false,"host":null,"global":{"external":true,"family":"Lato","size":null},"title":{"external":true,"family":null,"size":null},"headings":{"external":true,"family":null,"size":null},"posts":{"external":true,"family":null},"codes":{"external":true,"family":null}},"index_with_subtitle":false,"exturl":false,"exturl_icon":true,"google_site_verification":null,"bing_site_verification":null,"yandex_site_verification":null,"baidu_site_verification":null,"note":{"style":"simple","icons":false,"light_bg_offset":0},"tabs":{"sticky":false,"transition":{"tabs":false,"labels":true}},"pdf":{"enable":false,"height":"500px"},"mermaid":{"enable":false,"theme":{"light":"default","dark":"dark"}},"wavedrom":{"enable":false},"math":{"every_page":false,"mathjax":{"enable":false,"tags":"none"},"katex":{"enable":false,"copy_tex":false}},"fancybox":false,"mediumzoom":false,"pangu":false,"quicklink":{"enable":false,"home":true,"archive":false,"delay":true,"timeout":3000,"priority":true},"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"pace":{"enable":false,"color":"blue","theme":"minimal"},"canvas_ribbon":{"enable":false,"size":300,"alpha":0.6,"zIndex":-1},"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"disqus":{"enable":false,"shortname":null,"count":true},"disqusjs":{"enable":false,"api":null,"apikey":null,"shortname":null},"livere_uid":null,"gitalk":{"enable":false,"github_id":null,"repo":null,"client_id":null,"client_secret":null,"admin_user":null,"distraction_free_mode":true,"proxy":"https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token","language":null,"body":null},"utterances":{"enable":false,"repo":"user-name/repo-name","issue_term":"pathname","theme":"github-light"},"isso":null,"addtoany":{"enable":false,"buttons":null},"google_analytics":{"tracking_id":null,"only_pageview":false,"measure_protocol_api_secret":null},"baidu_analytics":null,"cloudflare_analytics":null,"clarity_analytics":null,"matomo":{"enable":false,"server_url":null,"site_id":null},"umami":{"enable":false,"script_url":null,"website_id":null,"host_url":null},"plausible":{"enable":false,"script_url":null,"site_domain":null},"firestore":{"enable":false,"collection":"articles","apiKey":null,"projectId":null},"busuanzi_count":{"enable":false,"total_visitors":true,"total_visitors_icon":"fa fa-user","total_views":true,"total_views_icon":"fa fa-eye","post_views":true,"post_views_icon":"far fa-eye"},"algolia_search":{"enable":false,"hits":{"per_page":10}},"chat":{"enable":false,"icon":"fa fa-comment"},"chatra":{"enable":false,"async":true,"id":null},"tidio":{"enable":false,"key":null},"vendors":{"internal":"local","plugins":"cdnjs","custom_cdn_url":null},"css":"css","js":"js","images":"images","root":"","title":"Vivid Bloom","subtitle":"","description":"","keywords":null,"author":"Vivid Bloom","language":"zh-CN","timezone":"Asia/Shanghai","url":"https://VividBloom.github.io","permalink":":year/:month/:day/:title/","permalink_defaults":null,"pretty_urls":{"trailing_index":true,"trailing_html":true},"style":{"avatar":"/images/logo.webp","logo":"/images/logo.webp","favicon":"/images/logo.webp","mode":"dark"},"home_article":{"category":{"enable":true,"limit":3},"tag":{"enable":true,"limit":5}},"search":{"path":"search.xml","field":"post","content":true,"template":"./search.xml"},"source_dir":"source","public_dir":"public","tag_dir":"tags","archive_dir":"archives","category_dir":"categories","code_dir":"downloads/code","i18n_dir":":lang","skip_render":null,"new_post_name":":title.md","default_layout":"post","titlecase":false,"external_link":{"enable":true,"field":"site","exclude":""},"filename_case":0,"render_drafts":false,"post_asset_folder":false,"relative_link":false,"future":true,"syntax_highlighter":"highlight.js","highlight":{"line_number":true,"auto_detect":false,"tab_replace":"","wrap":true,"hljs":false},"prismjs":{"preprocess":true,"line_number":true,"tab_replace":""},"index_generator":{"path":"","per_page":10,"order_by":"-date"},"default_category":"uncategorized","category_map":null,"tag_map":null,"meta_generator":true,"date_format":"YYYY-MM-DD","time_format":"HH:mm:ss","updated_option":"mtime","per_page":10,"pagination_dir":"page","include":null,"exclude":null,"ignore":null,"theme":"keep","deploy":{"type":"git","repo":"https://github.com/VividBloom/VividBloom.github.io.git","branch":"main","comment":"更新"},"source_data":{},"version":"4.2.5"}
+    KEEP.language_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 个月前","year":"%s 年前"}
+    KEEP.language_code_block = {"copy":"复制代码","copied":"已复制","fold":"折叠代码块","folded":"已折叠"}
+    KEEP.language_copy_copyright = {"copy":"复制版权信息","copied":"已复制","title":"原文标题","author":"原文作者","link":"原文链接"}
+  </script>
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+
+    
+</div>
+
+
+
+<main class="page-container border-box">
+    <!-- home first screen  -->
+    
+
+    <!-- page content -->
+    <div class="page-main-content border-box">
+        <div class="page-main-content-top">
+            
+<header class="header-wrapper">
+
+    <div class="border-box header-content">
+        <div class="left flex-start border-box">
+            
+                <a class="logo-image border-box" href="/">
+                    <img src="/images/logo.webp">
+                </a>
+            
+            <a class="site-name border-box" href="/">
+               Vivid Bloom
+            </a>
+        </div>
+
+        <div class="right border-box">
+            <div class="pc border-box">
+                <ul class="menu-list border-box">
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/">
+                                
+                                首页
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/archives">
+                                
+                                归档
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/tags">
+                                
+                                标签
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/categories">
+                                
+                                分类
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/about">
+                                
+                                关于
+                                
+                            </a>
+                            
+                        </li>
+                    
+                    
+                        <li class="menu-item search search-popup-trigger">
+                            <i class="menu-text-color fas search fa-search"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <div class="mobile border-box flex-start">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div>
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list border-box">
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/">
+                            
+                            首页
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/archives">
+                            
+                            归档
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/tags">
+                            
+                            标签
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/categories">
+                            
+                            分类
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/about">
+                            
+                            关于
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle border-box">
+
+            <div class="main-content border-box">
+                
+
+                    
+<div class="fade-in-down-animation">
+    <div class="post-page-container border-box">
+        <div class="post-content-container border-box">
+            
+
+            <div class="post-content-bottom border-box">
+                
+                    <div class="post-title">
+                        计算机系统基础知识
+                    </div>
+                
+
+                
+                    <div class="post-header border-box">
+                        
+                            <div class="avatar-box border-box">
+                                <img src="/images/logo.webp">
+                            </div>
+                        
+                        <div class="info-box">
+                            <div class="author border-box">
+                                <span class="name">Vivid Bloom</span>
+                                
+                            </div>
+                            <div class="meta-info border-box">
+                                
+
+<div class="post-meta-info-container border-box post">
+    <div class="post-meta-info border-box">
+        
+
+        
+            <span class="meta-info-item post-create-date">
+                <i class="icon fa-solid fa-calendar-plus"></i>&nbsp;
+                <span class="datetime">2026-05-17 00:13:52</span>
+            </span>
+
+            
+                <span class="meta-info-item post-update-date">
+                    <i class="icon fa-solid fa-file-pen"></i>&nbsp;
+                    <span class="datetime" data-updated="Fri May 22 2026 11:11:34 GMT+0800">2026-05-22 11:11:34</span>
+                </span>
+            
+        
+
+        
+            <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
+                <ul class="post-category-ul">
+                    
+                            <li class="category-item"><a href="/categories/%E8%BD%AF%E8%80%83/">软考</a></li>
+                        
+                    
+                </ul>
+            </span>
+        
+
+        
+            <span class="post-tag meta-info-item border-box">
+                <ul class="post-tag-ul">
+                    
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/%E8%BD%AF%E8%80%83/">软考</a></li>
+                        
+                    
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/">基础知识</a></li>
+                        
+                    
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E5%B8%88/">系统架构师</a></li>
+                        
+                    
+                </ul>
+            </span>
+        
+
+        
+        
+        
+        
+    </div>
+
+    
+</div>
+
+                            </div>
+                        </div>
+                    </div>
+                
+
+                <div class="post-content keep-markdown-body ">
+                    
+
+                    
+                         <h1 id="计算机系统基础知识"><a href="#计算机系统基础知识" class="headerlink" title="计算机系统基础知识"></a>计算机系统基础知识</h1><p>想成为一名合格的高级架构师, 需要在计算机领域中”上知天文, 下知地理”, 所谓”万丈高楼平地起”, 本节所要讲述的计算机系统基础知识, 属于需要掌握的庞杂的知识域中的一小部分, 都是入门的基础知识.</p>
+<h2 id="计算机系统概述"><a href="#计算机系统概述" class="headerlink" title="计算机系统概述"></a>计算机系统概述</h2><ol>
+<li><p>计算机系统的定义与组成</p>
+<p><strong>计算机系统</strong>(Computer System)是指用于数据管理的计算机硬件, 软件及网络组成的系统. 计算机系统可划分为硬件(子系统)和软件(子系统)两部分. </p>
+<p><strong>硬件</strong>由机械, 电子元器件, 磁介质和光介质等物理实体构成</p>
+<p><strong>软件</strong>是一系列按照特定顺序的数据和指令, 并控制硬件完成指定的功能</p>
+</li>
+<li><p>计算机系统分类</p>
+<p>计算机系统的分类维度很多, 也较为复杂, 可以从硬件的结构, 性能, 规模上划分, 亦可从软件的构成, 特征上划分, 或者从系统的整体用途, 服务对象等进行分类.</p>
+</li>
+</ol>
+<!-- more -->
+
+<h2 id="计算机硬件基础知识"><a href="#计算机硬件基础知识" class="headerlink" title="计算机硬件基础知识"></a>计算机硬件基础知识</h2><ol>
+<li><p>冯.诺依曼计算机结构</p>
+<p>冯.诺依曼计算机结构将计算机硬件划分为<strong>运算器</strong>,<strong>控制器</strong>,<strong>存储器</strong>,<strong>输入设备</strong>,<strong>输出设备</strong>5个部分. 但在现实的硬件中, 控制单元和运算单元被集成为一体, 封装为通常意义上的<strong>中央处理器</strong>(Central Processing Unit, CPU)</p>
+</li>
+<li><p>典型的处理器系统</p>
+<p><img  
+                       lazyload
+                       alt="image"
+                       data-src="https://vividbloom.github.io/picx-images-hosting/%E8%BD%AF%E8%80%83/%E5%85%B8%E5%9E%8B%E7%9A%84%E5%A4%84%E7%90%86%E5%99%A8%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%A4%BA%E6%84%8F%E5%9B%BE.9ddl84kids.webp"
+                        alt="典型的处理器体系结构示意图"
+                 ></p>
+</li>
+<li><p>专用处理器</p>
+<p>常见的有图形处理器(Graphics Processing Unit, GPU),</p>
+<p>信号处理器(Digital Signal Processor, DSP)</p>
+<p>现场可编程逻辑门阵列(Field Programmable Gate Array, FPGA)</p>
+<p>GPU常有数百个或数千个内核, 经过优化可并行运行大量计算</p>
+<p>DSP专用于实时的数字信号处理, 常采用哈佛体系结构</p>
+</li>
+<li><p>指令集系统</p>
+<p>典型的处理器根据指令集的复杂程度可分为<strong>复杂指令集(Complex Instruction Set Computers, CISC)</strong>, **精简指令集(Reduced Instruction Set Computers, RISC)**两类</p>
+<p>CISC以Intel, AMD的x86 CPU为代表, RISC以ARM和Power为代表.</p>
+<p>国产处理器目前有龙芯, 飞腾, 申威等品牌, 常采用RISC-V,MIPS, ARM等精简指令集架构.</p>
+</li>
+<li><p>存储器</p>
+<p>存储器是先用半导体, 磁, 光等介质制成用于存储数据的电子设备. 根据存储器的硬件结构可分为SRAM, DRAM, NVRAM, Flash, EPROM, Disk等. </p>
+<p>按照与处理器的物理距离可分为4个层次: 片上缓存, 片外缓存, 主存(内存), 外存. 其访问速度依次降低, 而容量依次提高.</p>
+</li>
+<li><p>总线</p>
+<p>总线(Bus)是指计算机部件间遵循某一特定协议实现数据交换的形式, 即以一种特定格式按照规定的控制逻辑实现部件间的数据传输. 按照总线在计算机中所处的位置划分为内总线, 系统总线, 外部总线. 目前, 计算机总线存在许多种类, 常见的有并行总线和串行总线. 两者的区别如下:</p>
+<table>
+<thead>
+<tr>
+<th align="center">名称</th>
+<th align="center">数据线</th>
+<th align="center">特点</th>
+<th align="center">应用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">并行总线</td>
+<td align="center">多条双向数据线</td>
+<td align="center">有传输延迟, 适合近距离连接</td>
+<td align="center">系统总线(计算机各部件)</td>
+</tr>
+<tr>
+<td align="center">串行总线</td>
+<td align="center">一条双向数据线或两条单向数据线</td>
+<td align="center">速率不高, 但适合长距离连接</td>
+<td align="center">通信总线(计算机之间或计算机与其他系统间)</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>接口</p>
+<p>接口是指同一计算机不同功能层之间的通信规则. 计算机接口有多种, 常见的有输入输出接口, 如HDMI,SATA, RS-232等; </p>
+<p>网络接口, 如RJ45, FC等; 以及A&#x2F;D转换接口等非标准接口</p>
+</li>
+<li><p>外部设备</p>
+<p>外部设备也称为外围设备, 是计算机结构中的非必要设备, 但从功能上又常常不可缺少, 例如键盘, 鼠标, 显示器等. 虽然种类多样, 但都是通过接口实现与计算机主体的连接, 并通过指令, 数据实现预期的功能</p>
+</li>
+</ol>
+<h2 id="计算机软件基础知识"><a href="#计算机软件基础知识" class="headerlink" title="计算机软件基础知识"></a>计算机软件基础知识</h2><ol>
+<li><p>计算机软件</p>
+<p><strong>计算机软件</strong>是指计算机系统中的程序及其文档, 是计算任务的处理对象规则的描述. <strong>软件系统</strong>是指在计算机硬件系统上运行的程序, 相关的文档资料和数据的集合. 计算机软件可用来扩充计算机系统的功能, 提高计算机系统的效率. 按照软件所起的作用和需要的运行环境不同, 通常将计算机软件分为系统软件和应用软件两大类.</p>
+<p>1)系统软件: 为整个计算机系统配置的不依赖特定应用领域的通用软件, 对计算机系统的硬件和软件资源进行控制和管理, 并提供运行服务支持</p>
+<p>2)应用软件: 是指为某类应用需要或解决某个特定问题而设计的软件, 常与具体领域相关联, 如教学软件</p>
+</li>
+<li><p>操作系统</p>
+<p><strong>操作系统</strong>是计算机系统的资源管理者, 包含对系统软,硬件资源实施管理的一组程序. 操作系统通常由操作系统的内核(Kernel)和其他许多附加的配套软件所组成, 如用户界面, 管理工具, 开发工具, 常用应用程序等, 操作系统的重要作用如下:</p>
+<p>1)管理计算机中运行的程序和分配各种软,硬件资源</p>
+<p>2)为用户提供友善的人机界面</p>
+<p>3)为应用程序的开发和运行提供一个高效率的平台</p>
+<p><strong>操作系统具有并发性, 共享性, 虚拟性和不确定性的特征</strong></p>
+<p><strong>操作系统的分类</strong>:</p>
+<p>1)批处理操作系统, 根据同时执行的作业数又分为单道批处理和多道批处理. 一个作业由用户程序, 数据和作业说明书(作业控制语言)3个部分组成</p>
+<p>2)分时操作系统, 将CPU的工作时间划分为许多很短的时间片, 每个时间片分别为一个终端的用户提供服务或者执行一个作业. 分时系统主要有4个特点: <strong>多路性, 独立性, 交互性和及时性</strong></p>
+<p>3)实时操作系统, 对于外来信息能够以足够快的速度进行处理, 并在被控对象允许的时间范围内快速做出反应, 对可靠性要求高, 并且不强制要求用户交互. 实时系统的应用非常广泛</p>
+<p>4)网络操作系统, 使联网计算机能有效地共享网络资源, 为网络用户提供各种服务和接口. 特征包括硬件独立性和多用户支持等.</p>
+<p>5)分布式操作系统, 指为分布式计算机系统配置的操作系统. 分布式操作系统是网络操作系统的更高级形式, 它保持网络系统所拥有的全部功能, 同时又有透明性, 可靠性, 高性能等特性.</p>
+<p>6)嵌入式操作系统, 运行在嵌入式智能设备环境中, 对整个智能硬件以及它所操作,控制的各种部件装置等资源进行统一协调, 处理, 指挥和控制, 特点是微型化, 可定制, 可靠性和易移植性. 常采用硬件抽象层(Hardware Abstraction Layer, HAL)和板级支撑包(Board Support Package, BSP)来提高移植性, 常见的嵌入式实时操作系统有VxWorks, uClinux, PalmOS, WindowsCE, uC&#x2F;OS-II, eCos等</p>
+</li>
+<li><p>数据库</p>
+<p>数据库(DataBase, DB)是指长期存储在计算机内, 有组织的, 统一管理的相关数据的集合. 数据是按一定格式存放的, 具有较小的冗余度, 较高的数据独立性和易扩展性, 可为多个用户共享. </p>
+<p>数据库可以分为: 关系型数据库, 键值(Key-Value)数据库, 列存储数据库, 文档数据库等</p>
+</li>
+<li><p>分布式数据库系统</p>
+<p>分布式数据库系统(Distributed DataBase System, DDBS), 是针对地理上分散, 而管理上又需要不同程度集中的需求而提出的一种数据管理信息系统. 满足分布性, 逻辑相关性, 场地透明性, 场地自治性的数据库系统被称为完全分布式数据库系统. 分布式数据库系统的特点是数据的集中控制性, 数据独立性, 数据冗余可控性, 场地自治性, 存取的有效性.</p>
+</li>
+<li><p>文件系统</p>
+<p>文件(File)是具有符号的, 在逻辑上具有完整意义的一组相关信息项的集合. 文件系统是操作系统中实现文件统一管理的一组软件和相关数据的集合, 是专门负责管理和存取文件信息的软件机构.</p>
+<p>文件的类型如下:</p>
+<p>1)按性质和用途分类可将文件分为系统文件, 库文件, 用户文件</p>
+<p>2)按信息保存期限分类可将文件分为临时文件, 档案文件, 永久文件</p>
+<p>3)按保护方式分类可将文件分为只读文件,读&#x2F;写文件, 可执行文件, 不保护文件</p>
+<p>4)Unix系统将文件分为普通文件, 目录文件和设备文件(特殊文件)</p>
+<p>文件的存取方法: 通常有顺序存取和随机存取两种方法</p>
+<p>文件组织方法: 有连续结构, 链接结构和索引结构, 还有多重索引方式</p>
+<p>文件存储空间的管理知道存储空间的使用情况, 空间管理的数据结构通常称为磁盘分配表(Disk Allocation Table), 有空闲区表, 位示图, 空闲块链3种. 位示图用每一位的0和1表示一个区块空闲或被占用.</p>
+<p><img  
+                       lazyload
+                       alt="image"
+                       data-src="https://vividbloom.github.io/picx-images-hosting/%E8%BD%AF%E8%80%83/%E4%BD%8D%E7%A4%BA%E5%9B%BE%E4%BE%8B.86u9zp5npp.webp"
+                        alt="位示图例"
+                 ></p>
+</li>
+<li><p>网络协议</p>
+<p>常用的网络协议包括局域协议(Local Area Network, LAN), 广域网协议(Wide Area Network, WAN), 无线网协议和移动网协议. 互联网使用的是TCP&#x2F;IP协议簇.</p>
+</li>
+<li><p>中间件</p>
+<p>中间件(Middleware)是应用软件与各种操作系统之间使用的标准编程接口和协议, 是基础中间件(分布式系统服务)软件的一大类, 属于可复用软件的范畴.</p>
+<p>常见中间件的分类如下:</p>
+<p>1)通信处理(消息)中间件, 保证系统能在不同的平台之间通信, 例如MQSeries</p>
+<p>2)事务处理(交易)中间件, 实现协调处理顺序, 监视和调度, 负载均衡等功能, 例如Tuxedo</p>
+<p>3)数据存取管理中间件, 为不同种类数据的读写和加解密提供统一的接口</p>
+<p>4)Web服务器中间件, 提供Web程序执行的运行时容器, 例如Tomcat, JBOSS等</p>
+<p>5)安全中间件, 用中间件屏蔽操作系统的缺陷, 提升安全等级</p>
+<p>6)跨平台和架构的中间件, 用于开发大型应用软件</p>
+<p>7)专用平台中间件, 为解决特定应用领域的开发设计问题是提供构件库</p>
+<p>8)网络中间件, 包括网管工具, 接入工具等</p>
+</li>
+<li><p>软件构件</p>
+<p>构件又称为组件, 是一个自包容, 可复用的程序集, 这个集合整体向外提供统一的访问接口, 构件外部只能通过接口来访问构件, 而不能直接操作构件的内部. 构件的两个最重要的特性是自包容与可重用, 利用软件构件进行搭积木式地开发. 优点: 易扩展, 可重用, 并行开发. 缺点: 需要经验丰富的设计师, 快速开发与质量属性之间需要妥协, 构件质量影响整体的质量.</p>
+<p>商用构件的标准规范有:</p>
+<p>1)OMG的公共对象请求代理架构(Common Object Request Broker Architecture, CORBA)是一个纯粹的规范而不是产品, 主要分为3个层次: 对象请求代理(Object Request Broker, ORB), 公共对象服务和公共设施. 采用IDL定义接口, 并易于转化为具体语言实现.</p>
+<p>2)SUN的J2EE, 定义了完整的基于Java语言开发面向企业分布的应用规范, 其中EJB是J2EE的构件标准, EJB中的构件称为Bean, 可以分为会话Bean, 实体Bean和消息驱动Bean</p>
+<p>3)Microsoft的DNA2000, 采用DCOM&#x2F;COM&#x2F;COM+作为标准的构件</p>
+</li>
+</ol>
+<h2 id="计算机语言"><a href="#计算机语言" class="headerlink" title="计算机语言"></a>计算机语言</h2><p>计算机语言(Compute Language)是指人与计算机之间用于交流的一种语言, 主要由一套指令组成, 而这套指令一般包括表达式, 流程控制和集合三大部分内容.</p>
+<p>计算机语言的分类有:</p>
+<ol>
+<li><p>机器语言. 机器语言是第一代计算机语言, 是计算机自身具有的”本地语”, 由计算机所能直接理解和执行的所有指令组成. 指令格式由操作码和操作数两部分组成.</p>
+</li>
+<li><p>汇编语言. 汇编语言在机器语言的基础上采用英文字母和符号串来表达指令, 是机器语言的符号描述. 每条语句均由名字, 操作符, 操作数和注释4个字段(Fields)组成. 伪指令语句包括数据定义伪指令DB,DW,DD, 段定义伪指令SEGMENT, 过程定义伪指令PROC等, 编译后不产生机器代码.</p>
+</li>
+<li><p>高级语言. 高级语言比汇编语言更贴近于人类使用的语言, 易于理解, 记忆和使用. 常见的高级语言包括C, C++, Java, Python等.</p>
+</li>
+<li><p>建模语言. 建模语言主要指的是统一建模语言(Unified Modeling Language, UML), UML由3个要素构成: UML的基本构造块(事物, 关系), 图(支配基本构造块如何放置在一起的规则)和运用于整个语言的公用机制.</p>
+<p>1)事物. UML中的4种事物: 结构事物, 行为事物, 分组事物, 注释事物</p>
+<p>a. 结构事物: 名词, 静态部分, 用于描述概念或物理元素. 结构事物包括类(Class), 接口(Interface), 协作(Collaboration), 用例(UseCase), 主动类(Active Class), 构件(Component), 制品(Artiface)和节点(Node)</p>
+<p><img  
+                       lazyload
+                       alt="image"
+                       data-src="https://vividbloom.github.io/picx-images-hosting/%E8%BD%AF%E8%80%83/image.9kgtasfflt.webp"
+                        alt="结构事物"
+                 ></p>
+<p>b. 行为事物: 动词, 描述了跨越时间和空间的行为. 行为事物包括交互(Interaction), 状态机(State Machine), 活动(Activity)</p>
+<p><img  
+                       lazyload
+                       alt="image"
+                       data-src="https://vividbloom.github.io/picx-images-hosting/%E8%BD%AF%E8%80%83/image.58i0390mcf.webp"
+                        alt="行为事物"
+                 ></p>
+<p>c. 分组事物: 包是最常见的分组事物, 结构事物, 行为事物甚至其他分组事物都可以放进包内</p>
+<p>d. 注释事物: 注释即注解, 用来描述, 说明和标注模型的任何元素</p>
+<p><img  
+                       lazyload
+                       alt="image"
+                       data-src="https://vividbloom.github.io/picx-images-hosting/%E8%BD%AF%E8%80%83/image.6m4j7amrjk.webp"
+                        alt="分组事物和注释事物"
+                 ></p>
+<p>2)关系. UML中的4种关系: 依赖, 关联, 泛化, 实现</p>
+<p><img  
+                       lazyload
+                       alt="image"
+                       data-src="https://vividbloom.github.io/picx-images-hosting/%E8%BD%AF%E8%80%83/image.6t7r2py6f1.webp"
+                        alt="关系"
+                 ></p>
+<p>a.依赖关系. 其中一个事物(独立事物)发生变化会影响另一个事物. 依赖关系是一种使用的关系.</p>
+<p>b. 关联关系. 是一种拥有的关系, 关联提供了不同类的对象之间的结构关系, 它在一段时间内将多个类的实例连接在一起. 一般认为关联关系有2个特例: 一个是聚合关系, 另一个是组合关系. 聚合关系表示类之间的整体与部分的关系, 其含义是”部分”可能同时属于多个”整体”, “部分”与”整体”的生命周期可以不相同. 组合关系也表示类之间的整体与部分的关系. 与聚合关系的区别在于, 组合关系中的”部分”只能属于一个”整体”, “部分”与”整体”的生命周期相同, “部分”随着”整体”的创建而创建, 也随着”整体”的消亡而消亡.</p>
+<p>c. 泛化关系. 泛化是一种特殊&#x2F;一般关系, 特殊元素(子元素)的对象可替代一般元素(父元素)的对象</p>
+<p>d. 实现关系. 在两种情况下会使用实现关系: 一种是在接口和实现它们的类或构件之间; 另一种是在用例和实现它们的协作之间.</p>
+<p>3)图. 图是一组元素的图形表示, 大多数情况下把图画成顶点(代表事物)和弧(代表关系)的连通图</p>
+<p>UML2.0提供了14种图, 分别是类图, 对象图, 用例图, 序列图, 通信图, 状态图, 活动图, 构件图, 部署图, 制品图, 组合结构图, 包图, 交互概览图和计时图(定时图). 序列图, 通信图, 交互概览图和计时图均被称为交互图.</p>
+<p>类图展现了一组对象, 接口, 协作和它们之间的关系</p>
+<p><img  
+                       lazyload
+                       alt="image"
+                       data-src="https://vividbloom.github.io/picx-images-hosting/%E8%BD%AF%E8%80%83/image.1ow2dfyoz9.webp"
+                        alt="类图"
+                 ></p>
+<p>用例图(Use Case Diagram)展现了一组用例, 参与者(Actor)以及它们之间的关系. 用例之间有扩展关系(&lt;<extend>&gt;)和包含关系(&lt;<include>&gt;), 参与者和用例之间有关联关系, 用例与用例, 参与者与参与者之间有泛化关系. 包含关系的特点是当两个或多个用例中共用一组相同的动作时, 可以将这组相同的动作抽出来作为一个独立的子用例, 供多个基用例所共享; 扩展关系则是对基用例的扩展, 基用例是一个完整的用例, 即使没有子用例的参与, 也可以完成一个完整的功能.</p>
+<p><img  
+                       lazyload
+                       alt="image"
+                       data-src="https://vividbloom.github.io/picx-images-hosting/%E8%BD%AF%E8%80%83/image.b9j9fn66k.webp"
+                        alt="用例图"
+                 ></p>
+<p>UML中有5种视图(View): 用例视图, 逻辑视图, 进程视图, 实现视图, 部署视图, 其中的用例视图居于中心地位</p>
+<p>4)形式化方法和形式化语言. 形式化方法是把概念, 判断, 推理转化成特定的形式符号后, 对形式符号表达系统进行研究的方法. 形式化方法有不同的分类方法. 根据描述方式分, 有模型描述和性质描述两类; 根据表达能力分, 有模型方法, 代数方法, 进程代数方法, 逻辑方法和网络模型方法等5类. 形式化方法的开发过程贯穿软件工程的整个生命周期.</p>
+<p>Z语言是一种形式化语言, 具有”状态-操作”风格, 借助模式来表达系统结构. 建立于集合论和数理逻辑的基础上, 是一个强类型系统, 可以使用自然语言.</p>
+</li>
+</ol>
+<h2 id="多媒体技术"><a href="#多媒体技术" class="headerlink" title="多媒体技术"></a>多媒体技术</h2><ol>
+<li><p>媒体与多媒体</p>
+<p>媒体是承载信息的载体, 即信息的表现形式(或者传播形式), 如文字, 声音, 图像, 动画和视频等. 多媒体有4个重要的特征: </p>
+<p>1)多维化, 即媒体的多样化</p>
+<p>2)集成性, 多媒体与设备集成, 也与信息和表现集成</p>
+<p>3)交互性, 可向用户提供更有效的控制和使用信息的手段</p>
+<p>4)实时性, 音频和视频等信息具有很强的时间特性</p>
+<p>多媒体系统通常由硬件和软件组成, 其中多媒体硬件主要包括计算机主要配置和外部设备以及与各种外部设备的控制接口; 多媒体软件主要包括多媒体驱动软件, 多媒体操作系统, 多媒体数据处理软件, 多媒体创作工具软件和多媒体应用软件等</p>
+</li>
+<li><p>多媒体系统的关键技术</p>
+<p>1)视,音频技术, 视频技术包括视频数字化和视频编码技术两个方面; 音频技术包括音频数字化, 语音处理, 语音合成及语音识别4个方面</p>
+<p>2)通信技术, 是多媒体系统中的一项关键技术, 通常包括数据传输信道和数据 传输技术</p>
+<p>3)数据压缩技术, 包括即时压缩和非即时压缩, 数据压缩和文件压缩, 无损压缩与有损压缩等</p>
+<p>4)虚拟现实(Virtual Reality, VR)&#x2F;增强现实(Augmented Reality, AR)技术, 虚拟现实又称人工现实, 临境等, 是一种可以创建和体验虚拟世界的计算机仿真系统, 采用计算机技术生成一个逼真的视觉, 听觉, 触觉, 味觉和嗅觉的感知系统与用户交互; 增强现实技术是指把原本在现实世界的一定时间和空间范围内很难体验到的实体信息(视觉信息, 声音, 味道, 触觉等), 通过模拟仿真后, 再叠加到现实世界中被人类感官所感知, 从而达到超越现实的感官体验. VR&#x2F;AR技术主要分为桌面式, 分布式, 沉浸式和增强式4种.</p>
+</li>
+</ol>
+
+                    
+                </div>
+
+                
+
+                <div class="post-bottom-tags-and-share border-box">
+                    <div>
+                        
+                            <ul class="post-tags-box border-box">
+                                
+                                    <li class="tag-item border-box">
+                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/tags/%E8%BD%AF%E8%80%83/">软考</a>
+                                    </li>
+                                
+                                    <li class="tag-item border-box">
+                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/">基础知识</a>
+                                    </li>
+                                
+                                    <li class="tag-item border-box">
+                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/tags/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E5%B8%88/">系统架构师</a>
+                                    </li>
+                                
+                            </ul>
+                        
+                    </div>
+                    <div>
+                        
+                    </div>
+                </div>
+
+                
+
+                
+                    <div class="post-nav border-box">
+                        
+                        
+                            <div class="next-post">
+                                <a class="next"
+                                   rel="next"
+                                   href="/2026/05/09/%E8%A1%8C%E6%B5%8B%E5%A4%8D%E4%B9%A0/"
+                                   title="行测复习"
+                                >
+                                    <span class="title flex-center">
+                                        <span class="post-nav-title-item text-ellipsis">行测复习</span>
+                                        <span class="post-nav-item">下一篇</span>
+                                    </span>
+                                    <span class="right arrow-icon flex-center">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        
+                    </div>
+                
+
+                
+                    
+
+
+    <div class="comments-container border-box">
+        <div id="comments-anchor" class="comment-area-title border-box">
+            <i class="fas fa-comments"></i>&nbsp;评论
+        </div>
+        <div class="comment-plugin-fail border-box">
+    <span class="fail-tip">评论插件加载失败</span>
+    <button class="reload keep-button">点击重新加载</button>
+</div>
+<div class="comment-plugin-loading flex-center border-box">
+    <i class="loading-icon fa-solid fa-spinner fa-spin"></i>
+    <span class="load-tip">正在加载评论插件</span>
+</div>
+<script data-pjax>
+  window.KeepCommentPlugin = {}
+  window.KeepCommentPlugin.hideLoading = () => {
+    const cplDom = document.querySelector('.comments-container .comment-plugin-loading')
+    cplDom.style.display = 'none'
+  }
+  window.KeepCommentPlugin.loadFailHandle = () => {
+    window.KeepCommentPlugin.hideLoading()
+    const cpfDom = document.querySelector('.comments-container .comment-plugin-fail')
+    cpfDom.style.display = 'flex'
+    cpfDom.querySelector('.reload').addEventListener('click', () => {
+      window.location.reload()
+    })
+  }
+</script>
+
+        
+            
+
+    <div class="gitalk-comment-container">
+        <div id="gitalk-container"></div>
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css">
+        <script 
+                src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"
+                async
+                onerror="window.KeepCommentPlugin.loadFailHandle()"
+        ></script>
+        <script 
+                async
+                onerror="window.KeepCommentPlugin.loadFailHandle()"
+        >
+          window.KeepCommentPlugin.initGitalk = () => {
+            let gitalkPathname = decodeURI(location.pathname)
+            const gitalkPathnameLength = gitalkPathname.length
+            const gitalkPathnameMaxLength = 50
+            if (gitalkPathnameLength > gitalkPathnameMaxLength) {
+              gitalkPathname = gitalkPathname.substring(0, gitalkPathnameMaxLength - 3) + '...'
+            }
+
+            if (window?.Gitalk) {
+              new Gitalk({
+                clientID: 'Ov23liB5vu3L88g0Gs9c',
+                clientSecret: '2bdfee6dca08c2f5e6391859dfea4444f2e3673d',
+                repo: 'https://VividBloom.github.io',
+                owner: 'VividBloom',
+                admin: 'VividBloom',
+                id: gitalkPathname,
+                proxy: '',
+                language: 'zh-CN'
+              }).render('gitalk-container')
+              window.KeepCommentPlugin.hideLoading()
+            } else {
+              setTimeout(() => {
+                window.KeepCommentPlugin.initGitalk()
+              }, 1000)
+            }
+          }
+
+          if ('false' === 'true') {
+            setTimeout(() => {
+              window.KeepCommentPlugin.initGitalk()
+            }, 1200)
+          } else {
+            window.addEventListener('DOMContentLoaded', window.KeepCommentPlugin.initGitalk)
+          }
+        </script>
+    </div>
+
+
+        
+    </div>
+
+
+
+
+
+                
+            </div>
+        </div>
+
+        
+            <div class="pc-post-toc right-toc">
+                <div class="post-toc-wrap border-box">
+    <div class="post-toc border-box">
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86"><span class="nav-number">1.</span> <span class="nav-text">计算机系统基础知识</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0"><span class="nav-number">1.1.</span> <span class="nav-text">计算机系统概述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A1%AC%E4%BB%B6%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86"><span class="nav-number">1.2.</span> <span class="nav-text">计算机硬件基础知识</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%BD%AF%E4%BB%B6%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86"><span class="nav-number">1.3.</span> <span class="nav-text">计算机软件基础知识</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%AF%AD%E8%A8%80"><span class="nav-number">1.4.</span> <span class="nav-text">计算机语言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A4%9A%E5%AA%92%E4%BD%93%E6%8A%80%E6%9C%AF"><span class="nav-number">1.5.</span> <span class="nav-text">多媒体技术</span></a></li></ol></li></ol>
+    </div>
+</div>
+
+            </div>
+        
+    </div>
+</div>
+
+
+                
+            </div>
+        </div>
+
+        <div class="page-main-content-bottom border-box">
+            
+<footer class="footer border-box">
+    <div class="copyright-info info-item">
+    &copy;&nbsp;2026
+    
+            &nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;&nbsp;<a href="/">Vivid Bloom</a>
+        
+    </div>
+
+    <div class="theme-info info-item">
+        由&nbsp;<a target="_blank" href="https://hexo.io">Hexo</a>&nbsp;驱动&nbsp;&&nbsp;主题&nbsp;<a class="keep-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep</a>
+    </div>
+
+    
+
+    
+
+    
+</footer>
+
+        </div>
+    </div>
+
+    <!-- post tools -->
+    
+        <div class="post-tools right-toc">
+            <div class="post-tools-container border-box">
+    <ul class="post-tools-list border-box">
+        <!-- PC encrypt again -->
+        
+
+        <!-- PC TOC show toggle -->
+        
+            <li class="tools-item flex-center toggle-show-toc">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        <!-- PC go comment -->
+        
+            <li class="tools-item flex-center go-to-comments">
+                <i class="fas fa-comment"></i>
+                <span class="post-comments-count"></span>
+            </li>
+        
+
+        <!-- PC full screen -->
+        <li class="tools-item flex-center full-screen">
+            <i class="fa-solid fa-expand"></i>
+        </li>
+    </ul>
+</div>
+
+        </div>
+    
+
+    <!-- side tools -->
+    <div class="side-tools">
+        <div class="side-tools-container border-box ">
+    <ul class="side-tools-list side-tools-show-handle border-box">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <!-- toggle mode -->
+        
+
+        <!-- rss -->
+        
+
+        <!-- to bottom -->
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list border-box">
+        
+            <li class="tools-item toggle-show-toc-tablet flex-center">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        
+            <li class="tools-item go-to-comments-tablet flex-center">
+                <i class="fas fa-comment"></i>
+            </li>
+        
+
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+
+        <li class="tools-item tool-scroll-to-top flex-center show-arrow">
+            <i class="arrow fas fa-arrow-up"></i>
+            <span class="percent"></span>
+        </li>
+    </ul>
+</div>
+
+    </div>
+
+    <!-- image mask -->
+    <div class="zoom-in-image-mask">
+    <img class="zoom-in-image">
+</div>
+
+
+    <!-- local search -->
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fas fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="搜索..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="close-popup-btn">
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+    <!-- tablet toc -->
+    
+        <div class="tablet-post-toc-mask">
+            <div class="tablet-post-toc">
+                <div class="post-toc-wrap border-box">
+    <div class="post-toc border-box">
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86"><span class="nav-number">1.</span> <span class="nav-text">计算机系统基础知识</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0"><span class="nav-number">1.1.</span> <span class="nav-text">计算机系统概述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A1%AC%E4%BB%B6%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86"><span class="nav-number">1.2.</span> <span class="nav-text">计算机硬件基础知识</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%BD%AF%E4%BB%B6%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86"><span class="nav-number">1.3.</span> <span class="nav-text">计算机软件基础知识</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%AF%AD%E8%A8%80"><span class="nav-number">1.4.</span> <span class="nav-text">计算机语言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A4%9A%E5%AA%92%E4%BD%93%E6%8A%80%E6%9C%AF"><span class="nav-number">1.5.</span> <span class="nav-text">多媒体技术</span></a></li></ol></li></ol>
+    </div>
+</div>
+
+            </div>
+        </div>
+    
+</main>
+
+
+
+
+
+<!-- common js -->
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/header-shrink.js"></script>
+
+<script src="/js/back2top.js"></script>
+
+<script src="/js/toggle-theme.js"></script>
+
+<script src="/js/code-block.js"></script>
+
+<script src="/js/main.js"></script>
+
+<script src="/js/libs/anime.min.js"></script>
+
+
+<!-- local search -->
+
+    
+<script src="/js/local-search.js"></script>
+
+
+
+<!-- lazyload -->
+
+    
+<script src="/js/lazyload.js"></script>
+
+
+
+<div class="">
+    <!-- home page -->
+    
+
+    <!-- post page -->
+    
+        <!-- post-helper -->
+        
+<script src="/js/post/post-helper.js"></script>
+
+
+        <!-- toc -->
+        
+            
+<script src="/js/post/toc.js"></script>
+
+        
+
+        <!-- copyright-info -->
+        
+
+        <!-- share -->
+        
+    
+
+    <!-- categories page -->
+    
+
+    <!-- links page -->
+    
+
+    <!-- photos page -->
+    
+
+    <!-- tools page -->
+    
+</div>
+
+<!-- mermaid -->
+
+
+<!-- pjax -->
+
+
+
+</body>
+</html>
