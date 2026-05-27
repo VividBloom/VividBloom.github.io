@@ -9,7 +9,7 @@
     
     <title>
         
-            计算机系统基础知识 |
+            HarmonyOS开发-ArkTS基础语法 |
         
         Vivid Bloom
     </title>
@@ -233,7 +233,7 @@
             <div class="post-content-bottom border-box">
                 
                     <div class="post-title">
-                        计算机系统基础知识
+                        HarmonyOS开发-ArkTS基础语法
                     </div>
                 
 
@@ -259,13 +259,13 @@
         
             <span class="meta-info-item post-create-date">
                 <i class="icon fa-solid fa-calendar-plus"></i>&nbsp;
-                <span class="datetime">2026-05-17 00:13:52</span>
+                <span class="datetime">2026-05-27 10:19:08</span>
             </span>
 
             
                 <span class="meta-info-item post-update-date">
                     <i class="icon fa-solid fa-file-pen"></i>&nbsp;
-                    <span class="datetime" data-updated="Fri May 22 2026 11:11:34 GMT+0800">2026-05-22 11:11:34</span>
+                    <span class="datetime" data-updated="Wed May 27 2026 23:01:17 GMT+0800">2026-05-27 23:01:17</span>
                 </span>
             
         
@@ -274,7 +274,7 @@
             <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
                 <ul class="post-category-ul">
                     
-                            <li class="category-item"><a href="/categories/%E8%BD%AF%E8%80%83/">软考</a></li>
+                            <li class="category-item"><a href="/categories/HarmonyOS/">HarmonyOS</a></li>
                         
                     
                 </ul>
@@ -285,13 +285,10 @@
             <span class="post-tag meta-info-item border-box">
                 <ul class="post-tag-ul">
                     
-                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/%E8%BD%AF%E8%80%83/">软考</a></li>
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/HarmonyOS/">HarmonyOS</a></li>
                         
                     
-                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/">基础知识</a></li>
-                        
-                    
-                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E5%B8%88/">系统架构师</a></li>
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/ArkTS/">ArkTS</a></li>
                         
                     
                 </ul>
@@ -316,228 +313,125 @@
                     
 
                     
-                         <h1 id="计算机系统基础知识"><a href="#计算机系统基础知识" class="headerlink" title="计算机系统基础知识"></a>计算机系统基础知识</h1><p>想成为一名合格的高级架构师, 需要在计算机领域中”上知天文, 下知地理”, 所谓”万丈高楼平地起”, 本节所要讲述的计算机系统基础知识, 属于需要掌握的庞杂的知识域中的一小部分, 都是入门的基础知识.</p>
-<h2 id="计算机系统概述"><a href="#计算机系统概述" class="headerlink" title="计算机系统概述"></a>计算机系统概述</h2><ol>
-<li><p>计算机系统的定义与组成</p>
-<p><strong>计算机系统</strong>(Computer System)是指用于数据管理的计算机硬件, 软件及网络组成的系统. 计算机系统可划分为硬件(子系统)和软件(子系统)两部分. </p>
-<p><strong>硬件</strong>由机械, 电子元器件, 磁介质和光介质等物理实体构成</p>
-<p><strong>软件</strong>是一系列按照特定顺序的数据和指令, 并控制硬件完成指定的功能</p>
-</li>
-<li><p>计算机系统分类</p>
-<p>计算机系统的分类维度很多, 也较为复杂, 可以从硬件的结构, 性能, 规模上划分, 亦可从软件的构成, 特征上划分, 或者从系统的整体用途, 服务对象等进行分类.</p>
-</li>
-</ol>
-<!-- more -->
-
-<h2 id="计算机硬件基础知识"><a href="#计算机硬件基础知识" class="headerlink" title="计算机硬件基础知识"></a>计算机硬件基础知识</h2><ol>
-<li><p>冯.诺依曼计算机结构</p>
-<p>冯.诺依曼计算机结构将计算机硬件划分为<strong>运算器</strong>,<strong>控制器</strong>,<strong>存储器</strong>,<strong>输入设备</strong>,<strong>输出设备</strong>5个部分. 但在现实的硬件中, 控制单元和运算单元被集成为一体, 封装为通常意义上的<strong>中央处理器</strong>(Central Processing Unit, CPU)</p>
-</li>
-<li><p>典型的处理器系统</p>
+                         <h1 id="HarmonyOS开发-ArkTS基础语法"><a href="#HarmonyOS开发-ArkTS基础语法" class="headerlink" title="HarmonyOS开发-ArkTS基础语法"></a>HarmonyOS开发-ArkTS基础语法</h1><p><code>ArkTS</code>是<code>HarmonyOS</code>应用的默认开发语言, 在<code>TypeScript(TS)</code>生态基础上做了扩展, 保持TS的基本风格. 通过规范定义, 从而强化了开发其的静态检查和分析, 提升了程序执行的稳定性和性能.</p>
+<p>同时支持与<code>TS/JS</code>高效互操作, 可以完全复用<code>TS/JS</code>生态, 已广泛用于鸿蒙应用生态.</p>
 <p><img  
                        lazyload
                        alt="image"
-                       data-src="https://vividbloom.github.io/picx-images-hosting/%E8%BD%AF%E8%80%83/%E5%85%B8%E5%9E%8B%E7%9A%84%E5%A4%84%E7%90%86%E5%99%A8%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%A4%BA%E6%84%8F%E5%9B%BE.9ddl84kids.webp"
-                        alt="典型的处理器体系结构示意图"
+                       data-src="https://vividbloom.github.io/picx-images-hosting/HarmonyOS/image.7p48pdc5kj.webp"
+                        alt="ArkTS发展历程"
                  ></p>
-</li>
-<li><p>专用处理器</p>
-<p>常见的有图形处理器(Graphics Processing Unit, GPU),</p>
-<p>信号处理器(Digital Signal Processor, DSP)</p>
-<p>现场可编程逻辑门阵列(Field Programmable Gate Array, FPGA)</p>
-<p>GPU常有数百个或数千个内核, 经过优化可并行运行大量计算</p>
-<p>DSP专用于实时的数字信号处理, 常采用哈佛体系结构</p>
-</li>
-<li><p>指令集系统</p>
-<p>典型的处理器根据指令集的复杂程度可分为<strong>复杂指令集(Complex Instruction Set Computers, CISC)</strong>, **精简指令集(Reduced Instruction Set Computers, RISC)**两类</p>
-<p>CISC以Intel, AMD的x86 CPU为代表, RISC以ARM和Power为代表.</p>
-<p>国产处理器目前有龙芯, 飞腾, 申威等品牌, 常采用RISC-V,MIPS, ARM等精简指令集架构.</p>
-</li>
-<li><p>存储器</p>
-<p>存储器是先用半导体, 磁, 光等介质制成用于存储数据的电子设备. 根据存储器的硬件结构可分为SRAM, DRAM, NVRAM, Flash, EPROM, Disk等. </p>
-<p>按照与处理器的物理距离可分为4个层次: 片上缓存, 片外缓存, 主存(内存), 外存. 其访问速度依次降低, 而容量依次提高.</p>
-</li>
-<li><p>总线</p>
-<p>总线(Bus)是指计算机部件间遵循某一特定协议实现数据交换的形式, 即以一种特定格式按照规定的控制逻辑实现部件间的数据传输. 按照总线在计算机中所处的位置划分为内总线, 系统总线, 外部总线. 目前, 计算机总线存在许多种类, 常见的有并行总线和串行总线. 两者的区别如下:</p>
-<table>
+<!-- more -->
+
+<h2 id="ArkTS基础语法"><a href="#ArkTS基础语法" class="headerlink" title="ArkTS基础语法"></a><code>ArkTS</code>基础语法</h2><p><strong>变量</strong>: 是在程序中用于存储数据值的标识符, 通过变量名访问或修改数据</p>
+<p><strong>类型</strong>: 定义变量可以存储的数据种类的标识</p>
+<h3 id="声明"><a href="#声明" class="headerlink" title="声明"></a>声明</h3><p><strong>变量声明</strong>: <code>ArkTS</code>中可以通过关键字<code>let</code>声明变量, 并通过类型注释指定类型</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> name : <span class="built_in">string</span> = <span class="string">&#x27;Vivid&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>let: 关键字</p>
+<p>name: 变量&#x2F;常量名</p>
+<p>string:  类型注释</p>
+<p>Vivid: 值</p>
+</blockquote>
+<p><strong>常量声明</strong>: <code>ArkTS</code>中可以通过<code>const</code>声明常量, 并通过类型注释指定类型</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="variable constant_">MAX_COUNT</span> : <span class="built_in">number</span> = <span class="number">100</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>const: 关键字</p>
+<p>MAX_COUNT: 变量&#x2F;常量名</p>
+<p>number:  类型注释</p>
+<p>100: 值</p>
+</blockquote>
+<h3 id="变量和常量的区别"><a href="#变量和常量的区别" class="headerlink" title="变量和常量的区别"></a>变量和常量的区别</h3><table>
 <thead>
 <tr>
-<th align="center">名称</th>
-<th align="center">数据线</th>
-<th align="center">特点</th>
-<th align="center">应用</th>
+<th align="center">特性</th>
+<th align="center">变量(let声明)</th>
+<th align="center">常量(const声明)</th>
 </tr>
 </thead>
 <tbody><tr>
-<td align="center">并行总线</td>
-<td align="center">多条双向数据线</td>
-<td align="center">有传输延迟, 适合近距离连接</td>
-<td align="center">系统总线(计算机各部件)</td>
+<td align="center">可变性</td>
+<td align="center">可多次赋值</td>
+<td align="center">声明后仅能赋值一次, 不可修改</td>
 </tr>
 <tr>
-<td align="center">串行总线</td>
-<td align="center">一条双向数据线或两条单向数据线</td>
-<td align="center">速率不高, 但适合长距离连接</td>
-<td align="center">通信总线(计算机之间或计算机与其他系统间)</td>
+<td align="center">声明关键字</td>
+<td align="center"><code>let</code></td>
+<td align="center"><code>const</code></td>
+</tr>
+<tr>
+<td align="center">命名规范</td>
+<td align="center">推荐小驼峰命名(如userName)</td>
+<td align="center">推荐全大写+下划线分隔(如MAX_VALUE)</td>
+</tr>
+<tr>
+<td align="center">性能优化</td>
+<td align="center">运行时动态赋值, 可能增加开销</td>
+<td align="center">编译时求值(常量表达式), 减少运行时计算</td>
 </tr>
 </tbody></table>
-</li>
-<li><p>接口</p>
-<p>接口是指同一计算机不同功能层之间的通信规则. 计算机接口有多种, 常见的有输入输出接口, 如HDMI,SATA, RS-232等; </p>
-<p>网络接口, 如RJ45, FC等; 以及A&#x2F;D转换接口等非标准接口</p>
-</li>
-<li><p>外部设备</p>
-<p>外部设备也称为外围设备, 是计算机结构中的非必要设备, 但从功能上又常常不可缺少, 例如键盘, 鼠标, 显示器等. 虽然种类多样, 但都是通过接口实现与计算机主体的连接, 并通过指令, 数据实现预期的功能</p>
-</li>
-</ol>
-<h2 id="计算机软件基础知识"><a href="#计算机软件基础知识" class="headerlink" title="计算机软件基础知识"></a>计算机软件基础知识</h2><ol>
-<li><p>计算机软件</p>
-<p><strong>计算机软件</strong>是指计算机系统中的程序及其文档, 是计算任务的处理对象规则的描述. <strong>软件系统</strong>是指在计算机硬件系统上运行的程序, 相关的文档资料和数据的集合. 计算机软件可用来扩充计算机系统的功能, 提高计算机系统的效率. 按照软件所起的作用和需要的运行环境不同, 通常将计算机软件分为系统软件和应用软件两大类.</p>
-<p>1)系统软件: 为整个计算机系统配置的不依赖特定应用领域的通用软件, 对计算机系统的硬件和软件资源进行控制和管理, 并提供运行服务支持</p>
-<p>2)应用软件: 是指为某类应用需要或解决某个特定问题而设计的软件, 常与具体领域相关联, 如教学软件</p>
-</li>
-<li><p>操作系统</p>
-<p><strong>操作系统</strong>是计算机系统的资源管理者, 包含对系统软,硬件资源实施管理的一组程序. 操作系统通常由操作系统的内核(Kernel)和其他许多附加的配套软件所组成, 如用户界面, 管理工具, 开发工具, 常用应用程序等, 操作系统的重要作用如下:</p>
-<p>1)管理计算机中运行的程序和分配各种软,硬件资源</p>
-<p>2)为用户提供友善的人机界面</p>
-<p>3)为应用程序的开发和运行提供一个高效率的平台</p>
-<p><strong>操作系统具有并发性, 共享性, 虚拟性和不确定性的特征</strong></p>
-<p><strong>操作系统的分类</strong>:</p>
-<p>1)批处理操作系统, 根据同时执行的作业数又分为单道批处理和多道批处理. 一个作业由用户程序, 数据和作业说明书(作业控制语言)3个部分组成</p>
-<p>2)分时操作系统, 将CPU的工作时间划分为许多很短的时间片, 每个时间片分别为一个终端的用户提供服务或者执行一个作业. 分时系统主要有4个特点: <strong>多路性, 独立性, 交互性和及时性</strong></p>
-<p>3)实时操作系统, 对于外来信息能够以足够快的速度进行处理, 并在被控对象允许的时间范围内快速做出反应, 对可靠性要求高, 并且不强制要求用户交互. 实时系统的应用非常广泛</p>
-<p>4)网络操作系统, 使联网计算机能有效地共享网络资源, 为网络用户提供各种服务和接口. 特征包括硬件独立性和多用户支持等.</p>
-<p>5)分布式操作系统, 指为分布式计算机系统配置的操作系统. 分布式操作系统是网络操作系统的更高级形式, 它保持网络系统所拥有的全部功能, 同时又有透明性, 可靠性, 高性能等特性.</p>
-<p>6)嵌入式操作系统, 运行在嵌入式智能设备环境中, 对整个智能硬件以及它所操作,控制的各种部件装置等资源进行统一协调, 处理, 指挥和控制, 特点是微型化, 可定制, 可靠性和易移植性. 常采用硬件抽象层(Hardware Abstraction Layer, HAL)和板级支撑包(Board Support Package, BSP)来提高移植性, 常见的嵌入式实时操作系统有VxWorks, uClinux, PalmOS, WindowsCE, uC&#x2F;OS-II, eCos等</p>
-</li>
-<li><p>数据库</p>
-<p>数据库(DataBase, DB)是指长期存储在计算机内, 有组织的, 统一管理的相关数据的集合. 数据是按一定格式存放的, 具有较小的冗余度, 较高的数据独立性和易扩展性, 可为多个用户共享. </p>
-<p>数据库可以分为: 关系型数据库, 键值(Key-Value)数据库, 列存储数据库, 文档数据库等</p>
-</li>
-<li><p>分布式数据库系统</p>
-<p>分布式数据库系统(Distributed DataBase System, DDBS), 是针对地理上分散, 而管理上又需要不同程度集中的需求而提出的一种数据管理信息系统. 满足分布性, 逻辑相关性, 场地透明性, 场地自治性的数据库系统被称为完全分布式数据库系统. 分布式数据库系统的特点是数据的集中控制性, 数据独立性, 数据冗余可控性, 场地自治性, 存取的有效性.</p>
-</li>
-<li><p>文件系统</p>
-<p>文件(File)是具有符号的, 在逻辑上具有完整意义的一组相关信息项的集合. 文件系统是操作系统中实现文件统一管理的一组软件和相关数据的集合, 是专门负责管理和存取文件信息的软件机构.</p>
-<p>文件的类型如下:</p>
-<p>1)按性质和用途分类可将文件分为系统文件, 库文件, 用户文件</p>
-<p>2)按信息保存期限分类可将文件分为临时文件, 档案文件, 永久文件</p>
-<p>3)按保护方式分类可将文件分为只读文件,读&#x2F;写文件, 可执行文件, 不保护文件</p>
-<p>4)Unix系统将文件分为普通文件, 目录文件和设备文件(特殊文件)</p>
-<p>文件的存取方法: 通常有顺序存取和随机存取两种方法</p>
-<p>文件组织方法: 有连续结构, 链接结构和索引结构, 还有多重索引方式</p>
-<p>文件存储空间的管理知道存储空间的使用情况, 空间管理的数据结构通常称为磁盘分配表(Disk Allocation Table), 有空闲区表, 位示图, 空闲块链3种. 位示图用每一位的0和1表示一个区块空闲或被占用.</p>
-<p><img  
-                       lazyload
-                       alt="image"
-                       data-src="https://vividbloom.github.io/picx-images-hosting/%E8%BD%AF%E8%80%83/%E4%BD%8D%E7%A4%BA%E5%9B%BE%E4%BE%8B.86u9zp5npp.webp"
-                        alt="位示图例"
-                 ></p>
-</li>
-<li><p>网络协议</p>
-<p>常用的网络协议包括局域协议(Local Area Network, LAN), 广域网协议(Wide Area Network, WAN), 无线网协议和移动网协议. 互联网使用的是TCP&#x2F;IP协议簇.</p>
-</li>
-<li><p>中间件</p>
-<p>中间件(Middleware)是应用软件与各种操作系统之间使用的标准编程接口和协议, 是基础中间件(分布式系统服务)软件的一大类, 属于可复用软件的范畴.</p>
-<p>常见中间件的分类如下:</p>
-<p>1)通信处理(消息)中间件, 保证系统能在不同的平台之间通信, 例如MQSeries</p>
-<p>2)事务处理(交易)中间件, 实现协调处理顺序, 监视和调度, 负载均衡等功能, 例如Tuxedo</p>
-<p>3)数据存取管理中间件, 为不同种类数据的读写和加解密提供统一的接口</p>
-<p>4)Web服务器中间件, 提供Web程序执行的运行时容器, 例如Tomcat, JBOSS等</p>
-<p>5)安全中间件, 用中间件屏蔽操作系统的缺陷, 提升安全等级</p>
-<p>6)跨平台和架构的中间件, 用于开发大型应用软件</p>
-<p>7)专用平台中间件, 为解决特定应用领域的开发设计问题是提供构件库</p>
-<p>8)网络中间件, 包括网管工具, 接入工具等</p>
-</li>
-<li><p>软件构件</p>
-<p>构件又称为组件, 是一个自包容, 可复用的程序集, 这个集合整体向外提供统一的访问接口, 构件外部只能通过接口来访问构件, 而不能直接操作构件的内部. 构件的两个最重要的特性是自包容与可重用, 利用软件构件进行搭积木式地开发. 优点: 易扩展, 可重用, 并行开发. 缺点: 需要经验丰富的设计师, 快速开发与质量属性之间需要妥协, 构件质量影响整体的质量.</p>
-<p>商用构件的标准规范有:</p>
-<p>1)OMG的公共对象请求代理架构(Common Object Request Broker Architecture, CORBA)是一个纯粹的规范而不是产品, 主要分为3个层次: 对象请求代理(Object Request Broker, ORB), 公共对象服务和公共设施. 采用IDL定义接口, 并易于转化为具体语言实现.</p>
-<p>2)SUN的J2EE, 定义了完整的基于Java语言开发面向企业分布的应用规范, 其中EJB是J2EE的构件标准, EJB中的构件称为Bean, 可以分为会话Bean, 实体Bean和消息驱动Bean</p>
-<p>3)Microsoft的DNA2000, 采用DCOM&#x2F;COM&#x2F;COM+作为标准的构件</p>
-</li>
-</ol>
-<h2 id="计算机语言"><a href="#计算机语言" class="headerlink" title="计算机语言"></a>计算机语言</h2><p>计算机语言(Compute Language)是指人与计算机之间用于交流的一种语言, 主要由一套指令组成, 而这套指令一般包括表达式, 流程控制和集合三大部分内容.</p>
-<p>计算机语言的分类有:</p>
-<ol>
-<li><p>机器语言. 机器语言是第一代计算机语言, 是计算机自身具有的”本地语”, 由计算机所能直接理解和执行的所有指令组成. 指令格式由操作码和操作数两部分组成.</p>
-</li>
-<li><p>汇编语言. 汇编语言在机器语言的基础上采用英文字母和符号串来表达指令, 是机器语言的符号描述. 每条语句均由名字, 操作符, 操作数和注释4个字段(Fields)组成. 伪指令语句包括数据定义伪指令DB,DW,DD, 段定义伪指令SEGMENT, 过程定义伪指令PROC等, 编译后不产生机器代码.</p>
-</li>
-<li><p>高级语言. 高级语言比汇编语言更贴近于人类使用的语言, 易于理解, 记忆和使用. 常见的高级语言包括C, C++, Java, Python等.</p>
-</li>
-<li><p>建模语言. 建模语言主要指的是统一建模语言(Unified Modeling Language, UML), UML由3个要素构成: UML的基本构造块(事物, 关系), 图(支配基本构造块如何放置在一起的规则)和运用于整个语言的公用机制.</p>
-<p>1)事物. UML中的4种事物: 结构事物, 行为事物, 分组事物, 注释事物</p>
-<p>a. 结构事物: 名词, 静态部分, 用于描述概念或物理元素. 结构事物包括类(Class), 接口(Interface), 协作(Collaboration), 用例(UseCase), 主动类(Active Class), 构件(Component), 制品(Artiface)和节点(Node)</p>
-<p><img  
-                       lazyload
-                       alt="image"
-                       data-src="https://vividbloom.github.io/picx-images-hosting/%E8%BD%AF%E8%80%83/image.9kgtasfflt.webp"
-                        alt="结构事物"
-                 ></p>
-<p>b. 行为事物: 动词, 描述了跨越时间和空间的行为. 行为事物包括交互(Interaction), 状态机(State Machine), 活动(Activity)</p>
-<p><img  
-                       lazyload
-                       alt="image"
-                       data-src="https://vividbloom.github.io/picx-images-hosting/%E8%BD%AF%E8%80%83/image.58i0390mcf.webp"
-                        alt="行为事物"
-                 ></p>
-<p>c. 分组事物: 包是最常见的分组事物, 结构事物, 行为事物甚至其他分组事物都可以放进包内</p>
-<p>d. 注释事物: 注释即注解, 用来描述, 说明和标注模型的任何元素</p>
-<p><img  
-                       lazyload
-                       alt="image"
-                       data-src="https://vividbloom.github.io/picx-images-hosting/%E8%BD%AF%E8%80%83/image.6m4j7amrjk.webp"
-                        alt="分组事物和注释事物"
-                 ></p>
-<p>2)关系. UML中的4种关系: 依赖, 关联, 泛化, 实现</p>
-<p><img  
-                       lazyload
-                       alt="image"
-                       data-src="https://vividbloom.github.io/picx-images-hosting/%E8%BD%AF%E8%80%83/image.6t7r2py6f1.webp"
-                        alt="关系"
-                 ></p>
-<p>a.依赖关系. 其中一个事物(独立事物)发生变化会影响另一个事物. 依赖关系是一种使用的关系.</p>
-<p>b. 关联关系. 是一种拥有的关系, 关联提供了不同类的对象之间的结构关系, 它在一段时间内将多个类的实例连接在一起. 一般认为关联关系有2个特例: 一个是聚合关系, 另一个是组合关系. 聚合关系表示类之间的整体与部分的关系, 其含义是”部分”可能同时属于多个”整体”, “部分”与”整体”的生命周期可以不相同. 组合关系也表示类之间的整体与部分的关系. 与聚合关系的区别在于, 组合关系中的”部分”只能属于一个”整体”, “部分”与”整体”的生命周期相同, “部分”随着”整体”的创建而创建, 也随着”整体”的消亡而消亡.</p>
-<p>c. 泛化关系. 泛化是一种特殊&#x2F;一般关系, 特殊元素(子元素)的对象可替代一般元素(父元素)的对象</p>
-<p>d. 实现关系. 在两种情况下会使用实现关系: 一种是在接口和实现它们的类或构件之间; 另一种是在用例和实现它们的协作之间.</p>
-<p>3)图. 图是一组元素的图形表示, 大多数情况下把图画成顶点(代表事物)和弧(代表关系)的连通图</p>
-<p>UML2.0提供了14种图, 分别是类图, 对象图, 用例图, 序列图, 通信图, 状态图, 活动图, 构件图, 部署图, 制品图, 组合结构图, 包图, 交互概览图和计时图(定时图). 序列图, 通信图, 交互概览图和计时图均被称为交互图.</p>
-<p>类图展现了一组对象, 接口, 协作和它们之间的关系</p>
-<p><img  
-                       lazyload
-                       alt="image"
-                       data-src="https://vividbloom.github.io/picx-images-hosting/%E8%BD%AF%E8%80%83/image.1ow2dfyoz9.webp"
-                        alt="类图"
-                 ></p>
-<p>用例图(Use Case Diagram)展现了一组用例, 参与者(Actor)以及它们之间的关系. 用例之间有扩展关系(&lt;<extend>&gt;)和包含关系(&lt;<include>&gt;), 参与者和用例之间有关联关系, 用例与用例, 参与者与参与者之间有泛化关系. 包含关系的特点是当两个或多个用例中共用一组相同的动作时, 可以将这组相同的动作抽出来作为一个独立的子用例, 供多个基用例所共享; 扩展关系则是对基用例的扩展, 基用例是一个完整的用例, 即使没有子用例的参与, 也可以完成一个完整的功能.</p>
-<p><img  
-                       lazyload
-                       alt="image"
-                       data-src="https://vividbloom.github.io/picx-images-hosting/%E8%BD%AF%E8%80%83/image.b9j9fn66k.webp"
-                        alt="用例图"
-                 ></p>
-<p>UML中有5种视图(View): 用例视图, 逻辑视图, 进程视图, 实现视图, 部署视图, 其中的用例视图居于中心地位</p>
-<p>4)形式化方法和形式化语言. 形式化方法是把概念, 判断, 推理转化成特定的形式符号后, 对形式符号表达系统进行研究的方法. 形式化方法有不同的分类方法. 根据描述方式分, 有模型描述和性质描述两类; 根据表达能力分, 有模型方法, 代数方法, 进程代数方法, 逻辑方法和网络模型方法等5类. 形式化方法的开发过程贯穿软件工程的整个生命周期.</p>
-<p>Z语言是一种形式化语言, 具有”状态-操作”风格, 借助模式来表达系统结构. 建立于集合论和数理逻辑的基础上, 是一个强类型系统, 可以使用自然语言.</p>
-</li>
-</ol>
-<h2 id="多媒体技术"><a href="#多媒体技术" class="headerlink" title="多媒体技术"></a>多媒体技术</h2><ol>
-<li><p>媒体与多媒体</p>
-<p>媒体是承载信息的载体, 即信息的表现形式(或者传播形式), 如文字, 声音, 图像, 动画和视频等. 多媒体有4个重要的特征: </p>
-<p>1)多维化, 即媒体的多样化</p>
-<p>2)集成性, 多媒体与设备集成, 也与信息和表现集成</p>
-<p>3)交互性, 可向用户提供更有效的控制和使用信息的手段</p>
-<p>4)实时性, 音频和视频等信息具有很强的时间特性</p>
-<p>多媒体系统通常由硬件和软件组成, 其中多媒体硬件主要包括计算机主要配置和外部设备以及与各种外部设备的控制接口; 多媒体软件主要包括多媒体驱动软件, 多媒体操作系统, 多媒体数据处理软件, 多媒体创作工具软件和多媒体应用软件等</p>
-</li>
-<li><p>多媒体系统的关键技术</p>
-<p>1)视,音频技术, 视频技术包括视频数字化和视频编码技术两个方面; 音频技术包括音频数字化, 语音处理, 语音合成及语音识别4个方面</p>
-<p>2)通信技术, 是多媒体系统中的一项关键技术, 通常包括数据传输信道和数据 传输技术</p>
-<p>3)数据压缩技术, 包括即时压缩和非即时压缩, 数据压缩和文件压缩, 无损压缩与有损压缩等</p>
-<p>4)虚拟现实(Virtual Reality, VR)&#x2F;增强现实(Augmented Reality, AR)技术, 虚拟现实又称人工现实, 临境等, 是一种可以创建和体验虚拟世界的计算机仿真系统, 采用计算机技术生成一个逼真的视觉, 听觉, 触觉, 味觉和嗅觉的感知系统与用户交互; 增强现实技术是指把原本在现实世界的一定时间和空间范围内很难体验到的实体信息(视觉信息, 声音, 味道, 触觉等), 通过模拟仿真后, 再叠加到现实世界中被人类感官所感知, 从而达到超越现实的感官体验. VR&#x2F;AR技术主要分为桌面式, 分布式, 沉浸式和增强式4种.</p>
-</li>
-</ol>
+<h2 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h2><h3 id="基本类型"><a href="#基本类型" class="headerlink" title="基本类型"></a>基本类型</h3><p>常用基本类型:</p>
+<ul>
+<li><code>string</code>: 字符串类型</li>
+<li>number: 数字类型</li>
+<li>boolean: 布尔类型</li>
+</ul>
+<p>文字信息: 字符串类型(<code>string</code>)</p>
+<p>数字信息: 数字类型(<code>number</code>)</p>
+<p>状态信息: 布尔类型(<code>boolean</code>)</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> <span class="attr">title</span>: <span class="built_in">string</span> = <span class="string">&#x27;Pura 90&#x27;</span>;</span><br><span class="line"><span class="keyword">let</span> <span class="attr">price</span>: <span class="built_in">number</span> = <span class="number">4999</span>;</span><br><span class="line"><span class="keyword">let</span> <span class="attr">isChoose</span>: <span class="built_in">boolean</span> = <span class="literal">true</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 输出</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(title); <span class="comment">// 输出: Pura 90</span></span><br><span class="line"><span class="comment">// console.log只能打印字符串类型, 打印数字类型需要先转化为字符口串</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(price.<span class="title function_">toString</span>()); <span class="comment">// 输出: 4999</span></span><br><span class="line"><span class="comment">// 使用模板字符串打印</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">`The price of <span class="subst">$&#123;title&#125;</span> is <span class="subst">$&#123;price&#125;</span>`</span>); <span class="comment">// 输出: The price of Pura 90&#x27; is 4999</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="引用类型"><a href="#引用类型" class="headerlink" title="引用类型"></a>引用类型</h3><p><strong>引用类型</strong>是在内存中通过引用访问和操作对象的数据类型, 支持包含多个值或键值对的复杂结构, 适合描述具有层级或关系的数据, 并包含用于存储状态的属性和用于执行操作的方法.</p>
+<p>常用的引用类型: <code>Object</code>, <code>Array</code>, <code>Enum</code>, <code>Class</code>, <code>Function</code> 等</p>
+<p><strong>Object</strong>类型是所有引用类型的基类型. 任何值, 包括基本类型的值, 都可以直接被赋给<code>Object</code>类型的变量. <code>Object</code>类型的实例默认继承了一些方法如: <code>toString()</code>, <code>hasOwnProperty()</code>等</p>
+<blockquote>
+<p><code>Object</code>类型过于宽泛, 编译器无法进行类型检查, 可能导致运行时错误</p>
+</blockquote>
+<p><code>Array</code>类型, 即数组, 是一种用于存储多个数据的对象, 里面的每个元素都符合数据声明时指定的数据类型</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 创建数组</span></span><br><span class="line"><span class="keyword">let</span> <span class="attr">students</span>: strings[] = [<span class="string">&#x27;XiaoMing&#x27;</span>, <span class="string">&#x27;XiaoZhang&#x27;</span>, <span class="string">&#x27;XiaoWang&#x27;</span>, <span class="string">&#x27;XiaoLi&#x27;</span>]; </span><br><span class="line"><span class="comment">// 打印数组的长度, 4</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">`<span class="subst">$&#123;students.length&#125;</span>`</span>); </span><br><span class="line"><span class="comment">// 打印索引为0的元素: XiaoMing</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(students[<span class="number">0</span>]);</span><br><span class="line"><span class="comment">// 添加元素 -&gt; 长度变为5</span></span><br><span class="line">students.<span class="title function_">push</span>(<span class="string">&#x27;XiaoHong&#x27;</span>);</span><br><span class="line"><span class="comment">// 删除末尾元素 -&gt; 长度变为4</span></span><br><span class="line">students.<span class="title function_">pop</span>();</span><br></pre></td></tr></table></figure>
+
+<h3 id="基本类型和引用类型的区别"><a href="#基本类型和引用类型的区别" class="headerlink" title="基本类型和引用类型的区别"></a>基本类型和引用类型的区别</h3><table>
+<thead>
+<tr>
+<th align="center">类型</th>
+<th align="center">存储方式</th>
+<th align="center">赋值行为</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">基本类型</td>
+<td align="center">直接存储数据值</td>
+<td align="center">赋值时创建副本, 修改不影响原变量(值复制)</td>
+</tr>
+<tr>
+<td align="center">引用类型</td>
+<td align="center">存储数据地址</td>
+<td align="center">赋值时复制内存地址, 多个变量共享同一内存地址, 修改会影响所有引用该内存地址的变量</td>
+</tr>
+</tbody></table>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 基本类型</span></span><br><span class="line"><span class="keyword">let</span> <span class="attr">a</span>: <span class="built_in">number</span> = <span class="number">10</span>;</span><br><span class="line"><span class="keyword">let</span> <span class="attr">b</span>: <span class="built_in">number</span> = a; <span class="comment">// b = 10(独立副本)</span></span><br><span class="line">b = <span class="number">20</span>;  <span class="comment">// a仍为10</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 引用类型</span></span><br><span class="line"><span class="keyword">let</span> <span class="attr">arr1</span>: <span class="built_in">number</span>[] = [<span class="number">1</span>, <span class="number">2</span>];</span><br><span class="line"><span class="keyword">let</span> <span class="attr">arr2</span>: <span class="built_in">number</span>[] = arr1; <span class="comment">// arr2与arr1指向同一数组</span></span><br><span class="line">arr2.<span class="title function_">push</span>(<span class="number">3</span>); <span class="comment">// arr1变为[1,2,3]</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="拓展类型"><a href="#拓展类型" class="headerlink" title="拓展类型"></a>拓展类型</h3><p><strong>Enum</strong>类型: 即枚举类型, 是预先定义的一组命名值的值类型, 其中命名值又称为枚举常量</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">enum</span> <span class="title class_">Color</span> &#123;</span><br><span class="line">    <span class="title class_">Red</span>,</span><br><span class="line">    <span class="title class_">Blue</span>,</span><br><span class="line">    <span class="title class_">Green</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 使用</span></span><br><span class="line"><span class="keyword">let</span> <span class="attr">color</span>: <span class="title class_">Color</span> = <span class="title class_">Color</span>.<span class="property">Red</span>;</span><br></pre></td></tr></table></figure>
+
+<p><strong>Union</strong>类型: 即联合类型, 由多个类型组合成的引用类型</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> <span class="attr">luckyNum</span>: <span class="built_in">number</span> | <span class="built_in">string</span> = <span class="number">7</span>;</span><br><span class="line">luckyNum = <span class="string">&#x27;seven&#x27;</span>;</span><br></pre></td></tr></table></figure>
+
+<p><strong>Type Aliases</strong>类型: 即类型别名, 用来定义现有类型的替代名称, 使用关键字<code>type</code>进行声明</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">type</span> <span class="title class_">NullableObject</span> = <span class="title class_">Object</span> | <span class="literal">null</span>;</span><br><span class="line"><span class="keyword">let</span> <span class="attr">obj</span>: <span class="title class_">NullableObject</span> = <span class="literal">null</span>;</span><br></pre></td></tr></table></figure>
+
+<h3 id="类型系统特性"><a href="#类型系统特性" class="headerlink" title="类型系统特性"></a>类型系统特性</h3><p><code>ArkTS</code>是类型安全的语言, 编辑器会进行类型检查, 实时提示错误信息.</p>
+<p>支持自动类型推断, 没有指定类型时, <code>ArkTS</code>支持使用类型推断自动选择合适的类型</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> meningOfLife = <span class="number">42</span>; <span class="comment">// meaningOfLife会被推测为number类型</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>类型断言</strong>是开发者通过<code>as</code>运算符显示指定变量类型, 用于在<code>ArkTS</code>中覆盖编译器推断并确保类型安全的核心机制.</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> <span class="attr">anyValue</span>: <span class="title class_">Object</span> = <span class="string">&#x27;ArkTS&#x27;</span>;</span><br><span class="line"><span class="keyword">let</span> <span class="attr">stringValue</span>: <span class="built_in">string</span> = anyValue <span class="keyword">as</span> <span class="built_in">string</span>; <span class="comment">// 断言为字符串</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>类型断言主要用于解决类型不确定或需要显式类型转换的场景</p>
+</blockquote>
 
                     
                 </div>
@@ -550,15 +444,11 @@
                             <ul class="post-tags-box border-box">
                                 
                                     <li class="tag-item border-box">
-                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/tags/%E8%BD%AF%E8%80%83/">软考</a>
+                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/tags/HarmonyOS/">HarmonyOS</a>
                                     </li>
                                 
                                     <li class="tag-item border-box">
-                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/">基础知识</a>
-                                    </li>
-                                
-                                    <li class="tag-item border-box">
-                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/tags/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E5%B8%88/">系统架构师</a>
+                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/tags/ArkTS/">ArkTS</a>
                                     </li>
                                 
                             </ul>
@@ -574,31 +464,15 @@
                 
                     <div class="post-nav border-box">
                         
-                            <div class="prev-post">
-                                <a class="prev"
-                                   rel="prev"
-                                   href="/2026/05/27/01_HarmonyOS%E5%BC%80%E5%8F%91-ArkTS%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95%E4%B8%80/"
-                                   title="HarmonyOS开发-ArkTS基础语法"
-                                >
-                                    <span class="left arrow-icon flex-center">
-                                        <i class="fas fa-chevron-left"></i>
-                                    </span>
-                                    <span class="title flex-center">
-                                        <span class="post-nav-title-item text-ellipsis">HarmonyOS开发-ArkTS基础语法</span>
-                                        <span class="post-nav-item">上一篇</span>
-                                    </span>
-                                </a>
-                            </div>
-                        
                         
                             <div class="next-post">
                                 <a class="next"
                                    rel="next"
-                                   href="/2026/05/09/%E8%A1%8C%E6%B5%8B%E5%A4%8D%E4%B9%A0/"
-                                   title="行测复习"
+                                   href="/2026/05/17/01%E8%BD%AF%E8%80%83-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"
+                                   title="计算机系统基础知识"
                                 >
                                     <span class="title flex-center">
-                                        <span class="post-nav-title-item text-ellipsis">行测复习</span>
+                                        <span class="post-nav-title-item text-ellipsis">计算机系统基础知识</span>
                                         <span class="post-nav-item">下一篇</span>
                                     </span>
                                     <span class="right arrow-icon flex-center">
@@ -710,7 +584,7 @@
             <div class="pc-post-toc right-toc">
                 <div class="post-toc-wrap border-box">
     <div class="post-toc border-box">
-        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86"><span class="nav-number">1.</span> <span class="nav-text">计算机系统基础知识</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0"><span class="nav-number">1.1.</span> <span class="nav-text">计算机系统概述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A1%AC%E4%BB%B6%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86"><span class="nav-number">1.2.</span> <span class="nav-text">计算机硬件基础知识</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%BD%AF%E4%BB%B6%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86"><span class="nav-number">1.3.</span> <span class="nav-text">计算机软件基础知识</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%AF%AD%E8%A8%80"><span class="nav-number">1.4.</span> <span class="nav-text">计算机语言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A4%9A%E5%AA%92%E4%BD%93%E6%8A%80%E6%9C%AF"><span class="nav-number">1.5.</span> <span class="nav-text">多媒体技术</span></a></li></ol></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#HarmonyOS%E5%BC%80%E5%8F%91-ArkTS%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95"><span class="nav-number">1.</span> <span class="nav-text">HarmonyOS开发-ArkTS基础语法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#ArkTS%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95"><span class="nav-number">1.1.</span> <span class="nav-text">ArkTS基础语法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A3%B0%E6%98%8E"><span class="nav-number">1.1.1.</span> <span class="nav-text">声明</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%98%E9%87%8F%E5%92%8C%E5%B8%B8%E9%87%8F%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="nav-number">1.1.2.</span> <span class="nav-text">变量和常量的区别</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="nav-number">1.2.</span> <span class="nav-text">数据类型</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B"><span class="nav-number">1.2.1.</span> <span class="nav-text">基本类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BC%95%E7%94%A8%E7%B1%BB%E5%9E%8B"><span class="nav-number">1.2.2.</span> <span class="nav-text">引用类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B%E5%92%8C%E5%BC%95%E7%94%A8%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="nav-number">1.2.3.</span> <span class="nav-text">基本类型和引用类型的区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8B%93%E5%B1%95%E7%B1%BB%E5%9E%8B"><span class="nav-number">1.2.4.</span> <span class="nav-text">拓展类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%B1%BB%E5%9E%8B%E7%B3%BB%E7%BB%9F%E7%89%B9%E6%80%A7"><span class="nav-number">1.2.5.</span> <span class="nav-text">类型系统特性</span></a></li></ol></li></ol></li></ol>
     </div>
 </div>
 
@@ -875,7 +749,7 @@
             <div class="tablet-post-toc">
                 <div class="post-toc-wrap border-box">
     <div class="post-toc border-box">
-        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86"><span class="nav-number">1.</span> <span class="nav-text">计算机系统基础知识</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0"><span class="nav-number">1.1.</span> <span class="nav-text">计算机系统概述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A1%AC%E4%BB%B6%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86"><span class="nav-number">1.2.</span> <span class="nav-text">计算机硬件基础知识</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%BD%AF%E4%BB%B6%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86"><span class="nav-number">1.3.</span> <span class="nav-text">计算机软件基础知识</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%AF%AD%E8%A8%80"><span class="nav-number">1.4.</span> <span class="nav-text">计算机语言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A4%9A%E5%AA%92%E4%BD%93%E6%8A%80%E6%9C%AF"><span class="nav-number">1.5.</span> <span class="nav-text">多媒体技术</span></a></li></ol></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#HarmonyOS%E5%BC%80%E5%8F%91-ArkTS%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95"><span class="nav-number">1.</span> <span class="nav-text">HarmonyOS开发-ArkTS基础语法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#ArkTS%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95"><span class="nav-number">1.1.</span> <span class="nav-text">ArkTS基础语法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A3%B0%E6%98%8E"><span class="nav-number">1.1.1.</span> <span class="nav-text">声明</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%98%E9%87%8F%E5%92%8C%E5%B8%B8%E9%87%8F%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="nav-number">1.1.2.</span> <span class="nav-text">变量和常量的区别</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="nav-number">1.2.</span> <span class="nav-text">数据类型</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B"><span class="nav-number">1.2.1.</span> <span class="nav-text">基本类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BC%95%E7%94%A8%E7%B1%BB%E5%9E%8B"><span class="nav-number">1.2.2.</span> <span class="nav-text">引用类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B%E5%92%8C%E5%BC%95%E7%94%A8%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="nav-number">1.2.3.</span> <span class="nav-text">基本类型和引用类型的区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8B%93%E5%B1%95%E7%B1%BB%E5%9E%8B"><span class="nav-number">1.2.4.</span> <span class="nav-text">拓展类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%B1%BB%E5%9E%8B%E7%B3%BB%E7%BB%9F%E7%89%B9%E6%80%A7"><span class="nav-number">1.2.5.</span> <span class="nav-text">类型系统特性</span></a></li></ol></li></ol></li></ol>
     </div>
 </div>
 
