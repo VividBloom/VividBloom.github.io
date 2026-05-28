@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="Hexo Theme Keep">
+    <meta name="author" content="Vivid Bloom">
+    
+    <title>
+        
+            03-HarmonyOS开发-ArkTS函数进阶 |
+        
+        Vivid Bloom
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    
+        <link rel="shortcut icon" href="/images/logo.webp">
+    
+    
+<link rel="stylesheet" href="/font/css/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/regular.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/solid.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/brands.min.css">
+
+    
+    <script class="keep-theme-configurations">
+    const KEEP = window.KEEP || {}
+    KEEP.hexo_config = {"hostname":"vividbloom.github.io","root":"/","language":"zh-CN","path":"search.json"}
+    KEEP.theme_config = {"base_info":{"title":"Vivid Bloom","author":"Vivid Bloom","avatar":"/images/logo.webp","logo":"/images/logo.webp","favicon":"/images/logo.webp","mode":"dark"},"menu":{"home":"/","archives":"/archives","tags":"/tags","categories":"/categories","about":"/about"},"first_screen":{"enable":true,"header_transparent":true,"background_img":"/images/bg.jpg","description":"桃之夭夭, 灼灼其华","hitokoto":true,"scroll":{"progress_bar":true,"percent":true}},"social_contact":{"enable":true,"links":{"github":"https://github.com/VividBloom"}},"scroll":{"progress_bar":false,"percent":false,"hide_header":true},"home":{"announcement":null,"category":true,"tag":true,"post_datetime":"updated","post_datetime_format":"ago"},"post":{"author_label":{"enable":true,"auto":false,"custom_label_list":["魔法师"]},"datetime_format":"YYYY-MM-DD HH:mm:ss"},"code_block":{"tools":{"enable":false,"style":"default"},"highlight_theme":"default"},"toc":{"enable":true,"number":true,"expand_all":false,"init_open":true,"layout":"right"},"website_count":{"busuanzi_count":{"enable":false,"site_uv":false,"site_pv":false,"page_pv":false}},"local_search":{"enable":true,"preload":true},"comment":{"enable":true,"use":"gitalk","gitalk":{"github_id":"VividBloom","repository":"https://VividBloom.github.io","client_id":"Ov23liB5vu3L88g0Gs9c","client_secret":"2bdfee6dca08c2f5e6391859dfea4444f2e3673d"}},"rss":{"enable":false},"lazyload":{"enable":true},"cdn":{"enable":false,"provider":"cdnjs"},"pjax":{"enable":false},"footer":{"since":2026,"word_count":false},"inject":{"enable":false,"css":[null],"js":[null]},"cache":{"enable":true},"minify":false,"custom_file_path":null,"scheme":"Muse","darkmode":true,"lightdark":{"enable":false,"check_supports":true},"favicon":{"small":"/images/favicon-16x16-next.png","medium":"/images/favicon-32x32-next.png","apple_touch_icon":"/images/apple-touch-icon-next.png","safari_pinned_tab":"/images/logo.svg"},"custom_logo":null,"creative_commons":{"license":"by-nc-sa","size":"small","sidebar":false,"post":false,"language":null},"open_graph":{"enable":true,"options":null},"menu_settings":{"icons":true,"badges":false},"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"avatar":{"url":null,"rounded":false,"rotated":false},"site_state":true,"social":null,"social_icons":{"enable":true,"icons_only":false,"transition":false},"links_settings":{"icon":"fa fa-globe","layout":"block"},"links":null,"language_switcher":false,"excerpt_description":true,"read_more_btn":true,"post_meta":{"item_text":true,"created_at":true,"updated_at":{"enable":true,"another_day":true},"categories":true},"symbols_count_time":{"separated_meta":true,"item_text_total":false},"tag_icon":false,"reward_settings":{"enable":false,"animation":false},"reward":null,"follow_me":null,"related_posts":{"enable":false,"icon":"fa fa-signs-post"},"post_edit":{"enable":false,"url":"https://github.com/user-name/repo-name/tree/branch-name/subdirectory-name/"},"post_navigation":"left","tagcloud":{"min":12,"max":30,"amount":200,"orderby":"name","order":1},"calendar":{"calendar_id":"<required>","api_key":"<required>","orderBy":"startTime","showLocation":false,"offsetMax":72,"offsetMin":4,"showDeleted":false,"singleEvents":true,"maxResults":250},"preconnect":false,"text_align":{"desktop":"justify","mobile":"justify"},"mobile_layout_economy":false,"theme_color":{"light":"#222","dark":"#222"},"body_scrollbar":{"overlay":false,"stable":false},"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"reading_progress":{"enable":false,"start_at":"left","position":"top","reversed":false,"color":"#37c6c0","height":"3px"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"github_banner":{"enable":false,"permalink":"https://github.com/yourname"},"font":{"enable":false,"host":null,"global":{"external":true,"family":"Lato","size":null},"title":{"external":true,"family":null,"size":null},"headings":{"external":true,"family":null,"size":null},"posts":{"external":true,"family":null},"codes":{"external":true,"family":null}},"index_with_subtitle":false,"exturl":false,"exturl_icon":true,"google_site_verification":null,"bing_site_verification":null,"yandex_site_verification":null,"baidu_site_verification":null,"note":{"style":"simple","icons":false,"light_bg_offset":0},"tabs":{"sticky":false,"transition":{"tabs":false,"labels":true}},"pdf":{"enable":false,"height":"500px"},"mermaid":{"enable":false,"theme":{"light":"default","dark":"dark"}},"wavedrom":{"enable":false},"math":{"every_page":false,"mathjax":{"enable":false,"tags":"none"},"katex":{"enable":false,"copy_tex":false}},"fancybox":false,"mediumzoom":false,"pangu":false,"quicklink":{"enable":false,"home":true,"archive":false,"delay":true,"timeout":3000,"priority":true},"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"pace":{"enable":false,"color":"blue","theme":"minimal"},"canvas_ribbon":{"enable":false,"size":300,"alpha":0.6,"zIndex":-1},"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"disqus":{"enable":false,"shortname":null,"count":true},"disqusjs":{"enable":false,"api":null,"apikey":null,"shortname":null},"livere_uid":null,"gitalk":{"enable":false,"github_id":null,"repo":null,"client_id":null,"client_secret":null,"admin_user":null,"distraction_free_mode":true,"proxy":"https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token","language":null,"body":null},"utterances":{"enable":false,"repo":"user-name/repo-name","issue_term":"pathname","theme":"github-light"},"isso":null,"addtoany":{"enable":false,"buttons":null},"google_analytics":{"tracking_id":null,"only_pageview":false,"measure_protocol_api_secret":null},"baidu_analytics":null,"cloudflare_analytics":null,"clarity_analytics":null,"matomo":{"enable":false,"server_url":null,"site_id":null},"umami":{"enable":false,"script_url":null,"website_id":null,"host_url":null},"plausible":{"enable":false,"script_url":null,"site_domain":null},"firestore":{"enable":false,"collection":"articles","apiKey":null,"projectId":null},"busuanzi_count":{"enable":false,"total_visitors":true,"total_visitors_icon":"fa fa-user","total_views":true,"total_views_icon":"fa fa-eye","post_views":true,"post_views_icon":"far fa-eye"},"algolia_search":{"enable":false,"hits":{"per_page":10}},"chat":{"enable":false,"icon":"fa fa-comment"},"chatra":{"enable":false,"async":true,"id":null},"tidio":{"enable":false,"key":null},"vendors":{"internal":"local","plugins":"cdnjs","custom_cdn_url":null},"css":"css","js":"js","images":"images","root":"","title":"Vivid Bloom","subtitle":"","description":"","keywords":null,"author":"Vivid Bloom","language":"zh-CN","timezone":"Asia/Shanghai","url":"https://VividBloom.github.io","permalink":":year/:month/:day/:title/","permalink_defaults":null,"pretty_urls":{"trailing_index":true,"trailing_html":true},"style":{"avatar":"/images/logo.webp","logo":"/images/logo.webp","favicon":"/images/logo.webp","mode":"dark"},"home_article":{"category":{"enable":true,"limit":3},"tag":{"enable":true,"limit":5}},"search":{"path":"search.xml","field":"post","content":true,"template":"./search.xml"},"source_dir":"source","public_dir":"public","tag_dir":"tags","archive_dir":"archives","category_dir":"categories","code_dir":"downloads/code","i18n_dir":":lang","skip_render":null,"new_post_name":":title.md","default_layout":"post","titlecase":false,"external_link":{"enable":true,"field":"site","exclude":""},"filename_case":0,"render_drafts":false,"post_asset_folder":false,"relative_link":false,"future":true,"syntax_highlighter":"highlight.js","highlight":{"line_number":true,"auto_detect":false,"tab_replace":"","wrap":true,"hljs":false},"prismjs":{"preprocess":true,"line_number":true,"tab_replace":""},"index_generator":{"path":"","per_page":10,"order_by":"-date"},"default_category":"uncategorized","category_map":null,"tag_map":null,"meta_generator":true,"date_format":"YYYY-MM-DD","time_format":"HH:mm:ss","updated_option":"mtime","per_page":10,"pagination_dir":"page","include":null,"exclude":null,"ignore":null,"theme":"keep","deploy":{"type":"git","repo":"https://github.com/VividBloom/VividBloom.github.io.git","branch":"main","comment":"更新"},"source_data":{},"version":"4.2.5"}
+    KEEP.language_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 个月前","year":"%s 年前"}
+    KEEP.language_code_block = {"copy":"复制代码","copied":"已复制","fold":"折叠代码块","folded":"已折叠"}
+    KEEP.language_copy_copyright = {"copy":"复制版权信息","copied":"已复制","title":"原文标题","author":"原文作者","link":"原文链接"}
+  </script>
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+
+    
+</div>
+
+
+
+<main class="page-container border-box">
+    <!-- home first screen  -->
+    
+
+    <!-- page content -->
+    <div class="page-main-content border-box">
+        <div class="page-main-content-top">
+            
+<header class="header-wrapper">
+
+    <div class="border-box header-content">
+        <div class="left flex-start border-box">
+            
+                <a class="logo-image border-box" href="/">
+                    <img src="/images/logo.webp">
+                </a>
+            
+            <a class="site-name border-box" href="/">
+               Vivid Bloom
+            </a>
+        </div>
+
+        <div class="right border-box">
+            <div class="pc border-box">
+                <ul class="menu-list border-box">
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/">
+                                
+                                首页
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/archives">
+                                
+                                归档
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/tags">
+                                
+                                标签
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/categories">
+                                
+                                分类
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/about">
+                                
+                                关于
+                                
+                            </a>
+                            
+                        </li>
+                    
+                    
+                        <li class="menu-item search search-popup-trigger">
+                            <i class="menu-text-color fas search fa-search"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <div class="mobile border-box flex-start">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div>
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list border-box">
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/">
+                            
+                            首页
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/archives">
+                            
+                            归档
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/tags">
+                            
+                            标签
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/categories">
+                            
+                            分类
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/about">
+                            
+                            关于
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle border-box">
+
+            <div class="main-content border-box">
+                
+
+                    
+<div class="fade-in-down-animation">
+    <div class="post-page-container border-box">
+        <div class="post-content-container border-box">
+            
+
+            <div class="post-content-bottom border-box">
+                
+                    <div class="post-title">
+                        03-HarmonyOS开发-ArkTS函数进阶
+                    </div>
+                
+
+                
+                    <div class="post-header border-box">
+                        
+                            <div class="avatar-box border-box">
+                                <img src="/images/logo.webp">
+                            </div>
+                        
+                        <div class="info-box">
+                            <div class="author border-box">
+                                <span class="name">Vivid Bloom</span>
+                                
+                            </div>
+                            <div class="meta-info border-box">
+                                
+
+<div class="post-meta-info-container border-box post">
+    <div class="post-meta-info border-box">
+        
+
+        
+            <span class="meta-info-item post-create-date">
+                <i class="icon fa-solid fa-calendar-plus"></i>&nbsp;
+                <span class="datetime">2026-05-28 11:55:59</span>
+            </span>
+
+            
+                <span class="meta-info-item post-update-date">
+                    <i class="icon fa-solid fa-file-pen"></i>&nbsp;
+                    <span class="datetime" data-updated="Fri May 29 2026 06:35:26 GMT+0800">2026-05-29 06:35:26</span>
+                </span>
+            
+        
+
+        
+            <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
+                <ul class="post-category-ul">
+                    
+                            <li class="category-item"><a href="/categories/HarmonyOS/">HarmonyOS</a></li>
+                        
+                    
+                </ul>
+            </span>
+        
+
+        
+            <span class="post-tag meta-info-item border-box">
+                <ul class="post-tag-ul">
+                    
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/HarmonyOS/">HarmonyOS</a></li>
+                        
+                    
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/ArkTS/">ArkTS</a></li>
+                        
+                    
+                </ul>
+            </span>
+        
+
+        
+        
+        
+        
+    </div>
+
+    
+</div>
+
+                            </div>
+                        </div>
+                    </div>
+                
+
+                <div class="post-content keep-markdown-body ">
+                    
+
+                    
+                         <h1 id="HarmonyOS开发-ArkTS函数进阶"><a href="#HarmonyOS开发-ArkTS函数进阶" class="headerlink" title="HarmonyOS开发-ArkTS函数进阶"></a>HarmonyOS开发-ArkTS函数进阶</h1><h2 id="箭头函数-lambda表达式"><a href="#箭头函数-lambda表达式" class="headerlink" title="箭头函数&#x2F;lambda表达式"></a>箭头函数&#x2F;<code>lambda</code>表达式</h2><p><strong>箭头函数</strong>是一种简化函数定义的语法形式, 能够提升代码的简洁性</p>
+<p><strong>使用场景</strong>: 常用于快速编写简短函数, 尤其适合作为参数传入其他函数(如: 循环, 判断中的小逻辑)的场景, 语法简洁且无需多余关键字.</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">(<span class="attr">flavor</span>: <span class="built_in">string</span>, <span class="attr">sweetness</span>: <span class="built_in">string</span>): <span class="function"><span class="params">string</span> =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">`一杯<span class="subst">$&#123;sweetness&#125;</span>的<span class="subst">$&#123;flavor&#125;</span>奶茶`</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>如果函数里只需要执行一行代码, 包裹代码的花括号可以省掉, 这行代码的结果自动当作返回值, 不用写<code>retrun</code></p>
+</blockquote>
+<h3 id="函数类型"><a href="#函数类型" class="headerlink" title="函数类型"></a>函数类型</h3><p><strong>函数类型</strong>是用于约束函数参数类型和返回类型的数据类型</p>
+<p><strong>使用场景</strong>: 函数类型适用于把函数赋值给变量, 或作为参数传给其他函数时的场景, 能避免写错参数&#x2F;返回值类型, 让代码更规范.</p>
+<p>基础语法: <code>type FuncType = (param1: 类型1, param2: 类型2) =&gt; 返回值类型</code></p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 声明一个函数类型</span></span><br><span class="line"><span class="keyword">type</span> <span class="title class_">MilkTeaMaker</span> = <span class="function">(<span class="params"><span class="attr">flavor</span>: <span class="built_in">string</span>, <span class="attr">sweetness</span>: <span class="built_in">string</span></span>) =&gt;</span> <span class="built_in">string</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> <span class="attr">makeMilkTea</span>: <span class="title class_">MilkTeaMaker</span> = <span class="function">(<span class="params"><span class="attr">flavor</span>: <span class="built_in">string</span>, <span class="attr">sweetness</span>: <span class="built_in">string</span></span>) =&gt;</span> <span class="string">`一杯<span class="subst">$&#123;sweetness&#125;</span>的<span class="subst">$&#123;flavor&#125;</span>奶茶`</span>;</span><br></pre></td></tr></table></figure>
+
+<h2 id="回调函数"><a href="#回调函数" class="headerlink" title="回调函数"></a>回调函数</h2><p><strong>回调函数</strong>: 把一个函数当成参数传给另一个函数, 接收参数的函数在 特定时机或条件下执行这个传入的函数</p>
+<p><strong>使用场景</strong>: 适合用在让一个函数完成核心逻辑后, 自动执行一在段可灵活替换的自定义逻辑的场景</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 制作奶茶</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">makeMilkTeaCallback</span>(<span class="params"><span class="attr">baseFlavor</span>: <span class="built_in">string</span>, <span class="attr">callback</span>: () =&gt; <span class="built_in">void</span></span>): <span class="built_in">void</span> &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">`<span class="subst">$&#123;baseFlavor&#125;</span>奶茶已出杯`</span>);</span><br><span class="line">    <span class="comment">// 制作完成后, 执行回调 - 添加自定义配料</span></span><br><span class="line">    <span class="title function_">callback</span>();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> <span class="title function_">addOther</span> = (<span class="params"></span>) =&gt; &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;加入布丁&#x27;</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="title function_">makeMilkTeaCallback</span>(<span class="string">&#x27;草莓&#x27;</span>, addOther);</span><br><span class="line"><span class="comment">// 输出</span></span><br><span class="line"><span class="comment">// 草莓奶茶已出杯</span></span><br><span class="line"><span class="comment">// 加入布丁</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="闭包函数"><a href="#闭包函数" class="headerlink" title="闭包函数"></a>闭包函数</h2><p><strong>闭包函数</strong>: 由函数及声明该函数的环境组合而成. 该环境包含了这个闭包创建时作用域内的任何局部变量</p>
+<p><strong>使用场景</strong>: 适用于需要让函数记住并保留自己定义时的变量(比如: 计数), 即使函数在其他地方被调用的场景</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">createCounter</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="keyword">let</span> count = <span class="number">0</span>; <span class="comment">// 初始值由外部传入</span></span><br><span class="line">    <span class="keyword">return</span> <span class="function">() =&gt;</span> &#123;</span><br><span class="line">        <span class="comment">// 用箭头函数简化内部函数</span></span><br><span class="line">        count++;</span><br><span class="line">        <span class="keyword">return</span> count;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> conter = <span class="title function_">createCounter</span>();</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">`<span class="subst">$&#123;createCounter()&#125;</span>`</span>) <span class="comment">// 1</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">`<span class="subst">$&#123;createCounter()&#125;</span>`</span>) <span class="comment">// 2</span></span><br></pre></td></tr></table></figure>
+
+<p><img  
+                       lazyload
+                       alt="image"
+                       data-src="https://vividbloom.github.io/picx-images-hosting/HarmonyOS/image.4xv6jwln37.webp"
+                        alt="闭包函数"
+                 ></p>
+<h2 id="函数重载"><a href="#函数重载" class="headerlink" title="函数重载"></a>函数重载</h2><p><strong>函数重载</strong>是一种允许开发者通过不同参数类型或数量定义同名函数的机制</p>
+<p><strong>使用方法</strong>: 需先声明多个无函数体的重载签名, 再通过一个兼容所有签名的实现函数完成具体逻辑</p>
+<blockquote>
+<p>不允许重载函数有相同的名字和参数列表, 否则将导致编译错误</p>
+</blockquote>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 第一步: 定义重载规则</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">printInfo</span>(<span class="params"><span class="attr">value</span>: <span class="built_in">string</span></span>): <span class="built_in">void</span>; <span class="comment">// 规则1: 接收字符串, 打印文字</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">printInfo</span>(<span class="params"><span class="attr">value</span>: <span class="built_in">number</span></span>): <span class="built_in">void</span>; <span class="comment">// 规则2: 接收数字, 打印数字说明</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 第二步: 实现函数</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">printInfo</span>(<span class="params"><span class="attr">value</span>: <span class="built_in">string</span> | <span class="built_in">number</span></span>): <span class="built_in">void</span> &#123;</span><br><span class="line">   <span class="comment">// 用if-else判断类型</span></span><br><span class="line">    <span class="keyword">if</span> (<span class="keyword">typeof</span> value === <span class="string">&#x27;string&#x27;</span>) &#123;</span><br><span class="line">        <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;文字信息: &#x27;</span>, value)</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;数字信息: 这个数字是: &#x27;</span>, value);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 第三步: 调用</span></span><br><span class="line"><span class="title function_">printInfo</span>(<span class="string">&#x27;Hello ArkTS&#x27;</span>); <span class="comment">// 匹配规则1, 输出: 文字信息: Hello ArkTS</span></span><br><span class="line"><span class="title function_">printInfo</span>(<span class="number">100</span>); <span class="comment">// 匹配规则2: 输出: 数字信息: 这个数字是: 100</span></span><br></pre></td></tr></table></figure>
+
+
+
+
+                    
+                </div>
+
+                
+
+                <div class="post-bottom-tags-and-share border-box">
+                    <div>
+                        
+                            <ul class="post-tags-box border-box">
+                                
+                                    <li class="tag-item border-box">
+                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/tags/HarmonyOS/">HarmonyOS</a>
+                                    </li>
+                                
+                                    <li class="tag-item border-box">
+                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/tags/ArkTS/">ArkTS</a>
+                                    </li>
+                                
+                            </ul>
+                        
+                    </div>
+                    <div>
+                        
+                    </div>
+                </div>
+
+                
+
+                
+                    <div class="post-nav border-box">
+                        
+                        
+                            <div class="next-post">
+                                <a class="next"
+                                   rel="next"
+                                   href="/2026/05/28/02-HarmonyOS%E5%BC%80%E5%8F%91-ArkTS%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95%E4%BA%8C/"
+                                   title="02_HarmonyOS开发-ArkTS基础语法二"
+                                >
+                                    <span class="title flex-center">
+                                        <span class="post-nav-title-item text-ellipsis">02_HarmonyOS开发-ArkTS基础语法二</span>
+                                        <span class="post-nav-item">下一篇</span>
+                                    </span>
+                                    <span class="right arrow-icon flex-center">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        
+                    </div>
+                
+
+                
+                    
+
+
+    <div class="comments-container border-box">
+        <div id="comments-anchor" class="comment-area-title border-box">
+            <i class="fas fa-comments"></i>&nbsp;评论
+        </div>
+        <div class="comment-plugin-fail border-box">
+    <span class="fail-tip">评论插件加载失败</span>
+    <button class="reload keep-button">点击重新加载</button>
+</div>
+<div class="comment-plugin-loading flex-center border-box">
+    <i class="loading-icon fa-solid fa-spinner fa-spin"></i>
+    <span class="load-tip">正在加载评论插件</span>
+</div>
+<script data-pjax>
+  window.KeepCommentPlugin = {}
+  window.KeepCommentPlugin.hideLoading = () => {
+    const cplDom = document.querySelector('.comments-container .comment-plugin-loading')
+    cplDom.style.display = 'none'
+  }
+  window.KeepCommentPlugin.loadFailHandle = () => {
+    window.KeepCommentPlugin.hideLoading()
+    const cpfDom = document.querySelector('.comments-container .comment-plugin-fail')
+    cpfDom.style.display = 'flex'
+    cpfDom.querySelector('.reload').addEventListener('click', () => {
+      window.location.reload()
+    })
+  }
+</script>
+
+        
+            
+
+    <div class="gitalk-comment-container">
+        <div id="gitalk-container"></div>
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css">
+        <script 
+                src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"
+                async
+                onerror="window.KeepCommentPlugin.loadFailHandle()"
+        ></script>
+        <script 
+                async
+                onerror="window.KeepCommentPlugin.loadFailHandle()"
+        >
+          window.KeepCommentPlugin.initGitalk = () => {
+            let gitalkPathname = decodeURI(location.pathname)
+            const gitalkPathnameLength = gitalkPathname.length
+            const gitalkPathnameMaxLength = 50
+            if (gitalkPathnameLength > gitalkPathnameMaxLength) {
+              gitalkPathname = gitalkPathname.substring(0, gitalkPathnameMaxLength - 3) + '...'
+            }
+
+            if (window?.Gitalk) {
+              new Gitalk({
+                clientID: 'Ov23liB5vu3L88g0Gs9c',
+                clientSecret: '2bdfee6dca08c2f5e6391859dfea4444f2e3673d',
+                repo: 'https://VividBloom.github.io',
+                owner: 'VividBloom',
+                admin: 'VividBloom',
+                id: gitalkPathname,
+                proxy: '',
+                language: 'zh-CN'
+              }).render('gitalk-container')
+              window.KeepCommentPlugin.hideLoading()
+            } else {
+              setTimeout(() => {
+                window.KeepCommentPlugin.initGitalk()
+              }, 1000)
+            }
+          }
+
+          if ('false' === 'true') {
+            setTimeout(() => {
+              window.KeepCommentPlugin.initGitalk()
+            }, 1200)
+          } else {
+            window.addEventListener('DOMContentLoaded', window.KeepCommentPlugin.initGitalk)
+          }
+        </script>
+    </div>
+
+
+        
+    </div>
+
+
+
+
+
+                
+            </div>
+        </div>
+
+        
+            <div class="pc-post-toc right-toc">
+                <div class="post-toc-wrap border-box">
+    <div class="post-toc border-box">
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#HarmonyOS%E5%BC%80%E5%8F%91-ArkTS%E5%87%BD%E6%95%B0%E8%BF%9B%E9%98%B6"><span class="nav-number">1.</span> <span class="nav-text">HarmonyOS开发-ArkTS函数进阶</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AE%AD%E5%A4%B4%E5%87%BD%E6%95%B0-lambda%E8%A1%A8%E8%BE%BE%E5%BC%8F"><span class="nav-number">1.1.</span> <span class="nav-text">箭头函数&#x2F;lambda表达式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%87%BD%E6%95%B0%E7%B1%BB%E5%9E%8B"><span class="nav-number">1.1.1.</span> <span class="nav-text">函数类型</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9B%9E%E8%B0%83%E5%87%BD%E6%95%B0"><span class="nav-number">1.2.</span> <span class="nav-text">回调函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%97%AD%E5%8C%85%E5%87%BD%E6%95%B0"><span class="nav-number">1.3.</span> <span class="nav-text">闭包函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%87%BD%E6%95%B0%E9%87%8D%E8%BD%BD"><span class="nav-number">1.4.</span> <span class="nav-text">函数重载</span></a></li></ol></li></ol>
+    </div>
+</div>
+
+            </div>
+        
+    </div>
+</div>
+
+
+                
+            </div>
+        </div>
+
+        <div class="page-main-content-bottom border-box">
+            
+<footer class="footer border-box">
+    <div class="copyright-info info-item">
+    &copy;&nbsp;2026
+    
+            &nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;&nbsp;<a href="/">Vivid Bloom</a>
+        
+    </div>
+
+    <div class="theme-info info-item">
+        由&nbsp;<a target="_blank" href="https://hexo.io">Hexo</a>&nbsp;驱动&nbsp;&&nbsp;主题&nbsp;<a class="keep-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep</a>
+    </div>
+
+    
+
+    
+
+    
+</footer>
+
+        </div>
+    </div>
+
+    <!-- post tools -->
+    
+        <div class="post-tools right-toc">
+            <div class="post-tools-container border-box">
+    <ul class="post-tools-list border-box">
+        <!-- PC encrypt again -->
+        
+
+        <!-- PC TOC show toggle -->
+        
+            <li class="tools-item flex-center toggle-show-toc">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        <!-- PC go comment -->
+        
+            <li class="tools-item flex-center go-to-comments">
+                <i class="fas fa-comment"></i>
+                <span class="post-comments-count"></span>
+            </li>
+        
+
+        <!-- PC full screen -->
+        <li class="tools-item flex-center full-screen">
+            <i class="fa-solid fa-expand"></i>
+        </li>
+    </ul>
+</div>
+
+        </div>
+    
+
+    <!-- side tools -->
+    <div class="side-tools">
+        <div class="side-tools-container border-box ">
+    <ul class="side-tools-list side-tools-show-handle border-box">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <!-- toggle mode -->
+        
+
+        <!-- rss -->
+        
+
+        <!-- to bottom -->
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list border-box">
+        
+            <li class="tools-item toggle-show-toc-tablet flex-center">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        
+            <li class="tools-item go-to-comments-tablet flex-center">
+                <i class="fas fa-comment"></i>
+            </li>
+        
+
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+
+        <li class="tools-item tool-scroll-to-top flex-center show-arrow">
+            <i class="arrow fas fa-arrow-up"></i>
+            <span class="percent"></span>
+        </li>
+    </ul>
+</div>
+
+    </div>
+
+    <!-- image mask -->
+    <div class="zoom-in-image-mask">
+    <img class="zoom-in-image">
+</div>
+
+
+    <!-- local search -->
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fas fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="搜索..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="close-popup-btn">
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+    <!-- tablet toc -->
+    
+        <div class="tablet-post-toc-mask">
+            <div class="tablet-post-toc">
+                <div class="post-toc-wrap border-box">
+    <div class="post-toc border-box">
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#HarmonyOS%E5%BC%80%E5%8F%91-ArkTS%E5%87%BD%E6%95%B0%E8%BF%9B%E9%98%B6"><span class="nav-number">1.</span> <span class="nav-text">HarmonyOS开发-ArkTS函数进阶</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AE%AD%E5%A4%B4%E5%87%BD%E6%95%B0-lambda%E8%A1%A8%E8%BE%BE%E5%BC%8F"><span class="nav-number">1.1.</span> <span class="nav-text">箭头函数&#x2F;lambda表达式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%87%BD%E6%95%B0%E7%B1%BB%E5%9E%8B"><span class="nav-number">1.1.1.</span> <span class="nav-text">函数类型</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9B%9E%E8%B0%83%E5%87%BD%E6%95%B0"><span class="nav-number">1.2.</span> <span class="nav-text">回调函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%97%AD%E5%8C%85%E5%87%BD%E6%95%B0"><span class="nav-number">1.3.</span> <span class="nav-text">闭包函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%87%BD%E6%95%B0%E9%87%8D%E8%BD%BD"><span class="nav-number">1.4.</span> <span class="nav-text">函数重载</span></a></li></ol></li></ol>
+    </div>
+</div>
+
+            </div>
+        </div>
+    
+</main>
+
+
+
+
+
+<!-- common js -->
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/header-shrink.js"></script>
+
+<script src="/js/back2top.js"></script>
+
+<script src="/js/toggle-theme.js"></script>
+
+<script src="/js/code-block.js"></script>
+
+<script src="/js/main.js"></script>
+
+<script src="/js/libs/anime.min.js"></script>
+
+
+<!-- local search -->
+
+    
+<script src="/js/local-search.js"></script>
+
+
+
+<!-- lazyload -->
+
+    
+<script src="/js/lazyload.js"></script>
+
+
+
+<div class="">
+    <!-- home page -->
+    
+
+    <!-- post page -->
+    
+        <!-- post-helper -->
+        
+<script src="/js/post/post-helper.js"></script>
+
+
+        <!-- toc -->
+        
+            
+<script src="/js/post/toc.js"></script>
+
+        
+
+        <!-- copyright-info -->
+        
+
+        <!-- share -->
+        
+    
+
+    <!-- categories page -->
+    
+
+    <!-- links page -->
+    
+
+    <!-- photos page -->
+    
+
+    <!-- tools page -->
+    
+</div>
+
+<!-- mermaid -->
+
+
+<!-- pjax -->
+
+
+
+</body>
+</html>
