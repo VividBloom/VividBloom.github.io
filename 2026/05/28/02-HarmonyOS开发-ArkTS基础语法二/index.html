@@ -265,7 +265,7 @@
             
                 <span class="meta-info-item post-update-date">
                     <i class="icon fa-solid fa-file-pen"></i>&nbsp;
-                    <span class="datetime" data-updated="Thu May 28 2026 10:57:14 GMT+0800">2026-05-28 10:57:14</span>
+                    <span class="datetime" data-updated="Thu May 28 2026 11:54:09 GMT+0800">2026-05-28 11:54:09</span>
                 </span>
             
         
@@ -429,6 +429,63 @@
 <p><code>try</code>语句: <code>try-catch-finally</code>包裹可能抛出异常的代码块, 捕获并处理异常</p>
 <figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">    <span class="keyword">let</span> result = <span class="title function_">checkAge</span>(-<span class="number">5</span>); <span class="comment">// 可能抛出异常的操作</span></span><br><span class="line">&#125; <span class="keyword">catch</span> (error) &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">error</span>(<span class="string">&#x27;捕获到异常: &#x27;</span>, error.<span class="property">message</span>); <span class="comment">// 处理异常</span></span><br><span class="line">&#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;清理操作&#x27;</span>); <span class="comment">// 无论是否异常都会执行</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
+<h2 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h2><p>函数是将多条语句组合在一起, 用于实现特定功能或完成特定任务的, 可重用的代码块.</p>
+<p>通过<code>function</code>关键字声明要告诉编译器函数的名称, 返回类型和参数以及执行的内容.</p>
+<p><code>function 函数名 (参数列表): 返回类型 &#123; 函数体 &#125;</code></p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">makeMilkTea</span>(<span class="params"><span class="attr">flavor</span>: <span class="built_in">string</span>, <span class="attr">sweetness</span>: <span class="built_in">string</span></span>): <span class="built_in">string</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">`一杯<span class="subst">$&#123;sweetness&#125;</span>的<span class="subst">$&#123;flavor&#125;</span>奶茶`</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> tea = <span class="title function_">makeMilkTea</span>(<span class="string">&#x27;草莓&#x27;</span>, <span class="string">&#x27;半糖&#x27;</span>); <span class="comment">// 通过函数名调用函数</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(tea); <span class="comment">// 输出: 一杯半糖的草莓奶茶</span></span><br><span class="line"><span class="keyword">let</span> tea1 = <span class="title function_">makeMilkTea</span>(<span class="string">&#x27;珍珠&#x27;</span>, <span class="string">&#x27;全糖&#x27;</span>);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(tea1); <span class="comment">// 输出: 一杯全糖的珍珠奶茶</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="参数类型"><a href="#参数类型" class="headerlink" title="参数类型:"></a>参数类型:</h3><ul>
+<li>必选参数: 函数调用时必须要传入的参数</li>
+<li>可选参数: 参数的格式可为<code>name?:Type</code>, 表示参数是可选的, 即在调用函数时可以选择性传入的参数</li>
+<li>默认参数: 允许开发者为参数指定默认值, 在调用函数时若未传递相应的参数, 则使用默认值</li>
+<li>剩余参数: 函数的最后一个参数可以是剩余参数, 格式为<code>...restArgs</code>, 允许开发者接收数量不定的实参, 并将它们作为数组处理</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">参数类型</th>
+<th align="center">语法格式</th>
+<th align="center">作用</th>
+<th align="center">是否必传</th>
+<th align="center">使用场景</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">普通参数</td>
+<td align="center">参数名: 类型</td>
+<td align="center">接收指定类型的传入值</td>
+<td align="center">是</td>
+<td align="center">必须传入的基础参数</td>
+</tr>
+<tr>
+<td align="center">可选参数</td>
+<td align="center">参数名?: 类型</td>
+<td align="center">允许调用 时省略该</td>
+<td align="center">否</td>
+<td align="center">非必需参数</td>
+</tr>
+<tr>
+<td align="center">默认参数</td>
+<td align="center">参数名: 类型 &#x3D; 默认值</td>
+<td align="center">未传参数时使用默认值</td>
+<td align="center">否</td>
+<td align="center">简化调用且需保底值的场景</td>
+</tr>
+<tr>
+<td align="center">剩余参数</td>
+<td align="center">…参数名: 类型[]</td>
+<td align="center">接收任意数量的同类型参数, 转为数组处理</td>
+<td align="center">否</td>
+<td align="center">不定数量参数</td>
+</tr>
+</tbody></table>
+<h3 id="返回类型"><a href="#返回类型" class="headerlink" title="返回类型:"></a>返回类型:</h3><p>函数返回类型定义了函数执行完成后返回值的数据类型.</p>
+<p>函数体内所有<code>return</code>语句的返回值类型必须与声明的返回类型严格匹配.</p>
+<p>不需要返回值的函数的返回类型可以显式指定为<code>void</code>或省略标注.</p>
+<h3 id="函数的作用域"><a href="#函数的作用域" class="headerlink" title="函数的作用域"></a>函数的作用域</h3><p>函数中定义的变量和其他实例仅可以在函数内部访问, 不能从外部访问</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> outerVar = <span class="string">&#x27;I am outer&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">func</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="keyword">let</span> outerVar = <span class="string">&#x27;I am inside&#x27;</span>;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(outerVar)<span class="string">&#x27;&#x27;</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">info</span>(outerVar); <span class="comment">// 打印: I am outer</span></span><br><span class="line"><span class="title function_">func</span>(); <span class="comment">// 打印: I am inside</span></span><br></pre></td></tr></table></figure>
+
+
                     
                 </div>
 
@@ -580,7 +637,7 @@
             <div class="pc-post-toc right-toc">
                 <div class="post-toc-wrap border-box">
     <div class="post-toc border-box">
-        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#HarmonyOS%E5%BC%80%E5%8F%91-ArkTS%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95%E4%BA%8C"><span class="nav-number">1.</span> <span class="nav-text">HarmonyOS开发-ArkTS基础语法二</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="nav-number">1.1.</span> <span class="nav-text">运算符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%A9%BA%E5%AE%89%E5%85%A8"><span class="nav-number">1.2.</span> <span class="nav-text">空安全</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AF%AD%E5%8F%A5"><span class="nav-number">1.3.</span> <span class="nav-text">语句</span></a></li></ol></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#HarmonyOS%E5%BC%80%E5%8F%91-ArkTS%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95%E4%BA%8C"><span class="nav-number">1.</span> <span class="nav-text">HarmonyOS开发-ArkTS基础语法二</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="nav-number">1.1.</span> <span class="nav-text">运算符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%A9%BA%E5%AE%89%E5%85%A8"><span class="nav-number">1.2.</span> <span class="nav-text">空安全</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AF%AD%E5%8F%A5"><span class="nav-number">1.3.</span> <span class="nav-text">语句</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%87%BD%E6%95%B0"><span class="nav-number">1.4.</span> <span class="nav-text">函数</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%82%E6%95%B0%E7%B1%BB%E5%9E%8B"><span class="nav-number">1.4.1.</span> <span class="nav-text">参数类型:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BF%94%E5%9B%9E%E7%B1%BB%E5%9E%8B"><span class="nav-number">1.4.2.</span> <span class="nav-text">返回类型:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%87%BD%E6%95%B0%E7%9A%84%E4%BD%9C%E7%94%A8%E5%9F%9F"><span class="nav-number">1.4.3.</span> <span class="nav-text">函数的作用域</span></a></li></ol></li></ol></li></ol>
     </div>
 </div>
 
@@ -745,7 +802,7 @@
             <div class="tablet-post-toc">
                 <div class="post-toc-wrap border-box">
     <div class="post-toc border-box">
-        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#HarmonyOS%E5%BC%80%E5%8F%91-ArkTS%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95%E4%BA%8C"><span class="nav-number">1.</span> <span class="nav-text">HarmonyOS开发-ArkTS基础语法二</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="nav-number">1.1.</span> <span class="nav-text">运算符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%A9%BA%E5%AE%89%E5%85%A8"><span class="nav-number">1.2.</span> <span class="nav-text">空安全</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AF%AD%E5%8F%A5"><span class="nav-number">1.3.</span> <span class="nav-text">语句</span></a></li></ol></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#HarmonyOS%E5%BC%80%E5%8F%91-ArkTS%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95%E4%BA%8C"><span class="nav-number">1.</span> <span class="nav-text">HarmonyOS开发-ArkTS基础语法二</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="nav-number">1.1.</span> <span class="nav-text">运算符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%A9%BA%E5%AE%89%E5%85%A8"><span class="nav-number">1.2.</span> <span class="nav-text">空安全</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AF%AD%E5%8F%A5"><span class="nav-number">1.3.</span> <span class="nav-text">语句</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%87%BD%E6%95%B0"><span class="nav-number">1.4.</span> <span class="nav-text">函数</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%82%E6%95%B0%E7%B1%BB%E5%9E%8B"><span class="nav-number">1.4.1.</span> <span class="nav-text">参数类型:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BF%94%E5%9B%9E%E7%B1%BB%E5%9E%8B"><span class="nav-number">1.4.2.</span> <span class="nav-text">返回类型:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%87%BD%E6%95%B0%E7%9A%84%E4%BD%9C%E7%94%A8%E5%9F%9F"><span class="nav-number">1.4.3.</span> <span class="nav-text">函数的作用域</span></a></li></ol></li></ol></li></ol>
     </div>
 </div>
 
