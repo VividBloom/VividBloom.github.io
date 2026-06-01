@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="Hexo Theme Keep">
+    <meta name="author" content="Vivid Bloom">
+    
+    <title>
+        
+            08-HarmonyOS开发-网络请求 |
+        
+        Vivid Bloom
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    
+        <link rel="shortcut icon" href="/images/logo.webp">
+    
+    
+<link rel="stylesheet" href="/font/css/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/regular.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/solid.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/brands.min.css">
+
+    
+    <script class="keep-theme-configurations">
+    const KEEP = window.KEEP || {}
+    KEEP.hexo_config = {"hostname":"vividbloom.github.io","root":"/","language":"zh-CN","path":"search.json"}
+    KEEP.theme_config = {"base_info":{"title":"Vivid Bloom","author":"Vivid Bloom","avatar":"/images/logo.webp","logo":"/images/logo.webp","favicon":"/images/logo.webp","mode":"dark"},"menu":{"home":"/","archives":"/archives","tags":"/tags","categories":"/categories","about":"/about"},"first_screen":{"enable":true,"header_transparent":true,"background_img":"/images/bg.jpg","description":"桃之夭夭, 灼灼其华","hitokoto":true,"scroll":{"progress_bar":true,"percent":true}},"social_contact":{"enable":true,"links":{"github":"https://github.com/VividBloom"}},"scroll":{"progress_bar":false,"percent":false,"hide_header":true},"home":{"announcement":null,"category":true,"tag":true,"post_datetime":"updated","post_datetime_format":"ago"},"post":{"author_label":{"enable":true,"auto":false,"custom_label_list":["魔法师"]},"datetime_format":"YYYY-MM-DD HH:mm:ss"},"code_block":{"tools":{"enable":false,"style":"default"},"highlight_theme":"default"},"toc":{"enable":true,"number":true,"expand_all":false,"init_open":true,"layout":"right"},"website_count":{"busuanzi_count":{"enable":false,"site_uv":false,"site_pv":false,"page_pv":false}},"local_search":{"enable":true,"preload":true},"comment":{"enable":true,"use":"gitalk","gitalk":{"github_id":"VividBloom","repository":"https://VividBloom.github.io","client_id":"Ov23liB5vu3L88g0Gs9c","client_secret":"2bdfee6dca08c2f5e6391859dfea4444f2e3673d"}},"rss":{"enable":false},"lazyload":{"enable":true},"cdn":{"enable":false,"provider":"cdnjs"},"pjax":{"enable":false},"footer":{"since":2026,"word_count":false},"inject":{"enable":false,"css":[null],"js":[null]},"cache":{"enable":true},"minify":false,"custom_file_path":null,"scheme":"Muse","darkmode":true,"lightdark":{"enable":false,"check_supports":true},"favicon":{"small":"/images/favicon-16x16-next.png","medium":"/images/favicon-32x32-next.png","apple_touch_icon":"/images/apple-touch-icon-next.png","safari_pinned_tab":"/images/logo.svg"},"custom_logo":null,"creative_commons":{"license":"by-nc-sa","size":"small","sidebar":false,"post":false,"language":null},"open_graph":{"enable":true,"options":null},"menu_settings":{"icons":true,"badges":false},"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"avatar":{"url":null,"rounded":false,"rotated":false},"site_state":true,"social":null,"social_icons":{"enable":true,"icons_only":false,"transition":false},"links_settings":{"icon":"fa fa-globe","layout":"block"},"links":null,"language_switcher":false,"excerpt_description":true,"read_more_btn":true,"post_meta":{"item_text":true,"created_at":true,"updated_at":{"enable":true,"another_day":true},"categories":true},"symbols_count_time":{"separated_meta":true,"item_text_total":false},"tag_icon":false,"reward_settings":{"enable":false,"animation":false},"reward":null,"follow_me":null,"related_posts":{"enable":false,"icon":"fa fa-signs-post"},"post_edit":{"enable":false,"url":"https://github.com/user-name/repo-name/tree/branch-name/subdirectory-name/"},"post_navigation":"left","tagcloud":{"min":12,"max":30,"amount":200,"orderby":"name","order":1},"calendar":{"calendar_id":"<required>","api_key":"<required>","orderBy":"startTime","showLocation":false,"offsetMax":72,"offsetMin":4,"showDeleted":false,"singleEvents":true,"maxResults":250},"preconnect":false,"text_align":{"desktop":"justify","mobile":"justify"},"mobile_layout_economy":false,"theme_color":{"light":"#222","dark":"#222"},"body_scrollbar":{"overlay":false,"stable":false},"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"reading_progress":{"enable":false,"start_at":"left","position":"top","reversed":false,"color":"#37c6c0","height":"3px"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"github_banner":{"enable":false,"permalink":"https://github.com/yourname"},"font":{"enable":false,"host":null,"global":{"external":true,"family":"Lato","size":null},"title":{"external":true,"family":null,"size":null},"headings":{"external":true,"family":null,"size":null},"posts":{"external":true,"family":null},"codes":{"external":true,"family":null}},"index_with_subtitle":false,"exturl":false,"exturl_icon":true,"google_site_verification":null,"bing_site_verification":null,"yandex_site_verification":null,"baidu_site_verification":null,"note":{"style":"simple","icons":false,"light_bg_offset":0},"tabs":{"sticky":false,"transition":{"tabs":false,"labels":true}},"pdf":{"enable":false,"height":"500px"},"mermaid":{"enable":false,"theme":{"light":"default","dark":"dark"}},"wavedrom":{"enable":false},"math":{"every_page":false,"mathjax":{"enable":false,"tags":"none"},"katex":{"enable":false,"copy_tex":false}},"fancybox":false,"mediumzoom":false,"pangu":false,"quicklink":{"enable":false,"home":true,"archive":false,"delay":true,"timeout":3000,"priority":true},"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"pace":{"enable":false,"color":"blue","theme":"minimal"},"canvas_ribbon":{"enable":false,"size":300,"alpha":0.6,"zIndex":-1},"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"disqus":{"enable":false,"shortname":null,"count":true},"disqusjs":{"enable":false,"api":null,"apikey":null,"shortname":null},"livere_uid":null,"gitalk":{"enable":false,"github_id":null,"repo":null,"client_id":null,"client_secret":null,"admin_user":null,"distraction_free_mode":true,"proxy":"https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token","language":null,"body":null},"utterances":{"enable":false,"repo":"user-name/repo-name","issue_term":"pathname","theme":"github-light"},"isso":null,"addtoany":{"enable":false,"buttons":null},"google_analytics":{"tracking_id":null,"only_pageview":false,"measure_protocol_api_secret":null},"baidu_analytics":null,"cloudflare_analytics":null,"clarity_analytics":null,"matomo":{"enable":false,"server_url":null,"site_id":null},"umami":{"enable":false,"script_url":null,"website_id":null,"host_url":null},"plausible":{"enable":false,"script_url":null,"site_domain":null},"firestore":{"enable":false,"collection":"articles","apiKey":null,"projectId":null},"busuanzi_count":{"enable":false,"total_visitors":true,"total_visitors_icon":"fa fa-user","total_views":true,"total_views_icon":"fa fa-eye","post_views":true,"post_views_icon":"far fa-eye"},"algolia_search":{"enable":false,"hits":{"per_page":10}},"chat":{"enable":false,"icon":"fa fa-comment"},"chatra":{"enable":false,"async":true,"id":null},"tidio":{"enable":false,"key":null},"vendors":{"internal":"local","plugins":"cdnjs","custom_cdn_url":null},"css":"css","js":"js","images":"images","root":"","title":"Vivid Bloom","subtitle":"","description":"","keywords":null,"author":"Vivid Bloom","language":"zh-CN","timezone":"Asia/Shanghai","url":"https://VividBloom.github.io","permalink":":year/:month/:day/:title/","permalink_defaults":null,"pretty_urls":{"trailing_index":true,"trailing_html":true},"style":{"avatar":"/images/logo.webp","logo":"/images/logo.webp","favicon":"/images/logo.webp","mode":"dark"},"home_article":{"category":{"enable":true,"limit":3},"tag":{"enable":true,"limit":5}},"search":{"path":"search.xml","field":"post","content":true,"template":"./search.xml"},"source_dir":"source","public_dir":"public","tag_dir":"tags","archive_dir":"archives","category_dir":"categories","code_dir":"downloads/code","i18n_dir":":lang","skip_render":null,"new_post_name":":title.md","default_layout":"post","titlecase":false,"external_link":{"enable":true,"field":"site","exclude":""},"filename_case":0,"render_drafts":false,"post_asset_folder":false,"relative_link":false,"future":true,"syntax_highlighter":"highlight.js","highlight":{"line_number":true,"auto_detect":false,"tab_replace":"","wrap":true,"hljs":false},"prismjs":{"preprocess":true,"line_number":true,"tab_replace":""},"index_generator":{"path":"","per_page":10,"order_by":"-date"},"default_category":"uncategorized","category_map":null,"tag_map":null,"meta_generator":true,"date_format":"YYYY-MM-DD","time_format":"HH:mm:ss","updated_option":"mtime","per_page":10,"pagination_dir":"page","include":null,"exclude":null,"ignore":null,"theme":"keep","deploy":{"type":"git","repo":"https://github.com/VividBloom/VividBloom.github.io.git","branch":"main","comment":"更新"},"source_data":{},"version":"4.2.5"}
+    KEEP.language_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 个月前","year":"%s 年前"}
+    KEEP.language_code_block = {"copy":"复制代码","copied":"已复制","fold":"折叠代码块","folded":"已折叠"}
+    KEEP.language_copy_copyright = {"copy":"复制版权信息","copied":"已复制","title":"原文标题","author":"原文作者","link":"原文链接"}
+  </script>
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+
+    
+</div>
+
+
+
+<main class="page-container border-box">
+    <!-- home first screen  -->
+    
+
+    <!-- page content -->
+    <div class="page-main-content border-box">
+        <div class="page-main-content-top">
+            
+<header class="header-wrapper">
+
+    <div class="border-box header-content">
+        <div class="left flex-start border-box">
+            
+                <a class="logo-image border-box" href="/">
+                    <img src="/images/logo.webp">
+                </a>
+            
+            <a class="site-name border-box" href="/">
+               Vivid Bloom
+            </a>
+        </div>
+
+        <div class="right border-box">
+            <div class="pc border-box">
+                <ul class="menu-list border-box">
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/">
+                                
+                                首页
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/archives">
+                                
+                                归档
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/tags">
+                                
+                                标签
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/categories">
+                                
+                                分类
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/about">
+                                
+                                关于
+                                
+                            </a>
+                            
+                        </li>
+                    
+                    
+                        <li class="menu-item search search-popup-trigger">
+                            <i class="menu-text-color fas search fa-search"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <div class="mobile border-box flex-start">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div>
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list border-box">
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/">
+                            
+                            首页
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/archives">
+                            
+                            归档
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/tags">
+                            
+                            标签
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/categories">
+                            
+                            分类
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/about">
+                            
+                            关于
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle border-box">
+
+            <div class="main-content border-box">
+                
+
+                    
+<div class="fade-in-down-animation">
+    <div class="post-page-container border-box">
+        <div class="post-content-container border-box">
+            
+
+            <div class="post-content-bottom border-box">
+                
+                    <div class="post-title">
+                        08-HarmonyOS开发-网络请求
+                    </div>
+                
+
+                
+                    <div class="post-header border-box">
+                        
+                            <div class="avatar-box border-box">
+                                <img src="/images/logo.webp">
+                            </div>
+                        
+                        <div class="info-box">
+                            <div class="author border-box">
+                                <span class="name">Vivid Bloom</span>
+                                
+                            </div>
+                            <div class="meta-info border-box">
+                                
+
+<div class="post-meta-info-container border-box post">
+    <div class="post-meta-info border-box">
+        
+
+        
+            <span class="meta-info-item post-create-date">
+                <i class="icon fa-solid fa-calendar-plus"></i>&nbsp;
+                <span class="datetime">2026-06-01 16:08:17</span>
+            </span>
+
+            
+                <span class="meta-info-item post-update-date">
+                    <i class="icon fa-solid fa-file-pen"></i>&nbsp;
+                    <span class="datetime" data-updated="Mon Jun 01 2026 17:18:54 GMT+0800">2026-06-01 17:18:54</span>
+                </span>
+            
+        
+
+        
+            <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
+                <ul class="post-category-ul">
+                    
+                            <li class="category-item"><a href="/categories/HarmonyOS/">HarmonyOS</a></li>
+                        
+                    
+                </ul>
+            </span>
+        
+
+        
+            <span class="post-tag meta-info-item border-box">
+                <ul class="post-tag-ul">
+                    
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/HarmonyOS/">HarmonyOS</a></li>
+                        
+                    
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/ArkTS/">ArkTS</a></li>
+                        
+                    
+                </ul>
+            </span>
+        
+
+        
+        
+        
+        
+    </div>
+
+    
+</div>
+
+                            </div>
+                        </div>
+                    </div>
+                
+
+                <div class="post-content keep-markdown-body ">
+                    
+
+                    
+                         <h1 id="网络请求"><a href="#网络请求" class="headerlink" title="网络请求"></a>网络请求</h1><h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h2><p>网络通信通常由客户端和服务端组成, 客户端发起请求, 服务器返回响应</p>
+<p><img  
+                       lazyload
+                       alt="image"
+                       data-src="https://vividbloom.github.io/picx-images-hosting/HarmonyOS/image.mpuxir6e.webp"
+                        alt="image"
+                 ></p>
+<p><img  
+                       lazyload
+                       alt="image"
+                       data-src="https://vividbloom.github.io/picx-images-hosting/HarmonyOS/image.6f1bqj0zkm.webp"
+                        alt="image"
+                 ></p>
+<h3 id="HTTP"><a href="#HTTP" class="headerlink" title="HTTP"></a><code>HTTP</code></h3><p><code>Hyper Text Transfer Protocol, HTTP</code>(超文本传输协议)是一种用于客户端与服务端之间传输超文本数据的应用层通信协议, 规定了双方的通信格式和交流逻辑.</p>
+<p><code>HTTP</code>发送请求的完整流程:</p>
+<ol>
+<li>客户端与服务端建立连接, 建立稳定的通信通道</li>
+<li>客户端通过这个通道向服务端发送具体的请求内容</li>
+<li>服务端处理完网络请求后通过网络协议发送客户端能够识别的响应报文对应的内容并进行处理</li>
+<li>如果双方不需要连接就关闭连接</li>
+</ol>
+<p><img  
+                       lazyload
+                       alt="image"
+                       data-src="https://vividbloom.github.io/picx-images-hosting/HarmonyOS/image.5mog8tj9fu.webp"
+                        alt="`HTTP`发送请求的完整流程"
+                 ></p>
+<h3 id="URL"><a href="#URL" class="headerlink" title="URL"></a><code>URL</code></h3><p>URL是用来定位服务端资源的唯一地址</p>
+<p>例如: &#96;<a class="link"   target="_blank" rel="noopener" href="https://developer.huawei.com/consumer/cn/doc/" >https://developer.huawei.com/consumer/cn/doc/<i class="fas fa-external-link-alt"></i></a></p>
+<p>其中</p>
+<ul>
+<li><code>https</code>: 协议类型, 告诉客户端和服务端要用<code>HTTP</code>协议的加密版本通信</li>
+<li><code>developer.huawei.com</code>: 域名, 相当于服务端的”地址”, 找到对应的服务器</li>
+<li><code>consumer</code>: 资源路径, 告诉服务端要访问上面的相关文档资源</li>
+</ul>
+<h3 id="请求报文"><a href="#请求报文" class="headerlink" title="请求报文"></a>请求报文</h3><p>客户端发送给服务端的”请求内容”, 有固定的格式, 包含请求行和请求头两部分.</p>
+<p><img  
+                       lazyload
+                       alt="image"
+                       data-src="https://vividbloom.github.io/picx-images-hosting/HarmonyOS/image.1vzank8ovx.webp"
+                        alt="请求报文"
+                 ></p>
+<p>第一行是请求行明确了三个信息</p>
+<ol>
+<li>请求方法: <code>GET</code></li>
+<li>资源路径: <code>/consumer/cn/doc/</code></li>
+<li>使用的协议版本: <code>HTTP/1.1</code></li>
+</ol>
+<p>第二行开始就是请求头信息, 每一行都是一个键值对用来告诉服务端额外信息. 比如: <code>HOST: developer.huawei.com</code>指定了要访问的服务端域名.</p>
+<p>请求报文就是客户端给服务端的”结构化留言”, 既说清了要做什么(请求行), 也说明了相关要求(请求头)</p>
+<h3 id="HTTP方法"><a href="#HTTP方法" class="headerlink" title="HTTP方法"></a><code>HTTP</code>方法</h3><ol>
+<li><code>GET</code>方法主要用于”获取数据”, 请求参数会跟在<code>URL</code>后面</li>
+<li><code>POST</code>方法主要用于”提交数据”, 请求参数放在请求体里, 不会显示在<code>URL</code>上, 相对更安全</li>
+<li><code>PUT</code>方法主要用于”修改数据”</li>
+<li><code>DELETE</code>方法主要用于”删除数据”</li>
+</ol>
+<h2 id="网络响应"><a href="#网络响应" class="headerlink" title="网络响应"></a>网络响应</h2><h3 id="响应报文"><a href="#响应报文" class="headerlink" title="响应报文"></a>响应报文</h3><p>响应报文也有固定的格式. 包含响应行, 响应头, 响应体三个部分.</p>
+<p>响应体是服务端返回的具体数据. 不展示.</p>
+<p><img  
+                       lazyload
+                       alt="image"
+                       data-src="https://vividbloom.github.io/picx-images-hosting/HarmonyOS/image.41yp9cnwxv.webp"
+                        alt="响应报文"
+                 ></p>
+<p><code>HTTP/1.1 200 OK</code>这就是响应行, 包含使用的<code>HTTP</code>版本<code>HTTP/1.1</code>, 响应码(<code>200</code>), 状态描述(<code>OK</code>)</p>
+<p>从第二行开始就是响应头, 每一行都是键值对.</p>
+<p><code>Content-Type: text/html; charset=UTF-8</code>: 告诉客户端响应体的数据类型和编码方式</p>
+<p><code>Content-Encoding: br</code>: 响应体数据应用的压缩算法</p>
+<p><code>Date: Fri, 12, Feb 2021 01:59:01 GMT</code>: 服务端处理请求的时间<br><code>Server: gws</code>: 服务器类型</p>
+<h3 id="常见响应码"><a href="#常见响应码" class="headerlink" title="常见响应码"></a>常见响应码</h3><ul>
+<li><code>2xx</code>: 成功, 报文已经收到且被正确处理</li>
+<li><code>4xx</code>: 客户端发送的报文错误, 服务端无法处理</li>
+<li><code>5xx</code>: 服务器错误</li>
+</ul>
+<h2 id="使用http模块发起网络请求"><a href="#使用http模块发起网络请求" class="headerlink" title="使用http模块发起网络请求"></a>使用<code>http</code>模块发起网络请求</h2><p><code>Network kit</code>是实现<code>HTTP</code>网络请求的核心工具, 是<code>HarmonyOS</code>提供的一套完整的网络工具箱. <code>http</code>模块封装了底层网络通信细节, 提供了简洁高效的接口, 使开发者能够轻松实现各种网络功能专注于业务逻辑而非网络协议的实现.</p>
+<h3 id="核心接口"><a href="#核心接口" class="headerlink" title="核心接口"></a>核心接口</h3><ul>
+<li><p><code>createHttp()</code>: 负责创建一个具体的<code>HTTP</code>请求任务也就是<code>HttpRequest</code>对象, 用于调用常用的网络请求方法, 是后续所有<code>HTTP</code>操作的基础, 可以通过<code>request()</code>方法发起请求, <code>destory()</code>方法销毁请求, <code>on()</code>方法和<code>off()</code>方法完成事件的订阅和取消.</p>
+<blockquote>
+<ol>
+<li><p><code>httpRequest.request()</code></p>
+<p><code>request(url: string, options?: HttpRequestOptions): Promise&lt;HttpResponse&gt;;</code></p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> promise = httpRequest.<span class="title function_">request</span>(<span class="string">&#x27;https://developer.huawei.com/config/cn/head.json&#x27;</span>, &#123;</span><br><span class="line">  <span class="attr">method</span>: http.<span class="property">RequestMethod</span>.<span class="property">GET</span>,</span><br><span class="line">  <span class="attr">usingCache</span>: <span class="literal">false</span>,</span><br><span class="line">  <span class="attr">header</span>: &#123; <span class="string">&#x27;Accept&#x27;</span>: <span class="string">&#x27;application/json&#x27;</span> &#125;,</span><br><span class="line">&#125;).<span class="title function_">then</span>(<span class="function">(<span class="params"><span class="attr">data</span>: http.<span class="title class_">HttpResponse</span></span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">if</span> (data.<span class="property">responseCode</span> === http.<span class="property">ResponseCode</span>.<span class="property">OK</span>) &#123;</span><br><span class="line">    <span class="keyword">const</span> <span class="attr">contentType</span>: <span class="built_in">string</span> = data.<span class="property">header</span>[<span class="string">&#x27;content-type&#x27;</span>];</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></li>
+</ol>
+</blockquote>
+</li>
+</ul>
+<h3 id="使用示例"><a href="#使用示例" class="headerlink" title="使用示例"></a>使用示例</h3><ol>
+<li><p>配置INTERNET权限</p>
+<p>在<code>module.json5</code>中配置:</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;module&quot;</span>: &#123;</span><br><span class="line">  <span class="string">&quot;requestPermissions&quot;</span>: [</span><br><span class="line">    &#123;</span><br><span class="line">      <span class="string">&quot;name&quot;</span>: <span class="string">&quot;ohos.permission.INTERNET&quot;</span>,</span><br><span class="line">      <span class="string">&quot;reason&quot;</span>: <span class="string">&quot;request images from network&quot;</span></span><br><span class="line">    &#125;</span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>导入http模块</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; http &#125; <span class="keyword">from</span> <span class="string">&#x27;@kit.NetworkKit&#x27;</span>;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>创建HTTP请求任务</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_">httpGetData</span>(): <span class="built_in">void</span> &#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">  <span class="keyword">let</span> httpRequest = http.<span class="title function_">createHttp</span>(); <span class="comment">// 创建HTTP请求</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>发起HTTP请求</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="attr">IMAGE_URL</span>: <span class="built_in">string</span> = <span class="string">&#x27;https://raw.gitcode.com/HarmonyOS_Codelabs/ObtainNetworkData/raw/master/Resources/rawfile/response.json&#x27;</span>;</span><br><span class="line"><span class="comment">// ...</span></span><br><span class="line"><span class="title function_">httpGetData</span>(): <span class="built_in">void</span> &#123;</span><br><span class="line">  <span class="keyword">let</span> httpRequest = http.<span class="title function_">createHttp</span>(); <span class="comment">// 创建HTTP请求</span></span><br><span class="line">  httpRequest.<span class="title function_">request</span>(<span class="variable constant_">IMAGE_URL</span>, &#123;</span><br><span class="line">    <span class="comment">// 根据URL地址，发起HTTP网络请求</span></span><br><span class="line">    <span class="attr">method</span>: http.<span class="property">RequestMethod</span>.<span class="property">GET</span>, <span class="comment">// 设置请求方式为GET</span></span><br><span class="line">  &#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>解析响应</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">httpRequest.<span class="title function_">request</span>(<span class="variable constant_">IMAGE_URL</span>, &#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">&#125;).<span class="title function_">then</span>(<span class="function">(<span class="params"><span class="attr">response</span>: http.<span class="title class_">HttpResponse</span></span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">if</span> (response &amp;&amp; response.<span class="property">responseCode</span> === <span class="number">200</span> &amp;&amp; response.<span class="property">resultType</span> === http.<span class="property">HttpDataType</span>.<span class="property">STRING</span>) &#123;</span><br><span class="line">    <span class="keyword">let</span> <span class="attr">imgArray</span>: <span class="title class_">Array</span>&lt;<span class="title class_">ImgMessage</span>&gt; = <span class="title class_">JSON</span>.<span class="title function_">parse</span>(response.<span class="property">result</span> <span class="keyword">as</span> <span class="built_in">string</span>);</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">imgInfo</span>.<span class="property">imgMessage</span> = imgArray;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>错误处理</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">httpRequest.<span class="title function_">request</span>(<span class="variable constant_">IMAGE_URL</span>, &#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">&#125;).<span class="title function_">then</span>(<span class="function">(<span class="params"><span class="attr">response</span>: http.<span class="title class_">HttpResponse</span></span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">&#125;).<span class="title function_">catch</span>(<span class="function">(<span class="params"><span class="attr">error</span>: <span class="title class_">BusinessError</span></span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="variable language_">this</span>.<span class="property">pageProperty</span>.<span class="property">isNetwork</span> = <span class="literal">false</span>;</span><br><span class="line">  <span class="variable language_">this</span>.<span class="property">imgInfo</span>.<span class="property">imgMessage</span> = [];</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>渲染页面</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="title class_">Grid</span>() &#123;</span><br><span class="line">  <span class="title class_">ForEach</span>(<span class="variable language_">this</span>.<span class="property">imgInfo</span>.<span class="property">imgMessage</span>, <span class="function">(<span class="params"><span class="attr">item</span>: <span class="title class_">ImgMessage</span></span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="title class_">GridItem</span>() &#123;</span><br><span class="line">      <span class="title class_">Image</span>(item.<span class="property">url</span>)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;, <span class="function">(<span class="params"><span class="attr">item</span>: <span class="title class_">ImgMessage</span></span>) =&gt;</span> item.<span class="property">id</span>.<span class="title function_">toString</span>())</span><br><span class="line">&#125;</span><br><span class="line">.<span class="title function_">width</span>(<span class="string">&#x27;100%&#x27;</span>)</span><br><span class="line">.<span class="title function_">columnsTemplate</span>(<span class="string">&#x27;1fr 1fr&#x27;</span>)</span><br><span class="line">.<span class="title function_">columnsGap</span>(<span class="number">8</span>)</span><br><span class="line">.<span class="title function_">rowsGap</span>(<span class="number">12</span>)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>销毁HTTP请求</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_">httpGetData</span>(): <span class="built_in">void</span> &#123;</span><br><span class="line">  httpRequest.<span class="title function_">request</span>(<span class="variable constant_">IMAGE_URL</span>, &#123;</span><br><span class="line">    <span class="comment">// ...</span></span><br><span class="line">  &#125;).<span class="title function_">then</span>(<span class="function">(<span class="params"><span class="attr">response</span>: http.<span class="title class_">HttpResponse</span></span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="comment">// ...</span></span><br><span class="line">  &#125;).<span class="title function_">catch</span>(<span class="function">(<span class="params"><span class="attr">error</span>: <span class="title class_">BusinessError</span></span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="comment">// ...</span></span><br><span class="line">  &#125;).<span class="title function_">finally</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">    httpRequest.<span class="title function_">destroy</span>();</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ol>
+
+                    
+                </div>
+
+                
+
+                <div class="post-bottom-tags-and-share border-box">
+                    <div>
+                        
+                            <ul class="post-tags-box border-box">
+                                
+                                    <li class="tag-item border-box">
+                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/tags/HarmonyOS/">HarmonyOS</a>
+                                    </li>
+                                
+                                    <li class="tag-item border-box">
+                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/tags/ArkTS/">ArkTS</a>
+                                    </li>
+                                
+                            </ul>
+                        
+                    </div>
+                    <div>
+                        
+                    </div>
+                </div>
+
+                
+
+                
+                    <div class="post-nav border-box">
+                        
+                        
+                            <div class="next-post">
+                                <a class="next"
+                                   rel="next"
+                                   href="/2026/05/30/07-HarmonyOS%E5%BC%80%E5%8F%91-%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%E6%A1%86%E6%9E%B6%E5%9F%BA%E7%A1%80/"
+                                   title="07-HarmonyOS开发-应用程序框架基础"
+                                >
+                                    <span class="title flex-center">
+                                        <span class="post-nav-title-item text-ellipsis">07-HarmonyOS开发-应用程序框架基础</span>
+                                        <span class="post-nav-item">下一篇</span>
+                                    </span>
+                                    <span class="right arrow-icon flex-center">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        
+                    </div>
+                
+
+                
+                    
+
+
+    <div class="comments-container border-box">
+        <div id="comments-anchor" class="comment-area-title border-box">
+            <i class="fas fa-comments"></i>&nbsp;评论
+        </div>
+        <div class="comment-plugin-fail border-box">
+    <span class="fail-tip">评论插件加载失败</span>
+    <button class="reload keep-button">点击重新加载</button>
+</div>
+<div class="comment-plugin-loading flex-center border-box">
+    <i class="loading-icon fa-solid fa-spinner fa-spin"></i>
+    <span class="load-tip">正在加载评论插件</span>
+</div>
+<script data-pjax>
+  window.KeepCommentPlugin = {}
+  window.KeepCommentPlugin.hideLoading = () => {
+    const cplDom = document.querySelector('.comments-container .comment-plugin-loading')
+    cplDom.style.display = 'none'
+  }
+  window.KeepCommentPlugin.loadFailHandle = () => {
+    window.KeepCommentPlugin.hideLoading()
+    const cpfDom = document.querySelector('.comments-container .comment-plugin-fail')
+    cpfDom.style.display = 'flex'
+    cpfDom.querySelector('.reload').addEventListener('click', () => {
+      window.location.reload()
+    })
+  }
+</script>
+
+        
+            
+
+    <div class="gitalk-comment-container">
+        <div id="gitalk-container"></div>
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css">
+        <script 
+                src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"
+                async
+                onerror="window.KeepCommentPlugin.loadFailHandle()"
+        ></script>
+        <script 
+                async
+                onerror="window.KeepCommentPlugin.loadFailHandle()"
+        >
+          window.KeepCommentPlugin.initGitalk = () => {
+            let gitalkPathname = decodeURI(location.pathname)
+            const gitalkPathnameLength = gitalkPathname.length
+            const gitalkPathnameMaxLength = 50
+            if (gitalkPathnameLength > gitalkPathnameMaxLength) {
+              gitalkPathname = gitalkPathname.substring(0, gitalkPathnameMaxLength - 3) + '...'
+            }
+
+            if (window?.Gitalk) {
+              new Gitalk({
+                clientID: 'Ov23liB5vu3L88g0Gs9c',
+                clientSecret: '2bdfee6dca08c2f5e6391859dfea4444f2e3673d',
+                repo: 'https://VividBloom.github.io',
+                owner: 'VividBloom',
+                admin: 'VividBloom',
+                id: gitalkPathname,
+                proxy: '',
+                language: 'zh-CN'
+              }).render('gitalk-container')
+              window.KeepCommentPlugin.hideLoading()
+            } else {
+              setTimeout(() => {
+                window.KeepCommentPlugin.initGitalk()
+              }, 1000)
+            }
+          }
+
+          if ('false' === 'true') {
+            setTimeout(() => {
+              window.KeepCommentPlugin.initGitalk()
+            }, 1200)
+          } else {
+            window.addEventListener('DOMContentLoaded', window.KeepCommentPlugin.initGitalk)
+          }
+        </script>
+    </div>
+
+
+        
+    </div>
+
+
+
+
+
+                
+            </div>
+        </div>
+
+        
+            <div class="pc-post-toc right-toc">
+                <div class="post-toc-wrap border-box">
+    <div class="post-toc border-box">
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%BD%91%E7%BB%9C%E8%AF%B7%E6%B1%82"><span class="nav-number">1.</span> <span class="nav-text">网络请求</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="nav-number">1.1.</span> <span class="nav-text">基本概念</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#HTTP"><span class="nav-number">1.1.1.</span> <span class="nav-text">HTTP</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#URL"><span class="nav-number">1.1.2.</span> <span class="nav-text">URL</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AF%B7%E6%B1%82%E6%8A%A5%E6%96%87"><span class="nav-number">1.1.3.</span> <span class="nav-text">请求报文</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HTTP%E6%96%B9%E6%B3%95"><span class="nav-number">1.1.4.</span> <span class="nav-text">HTTP方法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BD%91%E7%BB%9C%E5%93%8D%E5%BA%94"><span class="nav-number">1.2.</span> <span class="nav-text">网络响应</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%93%8D%E5%BA%94%E6%8A%A5%E6%96%87"><span class="nav-number">1.2.1.</span> <span class="nav-text">响应报文</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B8%B8%E8%A7%81%E5%93%8D%E5%BA%94%E7%A0%81"><span class="nav-number">1.2.2.</span> <span class="nav-text">常见响应码</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8http%E6%A8%A1%E5%9D%97%E5%8F%91%E8%B5%B7%E7%BD%91%E7%BB%9C%E8%AF%B7%E6%B1%82"><span class="nav-number">1.3.</span> <span class="nav-text">使用http模块发起网络请求</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A0%B8%E5%BF%83%E6%8E%A5%E5%8F%A3"><span class="nav-number">1.3.1.</span> <span class="nav-text">核心接口</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8%E7%A4%BA%E4%BE%8B"><span class="nav-number">1.3.2.</span> <span class="nav-text">使用示例</span></a></li></ol></li></ol></li></ol>
+    </div>
+</div>
+
+            </div>
+        
+    </div>
+</div>
+
+
+                
+            </div>
+        </div>
+
+        <div class="page-main-content-bottom border-box">
+            
+<footer class="footer border-box">
+    <div class="copyright-info info-item">
+    &copy;&nbsp;2026
+    
+            &nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;&nbsp;<a href="/">Vivid Bloom</a>
+        
+    </div>
+
+    <div class="theme-info info-item">
+        由&nbsp;<a target="_blank" href="https://hexo.io">Hexo</a>&nbsp;驱动&nbsp;&&nbsp;主题&nbsp;<a class="keep-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep</a>
+    </div>
+
+    
+
+    
+
+    
+</footer>
+
+        </div>
+    </div>
+
+    <!-- post tools -->
+    
+        <div class="post-tools right-toc">
+            <div class="post-tools-container border-box">
+    <ul class="post-tools-list border-box">
+        <!-- PC encrypt again -->
+        
+
+        <!-- PC TOC show toggle -->
+        
+            <li class="tools-item flex-center toggle-show-toc">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        <!-- PC go comment -->
+        
+            <li class="tools-item flex-center go-to-comments">
+                <i class="fas fa-comment"></i>
+                <span class="post-comments-count"></span>
+            </li>
+        
+
+        <!-- PC full screen -->
+        <li class="tools-item flex-center full-screen">
+            <i class="fa-solid fa-expand"></i>
+        </li>
+    </ul>
+</div>
+
+        </div>
+    
+
+    <!-- side tools -->
+    <div class="side-tools">
+        <div class="side-tools-container border-box ">
+    <ul class="side-tools-list side-tools-show-handle border-box">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <!-- toggle mode -->
+        
+
+        <!-- rss -->
+        
+
+        <!-- to bottom -->
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list border-box">
+        
+            <li class="tools-item toggle-show-toc-tablet flex-center">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        
+            <li class="tools-item go-to-comments-tablet flex-center">
+                <i class="fas fa-comment"></i>
+            </li>
+        
+
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+
+        <li class="tools-item tool-scroll-to-top flex-center show-arrow">
+            <i class="arrow fas fa-arrow-up"></i>
+            <span class="percent"></span>
+        </li>
+    </ul>
+</div>
+
+    </div>
+
+    <!-- image mask -->
+    <div class="zoom-in-image-mask">
+    <img class="zoom-in-image">
+</div>
+
+
+    <!-- local search -->
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fas fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="搜索..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="close-popup-btn">
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+    <!-- tablet toc -->
+    
+        <div class="tablet-post-toc-mask">
+            <div class="tablet-post-toc">
+                <div class="post-toc-wrap border-box">
+    <div class="post-toc border-box">
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%BD%91%E7%BB%9C%E8%AF%B7%E6%B1%82"><span class="nav-number">1.</span> <span class="nav-text">网络请求</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="nav-number">1.1.</span> <span class="nav-text">基本概念</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#HTTP"><span class="nav-number">1.1.1.</span> <span class="nav-text">HTTP</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#URL"><span class="nav-number">1.1.2.</span> <span class="nav-text">URL</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AF%B7%E6%B1%82%E6%8A%A5%E6%96%87"><span class="nav-number">1.1.3.</span> <span class="nav-text">请求报文</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HTTP%E6%96%B9%E6%B3%95"><span class="nav-number">1.1.4.</span> <span class="nav-text">HTTP方法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BD%91%E7%BB%9C%E5%93%8D%E5%BA%94"><span class="nav-number">1.2.</span> <span class="nav-text">网络响应</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%93%8D%E5%BA%94%E6%8A%A5%E6%96%87"><span class="nav-number">1.2.1.</span> <span class="nav-text">响应报文</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B8%B8%E8%A7%81%E5%93%8D%E5%BA%94%E7%A0%81"><span class="nav-number">1.2.2.</span> <span class="nav-text">常见响应码</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8http%E6%A8%A1%E5%9D%97%E5%8F%91%E8%B5%B7%E7%BD%91%E7%BB%9C%E8%AF%B7%E6%B1%82"><span class="nav-number">1.3.</span> <span class="nav-text">使用http模块发起网络请求</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A0%B8%E5%BF%83%E6%8E%A5%E5%8F%A3"><span class="nav-number">1.3.1.</span> <span class="nav-text">核心接口</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8%E7%A4%BA%E4%BE%8B"><span class="nav-number">1.3.2.</span> <span class="nav-text">使用示例</span></a></li></ol></li></ol></li></ol>
+    </div>
+</div>
+
+            </div>
+        </div>
+    
+</main>
+
+
+
+
+
+<!-- common js -->
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/header-shrink.js"></script>
+
+<script src="/js/back2top.js"></script>
+
+<script src="/js/toggle-theme.js"></script>
+
+<script src="/js/code-block.js"></script>
+
+<script src="/js/main.js"></script>
+
+<script src="/js/libs/anime.min.js"></script>
+
+
+<!-- local search -->
+
+    
+<script src="/js/local-search.js"></script>
+
+
+
+<!-- lazyload -->
+
+    
+<script src="/js/lazyload.js"></script>
+
+
+
+<div class="">
+    <!-- home page -->
+    
+
+    <!-- post page -->
+    
+        <!-- post-helper -->
+        
+<script src="/js/post/post-helper.js"></script>
+
+
+        <!-- toc -->
+        
+            
+<script src="/js/post/toc.js"></script>
+
+        
+
+        <!-- copyright-info -->
+        
+
+        <!-- share -->
+        
+    
+
+    <!-- categories page -->
+    
+
+    <!-- links page -->
+    
+
+    <!-- photos page -->
+    
+
+    <!-- tools page -->
+    
+</div>
+
+<!-- mermaid -->
+
+
+<!-- pjax -->
+
+
+
+</body>
+</html>
