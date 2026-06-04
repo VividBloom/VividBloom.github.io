@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="Hexo Theme Keep">
+    <meta name="author" content="Vivid Bloom">
+    
+    <title>
+        
+            09-HarmonyOS开发-保存应用数据 |
+        
+        Vivid Bloom
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    
+        <link rel="shortcut icon" href="/images/logo.webp">
+    
+    
+<link rel="stylesheet" href="/font/css/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/regular.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/solid.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/brands.min.css">
+
+    
+    <script class="keep-theme-configurations">
+    const KEEP = window.KEEP || {}
+    KEEP.hexo_config = {"hostname":"vividbloom.github.io","root":"/","language":"zh-CN","path":"search.json"}
+    KEEP.theme_config = {"base_info":{"title":"Vivid Bloom","author":"Vivid Bloom","avatar":"/images/logo.webp","logo":"/images/logo.webp","favicon":"/images/logo.webp","mode":"dark"},"menu":{"home":"/","archives":"/archives","tags":"/tags","categories":"/categories","about":"/about"},"first_screen":{"enable":true,"header_transparent":true,"background_img":"/images/bg.jpg","description":"桃之夭夭, 灼灼其华","hitokoto":true,"scroll":{"progress_bar":true,"percent":true}},"social_contact":{"enable":true,"links":{"github":"https://github.com/VividBloom"}},"scroll":{"progress_bar":false,"percent":false,"hide_header":true},"home":{"announcement":null,"category":true,"tag":true,"post_datetime":"updated","post_datetime_format":"ago"},"post":{"author_label":{"enable":true,"auto":false,"custom_label_list":["魔法师"]},"datetime_format":"YYYY-MM-DD HH:mm:ss"},"code_block":{"tools":{"enable":false,"style":"default"},"highlight_theme":"default"},"toc":{"enable":true,"number":true,"expand_all":false,"init_open":true,"layout":"right"},"website_count":{"busuanzi_count":{"enable":false,"site_uv":false,"site_pv":false,"page_pv":false}},"local_search":{"enable":true,"preload":true},"comment":{"enable":true,"use":"gitalk","gitalk":{"github_id":"VividBloom","repository":"https://VividBloom.github.io","client_id":"Ov23liB5vu3L88g0Gs9c","client_secret":"2bdfee6dca08c2f5e6391859dfea4444f2e3673d"}},"rss":{"enable":false},"lazyload":{"enable":true},"cdn":{"enable":false,"provider":"cdnjs"},"pjax":{"enable":false},"footer":{"since":2026,"word_count":false},"inject":{"enable":false,"css":[null],"js":[null]},"cache":{"enable":true},"minify":false,"custom_file_path":null,"scheme":"Muse","darkmode":true,"lightdark":{"enable":false,"check_supports":true},"favicon":{"small":"/images/favicon-16x16-next.png","medium":"/images/favicon-32x32-next.png","apple_touch_icon":"/images/apple-touch-icon-next.png","safari_pinned_tab":"/images/logo.svg"},"custom_logo":null,"creative_commons":{"license":"by-nc-sa","size":"small","sidebar":false,"post":false,"language":null},"open_graph":{"enable":true,"options":null},"menu_settings":{"icons":true,"badges":false},"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"avatar":{"url":null,"rounded":false,"rotated":false},"site_state":true,"social":null,"social_icons":{"enable":true,"icons_only":false,"transition":false},"links_settings":{"icon":"fa fa-globe","layout":"block"},"links":null,"language_switcher":false,"excerpt_description":true,"read_more_btn":true,"post_meta":{"item_text":true,"created_at":true,"updated_at":{"enable":true,"another_day":true},"categories":true},"symbols_count_time":{"separated_meta":true,"item_text_total":false},"tag_icon":false,"reward_settings":{"enable":false,"animation":false},"reward":null,"follow_me":null,"related_posts":{"enable":false,"icon":"fa fa-signs-post"},"post_edit":{"enable":false,"url":"https://github.com/user-name/repo-name/tree/branch-name/subdirectory-name/"},"post_navigation":"left","tagcloud":{"min":12,"max":30,"amount":200,"orderby":"name","order":1},"calendar":{"calendar_id":"<required>","api_key":"<required>","orderBy":"startTime","showLocation":false,"offsetMax":72,"offsetMin":4,"showDeleted":false,"singleEvents":true,"maxResults":250},"preconnect":false,"text_align":{"desktop":"justify","mobile":"justify"},"mobile_layout_economy":false,"theme_color":{"light":"#222","dark":"#222"},"body_scrollbar":{"overlay":false,"stable":false},"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"reading_progress":{"enable":false,"start_at":"left","position":"top","reversed":false,"color":"#37c6c0","height":"3px"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"github_banner":{"enable":false,"permalink":"https://github.com/yourname"},"font":{"enable":false,"host":null,"global":{"external":true,"family":"Lato","size":null},"title":{"external":true,"family":null,"size":null},"headings":{"external":true,"family":null,"size":null},"posts":{"external":true,"family":null},"codes":{"external":true,"family":null}},"index_with_subtitle":false,"exturl":false,"exturl_icon":true,"google_site_verification":null,"bing_site_verification":null,"yandex_site_verification":null,"baidu_site_verification":null,"note":{"style":"simple","icons":false,"light_bg_offset":0},"tabs":{"sticky":false,"transition":{"tabs":false,"labels":true}},"pdf":{"enable":false,"height":"500px"},"mermaid":{"enable":false,"theme":{"light":"default","dark":"dark"}},"wavedrom":{"enable":false},"math":{"every_page":false,"mathjax":{"enable":false,"tags":"none"},"katex":{"enable":false,"copy_tex":false}},"fancybox":false,"mediumzoom":false,"pangu":false,"quicklink":{"enable":false,"home":true,"archive":false,"delay":true,"timeout":3000,"priority":true},"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"pace":{"enable":false,"color":"blue","theme":"minimal"},"canvas_ribbon":{"enable":false,"size":300,"alpha":0.6,"zIndex":-1},"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"disqus":{"enable":false,"shortname":null,"count":true},"disqusjs":{"enable":false,"api":null,"apikey":null,"shortname":null},"livere_uid":null,"gitalk":{"enable":false,"github_id":null,"repo":null,"client_id":null,"client_secret":null,"admin_user":null,"distraction_free_mode":true,"proxy":"https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token","language":null,"body":null},"utterances":{"enable":false,"repo":"user-name/repo-name","issue_term":"pathname","theme":"github-light"},"isso":null,"addtoany":{"enable":false,"buttons":null},"google_analytics":{"tracking_id":null,"only_pageview":false,"measure_protocol_api_secret":null},"baidu_analytics":null,"cloudflare_analytics":null,"clarity_analytics":null,"matomo":{"enable":false,"server_url":null,"site_id":null},"umami":{"enable":false,"script_url":null,"website_id":null,"host_url":null},"plausible":{"enable":false,"script_url":null,"site_domain":null},"firestore":{"enable":false,"collection":"articles","apiKey":null,"projectId":null},"busuanzi_count":{"enable":false,"total_visitors":true,"total_visitors_icon":"fa fa-user","total_views":true,"total_views_icon":"fa fa-eye","post_views":true,"post_views_icon":"far fa-eye"},"algolia_search":{"enable":false,"hits":{"per_page":10}},"chat":{"enable":false,"icon":"fa fa-comment"},"chatra":{"enable":false,"async":true,"id":null},"tidio":{"enable":false,"key":null},"vendors":{"internal":"local","plugins":"cdnjs","custom_cdn_url":null},"css":"css","js":"js","images":"images","root":"","title":"Vivid Bloom","subtitle":"","description":"","keywords":null,"author":"Vivid Bloom","language":"zh-CN","timezone":"Asia/Shanghai","url":"https://VividBloom.github.io","permalink":":year/:month/:day/:title/","permalink_defaults":null,"pretty_urls":{"trailing_index":true,"trailing_html":true},"style":{"avatar":"/images/logo.webp","logo":"/images/logo.webp","favicon":"/images/logo.webp","mode":"dark"},"home_article":{"category":{"enable":true,"limit":3},"tag":{"enable":true,"limit":5}},"search":{"path":"search.xml","field":"post","content":true,"template":"./search.xml"},"source_dir":"source","public_dir":"public","tag_dir":"tags","archive_dir":"archives","category_dir":"categories","code_dir":"downloads/code","i18n_dir":":lang","skip_render":null,"new_post_name":":title.md","default_layout":"post","titlecase":false,"external_link":{"enable":true,"field":"site","exclude":""},"filename_case":0,"render_drafts":false,"post_asset_folder":false,"relative_link":false,"future":true,"syntax_highlighter":"highlight.js","highlight":{"line_number":true,"auto_detect":false,"tab_replace":"","wrap":true,"hljs":false},"prismjs":{"preprocess":true,"line_number":true,"tab_replace":""},"index_generator":{"path":"","per_page":10,"order_by":"-date"},"default_category":"uncategorized","category_map":null,"tag_map":null,"meta_generator":true,"date_format":"YYYY-MM-DD","time_format":"HH:mm:ss","updated_option":"mtime","per_page":10,"pagination_dir":"page","include":null,"exclude":null,"ignore":null,"theme":"keep","deploy":{"type":"git","repo":"https://github.com/VividBloom/VividBloom.github.io.git","branch":"main","comment":"更新"},"source_data":{},"version":"4.2.5"}
+    KEEP.language_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 个月前","year":"%s 年前"}
+    KEEP.language_code_block = {"copy":"复制代码","copied":"已复制","fold":"折叠代码块","folded":"已折叠"}
+    KEEP.language_copy_copyright = {"copy":"复制版权信息","copied":"已复制","title":"原文标题","author":"原文作者","link":"原文链接"}
+  </script>
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+
+    
+</div>
+
+
+
+<main class="page-container border-box">
+    <!-- home first screen  -->
+    
+
+    <!-- page content -->
+    <div class="page-main-content border-box">
+        <div class="page-main-content-top">
+            
+<header class="header-wrapper">
+
+    <div class="border-box header-content">
+        <div class="left flex-start border-box">
+            
+                <a class="logo-image border-box" href="/">
+                    <img src="/images/logo.webp">
+                </a>
+            
+            <a class="site-name border-box" href="/">
+               Vivid Bloom
+            </a>
+        </div>
+
+        <div class="right border-box">
+            <div class="pc border-box">
+                <ul class="menu-list border-box">
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/">
+                                
+                                首页
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/archives">
+                                
+                                归档
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/tags">
+                                
+                                标签
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/categories">
+                                
+                                分类
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/about">
+                                
+                                关于
+                                
+                            </a>
+                            
+                        </li>
+                    
+                    
+                        <li class="menu-item search search-popup-trigger">
+                            <i class="menu-text-color fas search fa-search"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <div class="mobile border-box flex-start">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div>
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list border-box">
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/">
+                            
+                            首页
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/archives">
+                            
+                            归档
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/tags">
+                            
+                            标签
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/categories">
+                            
+                            分类
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/about">
+                            
+                            关于
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle border-box">
+
+            <div class="main-content border-box">
+                
+
+                    
+<div class="fade-in-down-animation">
+    <div class="post-page-container border-box">
+        <div class="post-content-container border-box">
+            
+
+            <div class="post-content-bottom border-box">
+                
+                    <div class="post-title">
+                        09-HarmonyOS开发-保存应用数据
+                    </div>
+                
+
+                
+                    <div class="post-header border-box">
+                        
+                            <div class="avatar-box border-box">
+                                <img src="/images/logo.webp">
+                            </div>
+                        
+                        <div class="info-box">
+                            <div class="author border-box">
+                                <span class="name">Vivid Bloom</span>
+                                
+                            </div>
+                            <div class="meta-info border-box">
+                                
+
+<div class="post-meta-info-container border-box post">
+    <div class="post-meta-info border-box">
+        
+
+        
+            <span class="meta-info-item post-create-date">
+                <i class="icon fa-solid fa-calendar-plus"></i>&nbsp;
+                <span class="datetime">2026-06-04 07:55:00</span>
+            </span>
+
+            
+                <span class="meta-info-item post-update-date">
+                    <i class="icon fa-solid fa-file-pen"></i>&nbsp;
+                    <span class="datetime" data-updated="Thu Jun 04 2026 09:52:34 GMT+0800">2026-06-04 09:52:34</span>
+                </span>
+            
+        
+
+        
+            <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
+                <ul class="post-category-ul">
+                    
+                            <li class="category-item"><a href="/categories/HarmonyOS/">HarmonyOS</a></li>
+                        
+                    
+                </ul>
+            </span>
+        
+
+        
+            <span class="post-tag meta-info-item border-box">
+                <ul class="post-tag-ul">
+                    
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/HarmonyOS/">HarmonyOS</a></li>
+                        
+                    
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/ArkTS/">ArkTS</a></li>
+                        
+                    
+                </ul>
+            </span>
+        
+
+        
+        
+        
+        
+    </div>
+
+    
+</div>
+
+                            </div>
+                        </div>
+                    </div>
+                
+
+                <div class="post-content keep-markdown-body ">
+                    
+
+                    
+                         <h1 id="保存应用数据"><a href="#保存应用数据" class="headerlink" title="保存应用数据"></a>保存应用数据</h1><h2 id="用户首选项的使用"><a href="#用户首选项的使用" class="headerlink" title="用户首选项的使用"></a>用户首选项的使用</h2><p>用户首选项(<code>Preferences</code>)为应用提供<code>Key-Value</code>键值型的数据处理能力, 支持应用持久化轻量级数据, 并对其修改和查询. 一般适用于保存用户的修改化设置, 例如字体大小, 是否开启夜间模式等.</p>
+<h3 id="动作机制"><a href="#动作机制" class="headerlink" title="动作机制"></a>动作机制</h3><p>如图所示, 程序通过<code>ArkTS</code>接口调用用户首选项读写对应的数据文件. 开发者可以将用户首选项持久化文件的内容加载到<code>Preferences</code>实例, 每个文件唯一对应到一个<code>Preferences</code>实例, 系统会通过静态容器将该实例存储到内存中, 直到主动从内存中移除该实例或删除文件.</p>
+<p>应用首选项的持久化文件保存在应用沙箱内部, 可以通过<code>context</code>获取其路径.</p>
+<p><img  
+                       lazyload
+                       alt="image"
+                       data-src="https://vividbloom.github.io/picx-images-hosting/HarmonyOS/image.1sfotmzcdr.webp"
+                        alt="用户首选项运作机制"
+                 ></p>
+<!-- more -->
+
+<h3 id="存储模式说明"><a href="#存储模式说明" class="headerlink" title="存储模式说明"></a>存储模式说明</h3><p>用户首选项默认使用<code>XML</code>格式存储, 从<code>API version 18</code>开始, 可选择<code>GSKV</code>存储模式</p>
+<h4 id="XML存储"><a href="#XML存储" class="headerlink" title="XML存储"></a><code>XML</code>存储</h4><p><code>XML</code>存储指的是数据会以<code>XML</code>的形式存储到文件中, 该模式的优点是通用性强, 支持跨平台. 当选择该模式时, 首选项对数据操作主要发生在内存中, 开发者可以在需要的时候于再调用<code>flush</code>接口进行数据持久化. 针对单进程, 小数据场景, 推荐使用该存储模式</p>
+<h4 id="GSKV存储"><a href="#GSKV存储" class="headerlink" title="GSKV存储"></a><code>GSKV</code>存储</h4><p><code>GSKV</code>是从<code>API version 18</code>起提供的一种存储模式, 数据以二进制的形式存储到文件中, 该模式的优点是支持多进程并发读写. 当选择该模式时, 首选项对数据的操作会实时落盘. 针对多进程并发场景, 推荐使用该存储模式.</p>
+<h3 id="约束限制"><a href="#约束限制" class="headerlink" title="约束限制"></a>约束限制</h3><h4 id="首选项通用限制"><a href="#首选项通用限制" class="headerlink" title="首选项通用限制"></a>首选项通用限制</h4><ul>
+<li><code>Key</code>键为<code>string</code>类型, 要求非空且长度不超过1024个字节</li>
+<li>如果<code>Value</code>值为<code>string</code>类型, 请使用<code>UTF-8</code>编码格式, 可以为空, 不为空时长度不超过<code>16MB</code></li>
+<li>当调用<code>removePreferencesFromCache</code>或者<code>deletePreferences</code>后, 订阅的数据变更会主动取消订阅, 重新<code>getPreferences</code>后需要重新订阅数据变更</li>
+<li>不允许<code>deletePreferences</code>与其他接口多线程, 多进程并发调用, 否则可能会发生不可预期行为</li>
+<li>不支持数据加密存储. 如果需要进制数据加密, 应先将数据进行加密, 然后将密文通过<code>Uint8Array</code>类型存储到<code>Preferences</code>中</li>
+</ul>
+<h4 id="XML模式约束限制"><a href="#XML模式约束限制" class="headerlink" title="XML模式约束限制"></a><code>XML</code>模式约束限制</h4><ul>
+<li><code>XML</code>模式无法保证进程并发安全, 会有文件损坏和数据丢失风险, 不支持在多进程场景下使用</li>
+<li>当存储的数据中包含非<code>UTF-8</code>格式的字符串时, 请使用<code>Uint8Array</code>类型存储, 否则会造成持久化文件出现格式错误造成文件损坏</li>
+<li>内存会随着存储数据量的增大而增大, 建议存储数据不超过<code>50MB</code>.数据量较大时, 在使用同步接口创建<code>Preferences</code>对象和持久化数据时会成为耗时操作, 不建议在主线程中使用, 否则可能会出现<code>appfreeze</code>问题</li>
+</ul>
+<h4 id="GSKV模式约束限制"><a href="#GSKV模式约束限制" class="headerlink" title="GSKV模式约束限制"></a><code>GSKV</code>模式约束限制</h4><ul>
+<li><code>GSKV</code>模式不支持跨平台, 使用该模式前需要调用<code>isStorageTypeSupported</code>接口判断当前平台是否支持该模式</li>
+</ul>
+<h3 id="接口说明"><a href="#接口说明" class="headerlink" title="接口说明"></a>接口说明</h3><p>以下是用户首选项持久化功能的相关接口</p>
+<table>
+<thead>
+<tr>
+<th align="left">接口名称</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">getPreferencesSync(context: Context, options: Options): Preferences</td>
+<td align="left">获取Preferences实例。该接口存在异步接口。</td>
+</tr>
+<tr>
+<td align="left">putSync(key: string, value: ValueType): void</td>
+<td align="left">将数据写入Preferences实例，可通过flush将Preferences实例持久化。该接口存在异步接口。</td>
+</tr>
+<tr>
+<td align="left">hasSync(key: string): boolean</td>
+<td align="left">检查Preferences实例是否包含名为给定Key的存储键值对，true表示包含，false表示不包含。给定的Key值不能为空。该接口存在异步接口。</td>
+</tr>
+<tr>
+<td align="left">getSync(key: string, defValue: ValueType): ValueType</td>
+<td align="left">获取键对应的值，如果值为null或非默认值类型，将返回默认数据defValue。该接口存在异步接口。</td>
+</tr>
+<tr>
+<td align="left">deleteSync(key: string): void</td>
+<td align="left">从Preferences实例中删除名为给定Key的存储键值对。该接口存在异步接口。</td>
+</tr>
+<tr>
+<td align="left">flush(callback: AsyncCallback<void>): void</td>
+<td align="left">将当前Preferences实例的数据异步存储到用户首选项持久化文件中。</td>
+</tr>
+<tr>
+<td align="left">on(type: ‘change’, callback: Callback<string>): void</td>
+<td align="left">订阅数据变更，订阅的数据发生变更后，在执行flush方法后，触发callback回调。</td>
+</tr>
+<tr>
+<td align="left">off(type: ‘change’, callback?: Callback<string>): void</td>
+<td align="left">取消订阅数据变更。</td>
+</tr>
+<tr>
+<td align="left">deletePreferences(context: Context, options: Options, callback: AsyncCallback<void>): void</td>
+<td align="left">从内存中移除指定的Preferences实例。若Preferences实例有对应的持久化文件，则同时删除其持久化文件。</td>
+</tr>
+<tr>
+<td align="left">isStorageTypeSupported(type: StorageType): boolean</td>
+<td align="left">判断当前平台是否支持希望使用的存储模式。true表示支持，false表示不支持。</td>
+</tr>
+</tbody></table>
+<h3 id="开发步骤"><a href="#开发步骤" class="headerlink" title="开发步骤"></a>开发步骤</h3><ol>
+<li><p>导入<code>@kit.ArkData</code>模块</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; preferences &#125; <span class="keyword">from</span> <span class="string">&#x27;@kit.ArkData&#x27;</span>;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>(可选)选择存储模式</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> isGskvSupported = preferences.<span class="title function_">isStorageTypeSupported</span>(preferences.<span class="property">StorageType</span>.<span class="property">GSKV</span>);</span><br><span class="line"><span class="title class_">Logger</span>.<span class="title function_">info</span>(<span class="string">&#x27;Is gskv supported on this platform: &#x27;</span> + isGskvSupported);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>获取<code>Preferences</code>实例</p>
+<p>针对默认的<code>XML</code>模式, 使用<code>getPreferencesSync()</code>方法获取<code>Preferences</code>实例</p>
+<p><code>context</code>的定义如下:</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> context = <span class="title class_">EntryAbility</span>.<span class="title function_">getContext</span>();</span><br></pre></td></tr></table></figure>
+
+<p>获取<code>Preferences</code>实例</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; <span class="title class_">UIAbility</span> &#125; <span class="keyword">from</span> <span class="string">&#x27;@kit.AbilityKit&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> &#123; <span class="title class_">BusinessError</span> &#125; <span class="keyword">from</span> <span class="string">&#x27;@kit.BasicServicesKit&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> &#123; <span class="variable language_">window</span> &#125; <span class="keyword">from</span> <span class="string">&#x27;@kit.ArkUI&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> <span class="attr">dataPreferences</span>: preferences.<span class="property">Preferences</span> | <span class="literal">null</span> = <span class="literal">null</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">EntryAbility</span> <span class="keyword">extends</span> <span class="title class_ inherited__">UIAbility</span> &#123;</span><br><span class="line">  <span class="title function_">onWindowStageCreate</span>(<span class="params"><span class="attr">windowStage</span>: <span class="variable language_">window</span>.<span class="title class_">WindowStage</span></span>) &#123;</span><br><span class="line">    <span class="keyword">let</span> <span class="attr">options</span>: preferences.<span class="property">Options</span> = &#123; <span class="attr">name</span>: <span class="string">&#x27;myStore&#x27;</span> &#125;;</span><br><span class="line">    dataPreferences = preferences.<span class="title function_">getPreferencesSync</span>(context, options);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>若想使用<code>GSKV</code>模式且当前平台支持该模式, 可以通过以下方式获取<code>GSKV</code>模式的<code>Preferences</code>实例. 需要注意的是, 当选择某一存储模式后, 不允许再对存储模式进行切换.</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; <span class="title class_">UIAbility</span> &#125; <span class="keyword">from</span> <span class="string">&#x27;@kit.AbilityKit&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> &#123; <span class="title class_">BusinessError</span> &#125; <span class="keyword">from</span> <span class="string">&#x27;@kit.BasicServicesKit&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> &#123; <span class="variable language_">window</span> &#125; <span class="keyword">from</span> <span class="string">&#x27;@kit.ArkUI&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> <span class="attr">dataPreferences</span>: preferences.<span class="property">Preferences</span> | <span class="literal">null</span> = <span class="literal">null</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">EntryAbility</span> <span class="keyword">extends</span> <span class="title class_ inherited__">UIAbility</span> &#123;</span><br><span class="line">  <span class="title function_">onWindowStageCreate</span>(<span class="params"><span class="attr">windowStage</span>: <span class="variable language_">window</span>.<span class="title class_">WindowStage</span></span>) &#123;</span><br><span class="line">    <span class="keyword">let</span> <span class="attr">options</span>: preferences.<span class="property">Options</span> = &#123; <span class="attr">name</span>: <span class="string">&#x27;myStore&#x27;</span>, <span class="attr">storageType</span>: preferences.<span class="property">StorageType</span>.<span class="property">GSKV</span> &#125;;</span><br><span class="line">    dataPreferences = preferences.<span class="title function_">getPreferencesSync</span>(context, options);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>写入数据</p>
+<p>使用<code>putSync()</code>方法将数据写入<code>Preferences</code>实例</p>
+<p>针对默认存储模式, 在写入数据后, 如有需要, 可使用<code>flush()</code>方法将<code>Preferences</code>实例的数据存储到持久化文件.</p>
+<p>针对<code>GSKV</code>存储模式, 在写入数据后, 数据会实时持久化到文件中.</p>
+<blockquote>
+<p>当对应的键已经存在时, <code>putSync()</code>方法会覆盖其值. 可以使用<code>hasSync()</code>方法检查是否存在对应键值对</p>
+</blockquote>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (dataPreferences.<span class="title function_">hasSync</span>(<span class="string">&#x27;startup&#x27;</span>)) &#123;</span><br><span class="line">  <span class="title class_">Logger</span>.<span class="title function_">info</span>(<span class="string">&#x27;The key startup is contained.&#x27;</span>);</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">  <span class="title class_">Logger</span>.<span class="title function_">info</span>(<span class="string">&#x27;The key startup does not contain.&#x27;</span>);</span><br><span class="line">  <span class="comment">// 此处以此键值对不存在时写入数据为例</span></span><br><span class="line">  dataPreferences.<span class="title function_">putSync</span>(<span class="string">&#x27;startup&#x27;</span>, <span class="string">&#x27;auto&#x27;</span>);</span><br><span class="line">  <span class="comment">// 在XML模式下，当字符串包含非UTF-8格式的字符时，需要将字符串转为Uint8Array类型再存储，长度均不超过16 * 1024 * 1024个字节。</span></span><br><span class="line">  <span class="keyword">let</span> uInt8Array1 = <span class="keyword">new</span> util.<span class="title class_">TextEncoder</span>().<span class="title function_">encodeInto</span>(<span class="string">&#x27;~！@#￥%……&amp;*（）——+？&#x27;</span>);</span><br><span class="line">  dataPreferences.<span class="title function_">putSync</span>(<span class="string">&#x27;uInt8&#x27;</span>, uInt8Array1);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>读取数据</p>
+<p>使用<code>getSync()</code>方法获取数据, 即指定键对应的值. 如果值为<code>null</code>或非默认值类型, 则返回默认数据</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> val = dataPreferences.<span class="title function_">getSync</span>(<span class="string">&#x27;startup&#x27;</span>, <span class="string">&#x27;default&#x27;</span>);</span><br><span class="line"><span class="title class_">Logger</span>.<span class="title function_">info</span>(<span class="string">&#x27;The startup value is &#x27;</span> + val);</span><br><span class="line"><span class="keyword">let</span> uInt8Array2 : preferences.<span class="property">ValueType</span> = dataPreferences.<span class="title function_">getSync</span>(<span class="string">&#x27;uInt8&#x27;</span>, <span class="keyword">new</span> <span class="title class_">Uint8Array</span>(<span class="number">0</span>));</span><br><span class="line"><span class="comment">// 将获取到的Uint8Array转换为字符串</span></span><br><span class="line"><span class="keyword">let</span> textDecoder = util.<span class="property">TextDecoder</span>.<span class="title function_">create</span>(<span class="string">&#x27;utf-8&#x27;</span>);</span><br><span class="line">val = textDecoder.<span class="title function_">decodeToString</span>(uInt8Array2 <span class="keyword">as</span> <span class="title class_">Uint8Array</span>);</span><br><span class="line"><span class="title class_">Logger</span>.<span class="title function_">info</span>(<span class="string">&#x27;The uInt8 value is &#x27;</span> + val);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>删除数据</p>
+<p>使用<code>deleteSync()</code>方法删除指定键值对</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dataPreferences.<span class="title function_">deleteSync</span>(<span class="string">&#x27;startup&#x27;</span>);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>数据持久化</p>
+<p>应用存入数据到<code>Preferences</code>实例后, 可以使用<code>flush()</code>方法实现数据持久化</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">dataPreferences.<span class="title function_">flush</span>(<span class="function">(<span class="params"><span class="attr">err</span>: <span class="title class_">BusinessError</span></span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">if</span> (err) &#123;</span><br><span class="line">    <span class="title class_">Logger</span>.<span class="title function_">error</span>(<span class="string">`Failed to flush. Code:<span class="subst">$&#123;err.code&#125;</span>, message:<span class="subst">$&#123;err.message&#125;</span>`</span>);</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="title class_">Logger</span>.<span class="title function_">info</span>(<span class="string">&#x27;Succeeded in flushing.&#x27;</span>);</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>订阅数据变更</p>
+<p>应用订阅数据变更需要指定<code>observer</code>作为回调方法</p>
+<p>针对<code>XML</code>模式, 订阅的<code>Key</code>值发生变更后, 当执行<code>flush()</code>方法时, 触发<code>observer</code>回调</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> <span class="title function_">observer</span> = (<span class="params"><span class="attr">key</span>: <span class="built_in">string</span></span>) =&gt; &#123;</span><br><span class="line">  <span class="title class_">Logger</span>.<span class="title function_">info</span>(<span class="string">&#x27;The key &#x27;</span> + key + <span class="string">&#x27; changed.&#x27;</span>);</span><br><span class="line">&#125;</span><br><span class="line">dataPreferences.<span class="title function_">on</span>(<span class="string">&#x27;change&#x27;</span>, observer);</span><br><span class="line"><span class="comment">// 数据产生变更，由&#x27;auto&#x27;变为&#x27;manual&#x27;</span></span><br><span class="line">dataPreferences.<span class="title function_">put</span>(<span class="string">&#x27;startup&#x27;</span>, <span class="string">&#x27;manual&#x27;</span>, <span class="function">(<span class="params"><span class="attr">err</span>: <span class="title class_">BusinessError</span></span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">if</span> (err) &#123;</span><br><span class="line">    <span class="title class_">Logger</span>.<span class="title function_">error</span>(<span class="string">`Failed to put the value of &#x27;startup&#x27;. Code:<span class="subst">$&#123;err.code&#125;</span>,message:<span class="subst">$&#123;err.message&#125;</span>`</span>);</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="title class_">Logger</span>.<span class="title function_">info</span>(<span class="string">&#x27;Succeeded in putting the value of startup.&#x27;</span>);</span><br><span class="line">  <span class="keyword">if</span> (dataPreferences !== <span class="literal">null</span>) &#123;</span><br><span class="line">    dataPreferences.<span class="title function_">flush</span>(<span class="function">(<span class="params"><span class="attr">err</span>: <span class="title class_">BusinessError</span></span>) =&gt;</span> &#123;</span><br><span class="line">      <span class="keyword">if</span> (err) &#123;</span><br><span class="line">        <span class="title class_">Logger</span>.<span class="title function_">error</span>(<span class="string">`Failed to flush. Code:<span class="subst">$&#123;err.code&#125;</span>, message:<span class="subst">$&#123;err.message&#125;</span>`</span>);</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="title class_">Logger</span>.<span class="title function_">info</span>(<span class="string">&#x27;Succeeded in flushing.&#x27;</span>);</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<p>针对<code>GSKV</code>存储模式, 订阅的<code>Key</code>值发生变更后(无需调用<code>flush</code>), <code>observer</code>被触发回调</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> <span class="title function_">observer</span> = (<span class="params"><span class="attr">key</span>: <span class="built_in">string</span></span>) =&gt; &#123;</span><br><span class="line">  <span class="title class_">Logger</span>.<span class="title function_">info</span>(<span class="string">&#x27;The key &#x27;</span> + key + <span class="string">&#x27; changed.&#x27;</span>);</span><br><span class="line">&#125;</span><br><span class="line">dataPreferences.<span class="title function_">on</span>(<span class="string">&#x27;change&#x27;</span>, observer);</span><br><span class="line"><span class="comment">// 数据产生变更，由&#x27;auto&#x27;变为&#x27;manual&#x27;</span></span><br><span class="line">dataPreferences.<span class="title function_">put</span>(<span class="string">&#x27;startup&#x27;</span>, <span class="string">&#x27;manual&#x27;</span>, <span class="function">(<span class="params"><span class="attr">err</span>: <span class="title class_">BusinessError</span></span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">if</span> (err) &#123;</span><br><span class="line">    <span class="title class_">Logger</span>.<span class="title function_">error</span>(<span class="string">`Failed to put the value of &#x27;startup&#x27;. Code:<span class="subst">$&#123;err.code&#125;</span>,message:<span class="subst">$&#123;err.message&#125;</span>`</span>);</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="title class_">Logger</span>.<span class="title function_">info</span>(<span class="string">&#x27;Succeeded in putting the value of startup.&#x27;</span>);</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>删除指定文件</p>
+<p>使用<code>deletePreferences()</code>方法从内存中移除指定文件对应的<code>Preferences</code>实例及其数据. 若该<code>Preferences</code>存在对应的持久化文件, 则一并删除, 包括指定文件及其备份文件, 损坏文件.</p>
+<blockquote>
+<ul>
+<li>调用该接口后, 应用不允许再使用该<code>Preferences</code>实例进行数据操作, 否则会出现数据一致性问题</li>
+<li>成功删除后, 数据及文件将不可恢复</li>
+<li>在<code>GSKV</code>模式中, 该接口不支持与其他接口并发调用, 否则会出现不可预期行为</li>
+</ul>
+</blockquote>
+<p><code>context</code>的定义如下:</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> context = <span class="title class_">EntryAbility</span>.<span class="title function_">getContext</span>();</span><br></pre></td></tr></table></figure>
+
+<p>示例代码如下所示：</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> <span class="attr">options</span>: preferences.<span class="property">Options</span> = &#123; <span class="attr">name</span>: <span class="string">&#x27;myStore&#x27;</span> &#125;;</span><br><span class="line">preferences.<span class="title function_">deletePreferences</span>(context, options, <span class="function">(<span class="params"><span class="attr">err</span>: <span class="title class_">BusinessError</span></span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">if</span> (err) &#123;</span><br><span class="line">    <span class="title class_">Logger</span>.<span class="title function_">error</span>(<span class="string">`Failed to delete preferences. Code:<span class="subst">$&#123;err.code&#125;</span>, message:<span class="subst">$&#123;err.message&#125;</span>`</span>);</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="title class_">Logger</span>.<span class="title function_">info</span>(<span class="string">&#x27;Succeeded in deleting preferences.&#x27;</span>);</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h2 id="关系型数据库的使用"><a href="#关系型数据库的使用" class="headerlink" title="关系型数据库的使用"></a>关系型数据库的使用</h2><p>关系型数据库基于<code>SQLite</code>组件, 适用于存储包含复杂关系数据的场景, 比如一个班级的学生信息, 需要包括姓名, 学号, 各科成绩等. </p>
+<p>大数据量场景查询数据可能会导致耗时长甚至应用卡死, 如有相关操作可参考文档<a class="link"   target="_blank" rel="noopener" href="https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/batch-database-operations-guide" >批量数据写数据库场景<i class="fas fa-external-link-alt"></i></a>，且有建议如下：</p>
+<ul>
+<li>单次查询数据量不超过5000条</li>
+<li>在<code>TaskPool</code>中查询</li>
+<li>拼接<code>SQL</code>语句尽量简洁</li>
+<li>合理地分批次查询</li>
+</ul>
+<h3 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h3><ul>
+<li>谓词: 数据库中用来代表数据实体的性质, 特征或数据实体之间关系的词项, 主要用来定义数据库的操作条件</li>
+<li>结果集: 指用户查询后的结果集合, 可以对数据进行访问. 结果集提供了灵活的数据访问方式, 可以更方便地拿到用户想要的数据</li>
+</ul>
+<h3 id="运作机制"><a href="#运作机制" class="headerlink" title="运作机制"></a>运作机制</h3><p>关系型数据库对应用提供通用的操作接口, 底层使用<code>SQLite</code>作为持久化存储引擎, 支持<code>SQLite</code>具有的数据库特性, 包括但不限于事务, 索引, 视图, 触发器, 外键, 参数化查询和预编译<code>SQL</code>语句</p>
+<p><img  
+                       lazyload
+                       alt="image"
+                       data-src="https://vividbloom.github.io/picx-images-hosting/HarmonyOS/image.8l0qg5m5b9.webp"
+                        alt="关系型数据库运作机制"
+                 ></p>
+<h3 id="约束限制-1"><a href="#约束限制-1" class="headerlink" title="约束限制"></a>约束限制</h3><ul>
+<li>系统默认日志方式是<code>WAL(Write Ahead Log)</code>模式, 系统默认落盘方式是<code>FULL</code>模式</li>
+<li>数据库中常驻有4个读连接和1个写连接. 读连接会动态扩充, 无可用读连接时, 会创建新的读连接执行读操作. 写连接不会动态扩充, 无可用写连接时, 会等待连接释放后执行写操作</li>
+<li>为保证数据的准确性,  数据库同一时间只能支持一个写操作</li>
+<li>当应用被卸载完成后, 设备上的相关数据库文件及临时文件会被自动清除</li>
+<li><code>ArkTS</code>支持基本数据类型: <code>number</code>, <code>string</code>, 二进行类型数据, <code>boolean</code></li>
+<li>为保证插入并读取数据成功, 建议一条数据不要超过<code>2M</code>. 超出该大小, 插入成功, 读取失败.</li>
+</ul>
+<h3 id="接口说明-1"><a href="#接口说明-1" class="headerlink" title="接口说明"></a>接口说明</h3><table>
+<thead>
+<tr>
+<th align="left">接口名称</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">getRdbStore(context: Context, config: StoreConfig, callback: AsyncCallback<RdbStore>): void</td>
+<td align="left">获得一个RdbStore，操作关系型数据库，用户可以根据自己的需求配置RdbStore的参数，然后通过RdbStore调用相关接口可以执行相关的数据操作。</td>
+</tr>
+<tr>
+<td align="left">createTransaction(options?: TransactionOptions): Promise<Transaction></td>
+<td align="left">创建一个事务对象并开始事务。</td>
+</tr>
+<tr>
+<td align="left">execute(sql: string, args?: Array<ValueType>):Promise<ValueType></td>
+<td align="left">执行包含指定参数的SQL语句。</td>
+</tr>
+<tr>
+<td align="left">querySql(sql: string, bindArgs?: Array<ValueType>):Promise<ResultSet></td>
+<td align="left">根据指定SQL语句查询数据库中的数据。</td>
+</tr>
+<tr>
+<td align="left">insert(table: string, values: ValuesBucket, conflict?: ConflictResolution): Promise<number></td>
+<td align="left">向目标表中插入一行数据。</td>
+</tr>
+<tr>
+<td align="left">update(values: ValuesBucket, predicates: RdbPredicates, callback: AsyncCallback<number>):void</td>
+<td align="left">根据predicates的指定实例对象更新数据库中的数据。</td>
+</tr>
+<tr>
+<td align="left">delete(predicates: RdbPredicates, callback: AsyncCallback<number>):void</td>
+<td align="left">根据predicates的指定实例对象从数据库中删除数据。</td>
+</tr>
+<tr>
+<td align="left">query(predicates: RdbPredicates, columns: Array<string>, callback: AsyncCallback<ResultSet>):void</td>
+<td align="left">根据指定条件查询数据库中的数据。</td>
+</tr>
+<tr>
+<td align="left">deleteRdbStore(context: Context, name: string, callback: AsyncCallback<void>): void</td>
+<td align="left">删除数据库。</td>
+</tr>
+<tr>
+<td align="left">isTokenizerSupported(tokenizer: Tokenizer): boolean</td>
+<td align="left">判断当前平台是否支持传入的分词器（将文本分解为更小单元的工具，这些单元可以是单词、子词、字符或者其他语言片段）。</td>
+</tr>
+</tbody></table>
+<h3 id="开发步骤-1"><a href="#开发步骤-1" class="headerlink" title="开发步骤"></a>开发步骤</h3><p>因<code>Stage</code>模型, <code>FA</code>模型的差异, 个别示例代码提供了在两种模型下的对应示例; 示例代码未区分模型或没有对应注释说明时默认在两种模型下均适用.</p>
+<p>关系型数据库操作或者存储过程中, 有可能会因为各种原因发生非预期的数据库异常情况(抛出14800011), 此时需要对数据库进行重建并恢复数据, 以保障正常的应用开发, 具体可见<a class="link"   target="_blank" rel="noopener" href="https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-backup-and-restore#%E5%85%B3%E7%B3%BB%E5%9E%8B%E6%95%B0%E6%8D%AE%E5%BA%93%E5%BC%82%E5%B8%B8%E9%87%8D%E5%BB%BA" >关系型数据库异常重建<i class="fas fa-external-link-alt"></i></a></p>
+<ol>
+<li><p>使用关系型数据库实现数据持久化, 需要获取一个<code>RdbStore</code>, 其中包括建库, 建表, 升降级等操作. 推荐使用事务接口保证数据库升级流程原子性</p>
+<p><code>Stage</code>模型示例:</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; relationalStore &#125; <span class="keyword">from</span> <span class="string">&#x27;@kit.ArkData&#x27;</span>; <span class="comment">// 导入模块</span></span><br><span class="line"><span class="keyword">import</span> &#123; <span class="title class_">BusinessError</span> &#125; <span class="keyword">from</span> <span class="string">&#x27;@kit.BasicServicesKit&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> &#123; hilog &#125; <span class="keyword">from</span> <span class="string">&#x27;@kit.PerformanceAnalysisKit&#x27;</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="variable constant_">DOMAIN</span> = <span class="number">0x0000</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> <span class="attr">store</span>: relationalStore.<span class="property">RdbStore</span> | <span class="literal">undefined</span> = <span class="literal">undefined</span>;</span><br><span class="line"><span class="keyword">let</span> tokenType = relationalStore.<span class="property">Tokenizer</span>.<span class="property">ICU_TOKENIZER</span>;</span><br><span class="line"><span class="keyword">let</span> tokenTypeSupported = relationalStore.<span class="title function_">isTokenizerSupported</span>(tokenType);</span><br><span class="line"><span class="keyword">if</span> (!tokenTypeSupported) &#123;</span><br><span class="line">  tokenType = relationalStore.<span class="property">Tokenizer</span>.<span class="property">NONE_TOKENIZER</span>;</span><br><span class="line">  hilog.<span class="title function_">error</span>(<span class="variable constant_">DOMAIN</span>, <span class="string">&#x27;rdbDataPersistence&#x27;</span>, <span class="string">`ICU_TOKENIZER is not supported on this platform.`</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">const</span> <span class="attr">STORE_CONFIG</span>: relationalStore.<span class="property">StoreConfig</span> = &#123;</span><br><span class="line">  <span class="comment">// 数据库文件名</span></span><br><span class="line">  <span class="attr">name</span>: <span class="string">&#x27;RdbTest.db&#x27;</span>,</span><br><span class="line">  <span class="comment">// 数据库安全级别</span></span><br><span class="line">  <span class="attr">securityLevel</span>: relationalStore.<span class="property">SecurityLevel</span>.<span class="property">S3</span>,</span><br><span class="line">  <span class="comment">// 可选参数，指定数据库是否加密，默认不加密</span></span><br><span class="line">  <span class="attr">encrypt</span>: <span class="literal">false</span>,</span><br><span class="line">  <span class="comment">// 可选参数，数据库自定义路径。默认在本应用沙箱目录下创建RdbStore实例。</span></span><br><span class="line">  <span class="attr">customDir</span>: <span class="string">&#x27;customDir/subCustomDir&#x27;</span>,</span><br><span class="line">  <span class="comment">// 可选参数，指定数据库是否以只读方式打开。默认为false，表示数据库可读可写。为true时，只允许从数据库读取数据，不允许对数据库进行写操作，否则会返回错误码801。</span></span><br><span class="line">  <span class="attr">isReadOnly</span>: <span class="literal">false</span>,</span><br><span class="line">  <span class="comment">// 可选参数，指定用户在全文搜索场景(FTS)下使用哪种分词器。默认在FTS下仅支持英文分词，不支持其他语言分词。</span></span><br><span class="line">  <span class="attr">tokenizer</span>: tokenType,</span><br><span class="line">&#125;;</span><br><span class="line"><span class="comment">// ...</span></span><br><span class="line">  <span class="comment">// 判断数据库版本，如果不匹配则需进行升降级操作</span></span><br><span class="line">  <span class="comment">// 假设当前数据库版本为3，表结构：EMPLOYEE (NAME, AGE, SALARY, CODES, IDENTITY)</span></span><br><span class="line">  <span class="comment">// 建表Sql语句, IDENTITY为bigint类型，sql中指定类型为UNLIMITED INT</span></span><br><span class="line">  <span class="keyword">const</span> <span class="variable constant_">SQL_CREATE_TABLE</span> =</span><br><span class="line">    <span class="string">&#x27;CREATE TABLE IF NOT EXISTS EMPLOYEE (ID INTEGER PRIMARY KEY AUTOINCREMENT, NAME TEXT NOT NULL, AGE INTEGER, SALARY REAL, CODES BLOB, ADDRESS TEXT)&#x27;</span>;</span><br><span class="line">  <span class="keyword">if</span> (store === <span class="literal">undefined</span>) &#123;</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">      store = <span class="keyword">await</span> relationalStore.<span class="title function_">getRdbStore</span>(context, <span class="variable constant_">STORE_CONFIG</span>);</span><br><span class="line">    &#125; <span class="keyword">catch</span> (e) &#123;</span><br><span class="line">      <span class="keyword">const</span> err = e <span class="keyword">as</span> <span class="title class_">BusinessError</span>;</span><br><span class="line">      hilog.<span class="title function_">error</span>(<span class="variable constant_">DOMAIN</span>, <span class="string">&#x27;rdbDataPersistence&#x27;</span>, <span class="string">`Failed to get RdbStore. Code:<span class="subst">$&#123;err.code&#125;</span>, message:<span class="subst">$&#123;err.message&#125;</span>`</span>);</span><br><span class="line">      <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  hilog.<span class="title function_">info</span>(<span class="variable constant_">DOMAIN</span>, <span class="string">&#x27;rdbDataPersistence&#x27;</span>, <span class="string">&#x27;Succeeded in getting RdbStore.&#x27;</span>);</span><br><span class="line">  <span class="keyword">if</span> (store !== <span class="literal">undefined</span>) &#123;</span><br><span class="line">    <span class="keyword">let</span> transaction = <span class="keyword">await</span> store.<span class="title function_">createTransaction</span>(&#123;&#125;);</span><br><span class="line">    <span class="keyword">let</span> storeVersion = <span class="keyword">await</span> transaction.<span class="title function_">execute</span>(<span class="string">&#x27;PRAGMA user_version&#x27;</span>);</span><br><span class="line">    <span class="comment">// 当数据库创建时，数据库默认版本为0</span></span><br><span class="line">    <span class="comment">// 示例应用升级流程较短，所以使用单个事务。如果实际业务中升级逻辑较多，建议拆分多个独立事务串行执行。</span></span><br><span class="line">    <span class="keyword">if</span> (storeVersion === <span class="number">0</span>) &#123;</span><br><span class="line">      <span class="keyword">try</span> &#123;</span><br><span class="line">        <span class="keyword">await</span> transaction.<span class="title function_">execute</span>(<span class="variable constant_">SQL_CREATE_TABLE</span>); <span class="comment">// 创建数据表，以便后续调用insert接口插入数据</span></span><br><span class="line">        storeVersion = <span class="number">1</span>;</span><br><span class="line">        hilog.<span class="title function_">info</span>(<span class="variable constant_">DOMAIN</span>, <span class="string">&#x27;rdbDataPersistence&#x27;</span>, <span class="string">&#x27;Upgrade store version from 0 to 1 success.&#x27;</span>);</span><br><span class="line">        <span class="comment">// 设置数据库的版本，入参为大于0的整数</span></span><br><span class="line">      &#125; <span class="keyword">catch</span> (e) &#123;</span><br><span class="line">        <span class="keyword">const</span> err = e <span class="keyword">as</span> <span class="title class_">BusinessError</span>;</span><br><span class="line">        <span class="keyword">await</span> transaction.<span class="title function_">rollback</span>();</span><br><span class="line">        hilog.<span class="title function_">error</span>(<span class="variable constant_">DOMAIN</span>, <span class="string">&#x27;rdbDataPersistence&#x27;</span>, <span class="string">`Failed to execute sql. Code:<span class="subst">$&#123;err.code&#125;</span>, message:<span class="subst">$&#123;err.message&#125;</span>`</span>);</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 如果数据库版本不为0且和当前数据库版本不匹配，需要进行升降级操作</span></span><br><span class="line">    <span class="comment">// 当前数据库存在并且版本为1，数据库需要从1版本升级到2版本</span></span><br><span class="line">    <span class="keyword">if</span> (storeVersion === <span class="number">1</span>) &#123;</span><br><span class="line">      <span class="comment">// version = 1：表结构：EMPLOYEE (NAME, AGE, SALARY, CODES, ADDRESS)</span></span><br><span class="line">      <span class="comment">// =&gt; version = 2：表结构：EMPLOYEE (NAME, AGE, SALARY, CODES, ADDRESS, IDENTITY)</span></span><br><span class="line">      <span class="keyword">try</span> &#123;</span><br><span class="line">        <span class="keyword">await</span> transaction.<span class="title function_">execute</span>(<span class="string">&#x27;ALTER TABLE EMPLOYEE ADD COLUMN IDENTITY UNLIMITED INT&#x27;</span>);</span><br><span class="line">        storeVersion = <span class="number">2</span>;</span><br><span class="line">        hilog.<span class="title function_">info</span>(<span class="variable constant_">DOMAIN</span>, <span class="string">&#x27;rdbDataPersistence&#x27;</span>, <span class="string">&#x27;Upgrade store version from 1 to 2 success.&#x27;</span>);</span><br><span class="line">      &#125; <span class="keyword">catch</span> (e) &#123;</span><br><span class="line">        <span class="keyword">const</span> err = e <span class="keyword">as</span> <span class="title class_">BusinessError</span>;</span><br><span class="line">        <span class="keyword">await</span> transaction.<span class="title function_">rollback</span>();</span><br><span class="line">        hilog.<span class="title function_">error</span>(<span class="variable constant_">DOMAIN</span>, <span class="string">&#x27;rdbDataPersistence&#x27;</span>, <span class="string">`Failed to execute sql. Code:<span class="subst">$&#123;err.code&#125;</span>, message:<span class="subst">$&#123;err.message&#125;</span>`</span>);</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 当前数据库存在并且版本为2，数据库需要从2版本升级到3版本</span></span><br><span class="line">    <span class="keyword">if</span> (storeVersion === <span class="number">2</span>) &#123;</span><br><span class="line">      <span class="comment">// version = 2：表结构：EMPLOYEE (NAME, AGE, SALARY, CODES, ADDRESS, IDENTITY)</span></span><br><span class="line">      <span class="comment">// =&gt; version = 3：表结构：EMPLOYEE (NAME, AGE, SALARY, CODES, IDENTITY)</span></span><br><span class="line">      <span class="keyword">try</span> &#123;</span><br><span class="line">        <span class="keyword">await</span> transaction.<span class="title function_">execute</span>(<span class="string">&#x27;ALTER TABLE EMPLOYEE DROP COLUMN ADDRESS&#x27;</span>);</span><br><span class="line">        storeVersion = <span class="number">3</span>;</span><br><span class="line">        <span class="keyword">await</span> transaction.<span class="title function_">execute</span>(<span class="string">&#x27;PRAGMA user_version = 3&#x27;</span>);</span><br><span class="line">        hilog.<span class="title function_">info</span>(<span class="variable constant_">DOMAIN</span>, <span class="string">&#x27;rdbDataPersistence&#x27;</span>, <span class="string">&#x27;Upgrade store version from 2 to 3 success.&#x27;</span>)</span><br><span class="line">      &#125; <span class="keyword">catch</span> (e) &#123;</span><br><span class="line">        <span class="keyword">const</span> err = e <span class="keyword">as</span> <span class="title class_">BusinessError</span>;</span><br><span class="line">        <span class="keyword">await</span> transaction.<span class="title function_">rollback</span>();</span><br><span class="line">        hilog.<span class="title function_">error</span>(<span class="variable constant_">DOMAIN</span>, <span class="string">&#x27;rdbDataPersistence&#x27;</span>, <span class="string">`Failed to execute sql. Code:<span class="subst">$&#123;err.code&#125;</span>, message:<span class="subst">$&#123;err.message&#125;</span>`</span>);</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">await</span> transaction.<span class="title function_">commit</span>();</span><br><span class="line">    <span class="comment">// 请确保获取到RdbStore实例，完成数据表创建后，再进行数据库的增、删、改、查等操作</span></span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+
+<p><code>FA</code>模型示例:</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; relationalStore &#125; <span class="keyword">from</span> <span class="string">&#x27;@kit.ArkData&#x27;</span>; <span class="comment">// 导入模块</span></span><br><span class="line"><span class="keyword">import</span> &#123; featureAbility &#125; <span class="keyword">from</span> <span class="string">&#x27;@kit.AbilityKit&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> &#123; <span class="title class_">BusinessError</span> &#125; <span class="keyword">from</span> <span class="string">&#x27;@kit.BasicServicesKit&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> context = featureAbility.<span class="title function_">getContext</span>();</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> <span class="attr">STORE_CONFIG</span>: relationalStore.<span class="property">StoreConfig</span> = &#123;</span><br><span class="line">  <span class="attr">name</span>: <span class="string">&#x27;RdbTest.db&#x27;</span>, <span class="comment">// 数据库文件名</span></span><br><span class="line">  <span class="attr">securityLevel</span>: relationalStore.<span class="property">SecurityLevel</span>.<span class="property">S3</span> <span class="comment">// 数据库安全级别</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 假设当前数据库版本为3，表结构：EMPLOYEE (NAME, AGE, SALARY, CODES, IDENTITY)</span></span><br><span class="line"><span class="comment">// 建表Sql语句，IDENTITY为bigint类型，sql中指定类型为UNLIMITED INT</span></span><br><span class="line"><span class="keyword">const</span> <span class="variable constant_">SQL_CREATE_TABLE</span> =</span><br><span class="line">  <span class="string">&#x27;CREATE TABLE IF NOT EXISTS EMPLOYEE (ID INTEGER PRIMARY KEY AUTOINCREMENT, NAME TEXT NOT NULL, AGE INTEGER, SALARY REAL, CODES BLOB, IDENTITY UNLIMITED INT)&#x27;</span>;</span><br><span class="line"></span><br><span class="line">relationalStore.<span class="title function_">getRdbStore</span>(context, <span class="variable constant_">STORE_CONFIG</span>, <span class="title function_">async</span> (err, store) =&gt; &#123;</span><br><span class="line">  <span class="keyword">if</span> (err) &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">error</span>(<span class="string">`Failed to get RdbStore. Code:<span class="subst">$&#123;err.code&#125;</span>, message:<span class="subst">$&#123;err.message&#125;</span>`</span>);</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">info</span>(<span class="string">&#x27;Succeeded in getting RdbStore.&#x27;</span>);</span><br><span class="line"></span><br><span class="line">  <span class="keyword">let</span> storeVersion = store.<span class="property">version</span>;</span><br><span class="line">  <span class="comment">// 当数据库创建时，数据库默认版本为0</span></span><br><span class="line">  <span class="keyword">if</span> (storeVersion === <span class="number">0</span>) &#123;</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">      <span class="keyword">await</span> store.<span class="title function_">execute</span>(<span class="variable constant_">SQL_CREATE_TABLE</span>); <span class="comment">// 创建数据表，以便后续调用insert接口插入数据</span></span><br><span class="line">      <span class="comment">// 设置数据库的版本，入参为大于0的整数</span></span><br><span class="line">      storeVersion = <span class="number">3</span>;</span><br><span class="line">    &#125; <span class="keyword">catch</span> (e) &#123;</span><br><span class="line">      <span class="keyword">const</span> err = e <span class="keyword">as</span> <span class="title class_">BusinessError</span>;</span><br><span class="line">      <span class="variable language_">console</span>.<span class="title function_">error</span>(<span class="string">`Failed to execute sql. Code:<span class="subst">$&#123;err.code&#125;</span>, message:<span class="subst">$&#123;err.message&#125;</span>`</span>);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="comment">// 如果数据库版本不为0且和当前数据库版本不匹配，需要进行升降级操作</span></span><br><span class="line">  <span class="comment">// 当前数据库存在并且版本为1，数据库需要从1版本升级到2版本</span></span><br><span class="line">  <span class="keyword">if</span> (storeVersion === <span class="number">1</span>) &#123;</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">      <span class="comment">// version = 1：表结构：EMPLOYEE (NAME, SALARY, CODES, ADDRESS) =&gt; version = 2：表结构：EMPLOYEE (NAME, AGE, SALARY, CODES, ADDRESS)</span></span><br><span class="line">      <span class="keyword">await</span> store.<span class="title function_">execute</span>(<span class="string">&#x27;ALTER TABLE EMPLOYEE ADD COLUMN AGE INTEGER&#x27;</span>);</span><br><span class="line">      storeVersion = <span class="number">2</span>;</span><br><span class="line">      <span class="variable language_">console</span>.<span class="title function_">info</span>(<span class="string">&quot;Upgrade store version from 1 to 2 success.&quot;</span>)</span><br><span class="line">    &#125; <span class="keyword">catch</span> (e) &#123;</span><br><span class="line">      <span class="keyword">const</span> err = e <span class="keyword">as</span> <span class="title class_">BusinessError</span>;</span><br><span class="line">      <span class="variable language_">console</span>.<span class="title function_">error</span>(<span class="string">`Failed to execute sql. Code:<span class="subst">$&#123;err.code&#125;</span>, message:<span class="subst">$&#123;err.message&#125;</span>`</span>);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="comment">// 当前数据库存在并且版本为2，数据库需要从2版本升级到3版本</span></span><br><span class="line">  <span class="keyword">if</span> (storeVersion === <span class="number">2</span>) &#123;</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">      <span class="comment">// version = 2：表结构：EMPLOYEE (NAME, AGE, SALARY, CODES, ADDRESS) =&gt; version = 3：表结构：EMPLOYEE (NAME, AGE, SALARY, CODES)</span></span><br><span class="line">      <span class="keyword">await</span> store.<span class="title function_">execute</span>(<span class="string">&#x27;ALTER TABLE EMPLOYEE DROP COLUMN ADDRESS&#x27;</span>);</span><br><span class="line">      storeVersion = <span class="number">3</span>;</span><br><span class="line">      <span class="variable language_">console</span>.<span class="title function_">info</span>(<span class="string">&quot;Upgrade store version from 2 to 3 success.&quot;</span>)</span><br><span class="line">    &#125; <span class="keyword">catch</span> (e) &#123;</span><br><span class="line">      <span class="keyword">const</span> err = e <span class="keyword">as</span> <span class="title class_">BusinessError</span>;</span><br><span class="line">      <span class="variable language_">console</span>.<span class="title function_">error</span>(<span class="string">`Failed to execute sql. Code:<span class="subst">$&#123;err.code&#125;</span>, message:<span class="subst">$&#123;err.message&#125;</span>`</span>);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  store.<span class="property">version</span> = storeVersion;</span><br><span class="line">  <span class="comment">// 请确保获取到RdbStore实例，完成数据表创建后，再进行数据库的增、删、改、查等操作</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<ul>
+<li>应用创建的数据库与其上下文(<code>Context</code>)有关, 即使使用同样的数据库名称, 但不同的应用上下文, 会产生多个数据库, 例如每个<code>UIAbility</code>都有各自的上下文</li>
+<li>当应用首次获取数据库(调用<code>getRdbStore</code>)后, 在应用沙箱内会产生对应的数据库文件. 使用数据库的过程中, 在与数据库文件相同的目录下可能会产生以<code>-wal</code>和<code>-shm</code>结尾的临时文件. 此时若开发者希望移动数据库文件到其它地方使用查看, 则需要同时移动这些临时文件, 当应用被卸载完成后, 其在设备上产生的数据库文件及临时文件也被移除</li>
+<li>错误码的详细介绍请参见<a class="link"   target="_blank" rel="noopener" href="https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal" >通用错误码<i class="fas fa-external-link-alt"></i></a>和<a class="link"   target="_blank" rel="noopener" href="https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-data-rdb" >关系型数据库错误码<i class="fas fa-external-link-alt"></i></a>。</li>
+</ul>
+</blockquote>
+</li>
+<li><p>获取到<code>RdbStore</code>, 完成数据表创建后, 调用<code>insert()</code>接口插入数据</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 插入数据</span></span><br><span class="line"><span class="keyword">let</span> value1 = <span class="string">&#x27;Lisa&#x27;</span>;</span><br><span class="line"><span class="keyword">let</span> value2 = <span class="number">18</span>;</span><br><span class="line"><span class="keyword">let</span> value3 = <span class="number">100.5</span>;</span><br><span class="line"><span class="keyword">let</span> value4 = <span class="keyword">new</span> <span class="title class_">Uint8Array</span>([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>]);</span><br><span class="line"><span class="keyword">let</span> value5 = <span class="title class_">BigInt</span>(<span class="string">&#x27;15822401018187971961171&#x27;</span>);</span><br><span class="line"><span class="keyword">const</span> <span class="attr">valueBucket</span>: relationalStore.<span class="property">ValuesBucket</span> = &#123;</span><br><span class="line">  <span class="attr">NAME</span>: value1,</span><br><span class="line">  <span class="attr">AGE</span>: value2,</span><br><span class="line">  <span class="attr">SALARY</span>: value3,</span><br><span class="line">  <span class="attr">CODES</span>: value4,</span><br><span class="line">  <span class="attr">IDENTITY</span>: value5,</span><br><span class="line">&#125;;</span><br><span class="line"><span class="keyword">if</span> (store !== <span class="literal">undefined</span>) &#123;</span><br><span class="line">  <span class="keyword">try</span> &#123;</span><br><span class="line">    <span class="keyword">const</span> rowId = <span class="keyword">await</span> store.<span class="title function_">insert</span>(<span class="string">&#x27;EMPLOYEE&#x27;</span>, valueBucket);</span><br><span class="line">    hilog.<span class="title function_">info</span>(<span class="variable constant_">DOMAIN</span>, <span class="string">&#x27;rdbDataPersistence&#x27;</span>, <span class="string">`Succeeded in inserting data. rowId:<span class="subst">$&#123;rowId&#125;</span>`</span>);</span><br><span class="line">  &#125; <span class="keyword">catch</span> (error) &#123;</span><br><span class="line">    <span class="keyword">const</span> err = error <span class="keyword">as</span> <span class="title class_">BusinessError</span>;</span><br><span class="line">    hilog.<span class="title function_">error</span>(<span class="variable constant_">DOMAIN</span>, <span class="string">&#x27;rdbDataPersistence&#x27;</span>, <span class="string">`Failed to insert data. Code:<span class="subst">$&#123;err.code&#125;</span>, message:<span class="subst">$&#123;err.message&#125;</span>`</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>关系型数据库没有显式的<code>flush</code>操作实现持久化, 数据插入即保存在持久化文件</p>
+</blockquote>
+</li>
+<li><p>根据谓词指定的实例对象, 对数据进行修改或删除</p>
+<p>调用update()方法修改数据，调用delete()方法删除数据</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 修改数据、删除数据</span></span><br><span class="line"><span class="keyword">let</span> value6 = <span class="string">&#x27;Rose&#x27;</span>;</span><br><span class="line"><span class="keyword">let</span> value7 = <span class="number">22</span>;</span><br><span class="line"><span class="keyword">let</span> value8 = <span class="number">200.5</span>;</span><br><span class="line"><span class="keyword">let</span> value9 = <span class="keyword">new</span> <span class="title class_">Uint8Array</span>([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>]);</span><br><span class="line"><span class="keyword">let</span> value10 = <span class="title class_">BigInt</span>(<span class="string">&#x27;15822401018187971967863&#x27;</span>);</span><br><span class="line"><span class="keyword">const</span> <span class="attr">valueBucket2</span>: relationalStore.<span class="property">ValuesBucket</span> = &#123;</span><br><span class="line">  <span class="attr">NAME</span>: value6,</span><br><span class="line">  <span class="attr">AGE</span>: value7,</span><br><span class="line">  <span class="attr">SALARY</span>: value8,</span><br><span class="line">  <span class="attr">CODES</span>: value9,</span><br><span class="line">  <span class="attr">IDENTITY</span>: value10,</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 修改数据</span></span><br><span class="line"><span class="keyword">let</span> predicates1 = <span class="keyword">new</span> relationalStore.<span class="title class_">RdbPredicates</span>(<span class="string">&#x27;EMPLOYEE&#x27;</span>); <span class="comment">// 创建表&#x27;EMPLOYEE&#x27;的predicates</span></span><br><span class="line">predicates1.<span class="title function_">equalTo</span>(<span class="string">&#x27;NAME&#x27;</span>, <span class="string">&#x27;Lisa&#x27;</span>); <span class="comment">// 匹配表&#x27;EMPLOYEE&#x27;中&#x27;NAME&#x27;为&#x27;Lisa&#x27;的字段</span></span><br><span class="line"><span class="keyword">if</span> (store !== <span class="literal">undefined</span>) &#123;</span><br><span class="line">  (store <span class="keyword">as</span> relationalStore.<span class="property">RdbStore</span>).<span class="title function_">update</span>(valueBucket2, predicates1, <span class="function">(<span class="params"><span class="attr">err</span>: <span class="title class_">BusinessError</span>, <span class="attr">rows</span>: <span class="built_in">number</span></span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> (err) &#123;</span><br><span class="line">      hilog.<span class="title function_">error</span>(<span class="variable constant_">DOMAIN</span>, <span class="string">&#x27;rdbDataPersistence&#x27;</span>, <span class="string">`Failed to update data. Code:<span class="subst">$&#123;err.code&#125;</span>, message:<span class="subst">$&#123;err.message&#125;</span>`</span>);</span><br><span class="line">      <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    hilog.<span class="title function_">info</span>(<span class="variable constant_">DOMAIN</span>, <span class="string">&#x27;rdbDataPersistence&#x27;</span>, <span class="string">`Succeeded in updating data. row count: <span class="subst">$&#123;rows&#125;</span>`</span>);</span><br><span class="line">  &#125;)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 删除数据</span></span><br><span class="line">predicates1 = <span class="keyword">new</span> relationalStore.<span class="title class_">RdbPredicates</span>(<span class="string">&#x27;EMPLOYEE&#x27;</span>);</span><br><span class="line">predicates1.<span class="title function_">equalTo</span>(<span class="string">&#x27;NAME&#x27;</span>, <span class="string">&#x27;Lisa&#x27;</span>);</span><br><span class="line"><span class="keyword">if</span> (store !== <span class="literal">undefined</span>) &#123;</span><br><span class="line">  (store <span class="keyword">as</span> relationalStore.<span class="property">RdbStore</span>).<span class="title function_">delete</span>(predicates1, <span class="function">(<span class="params"><span class="attr">err</span>: <span class="title class_">BusinessError</span>, <span class="attr">rows</span>: <span class="built_in">number</span></span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> (err) &#123;</span><br><span class="line">      hilog.<span class="title function_">error</span>(<span class="variable constant_">DOMAIN</span>, <span class="string">&#x27;rdbDataPersistence&#x27;</span>, <span class="string">`Failed to delete data. Code:<span class="subst">$&#123;err.code&#125;</span>, message:<span class="subst">$&#123;err.message&#125;</span>`</span>);</span><br><span class="line">      <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    hilog.<span class="title function_">info</span>(<span class="variable constant_">DOMAIN</span>, <span class="string">&#x27;rdbDataPersistence&#x27;</span>, <span class="string">`Delete rows: <span class="subst">$&#123;rows&#125;</span>`</span>);</span><br><span class="line">  &#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>根据谓词指定的查询条件查找数据</p>
+<p>调用<code>query()</code>方法查找数据, 返回一个<code>ResultSet</code>结果集</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 查找数据</span></span><br><span class="line"><span class="keyword">let</span> predicates2 = <span class="keyword">new</span> relationalStore.<span class="title class_">RdbPredicates</span>(<span class="string">&#x27;EMPLOYEE&#x27;</span>);</span><br><span class="line">predicates2.<span class="title function_">equalTo</span>(<span class="string">&#x27;NAME&#x27;</span>, <span class="string">&#x27;Rose&#x27;</span>);</span><br><span class="line"><span class="keyword">if</span> (store !== <span class="literal">undefined</span>) &#123;</span><br><span class="line">  (store <span class="keyword">as</span> relationalStore.<span class="property">RdbStore</span>).<span class="title function_">query</span>(predicates2, [<span class="string">&#x27;ID&#x27;</span>, <span class="string">&#x27;NAME&#x27;</span>, <span class="string">&#x27;AGE&#x27;</span>, <span class="string">&#x27;SALARY&#x27;</span>, <span class="string">&#x27;CODES&#x27;</span>, <span class="string">&#x27;IDENTITY&#x27;</span>], <span class="function">(<span class="params"><span class="attr">err</span>: <span class="title class_">BusinessError</span>, resultSet</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> (err) &#123;</span><br><span class="line">      hilog.<span class="title function_">error</span>(<span class="variable constant_">DOMAIN</span>, <span class="string">&#x27;rdbDataPersistence&#x27;</span>, <span class="string">`Failed to query data. Code:<span class="subst">$&#123;err.code&#125;</span>, message:<span class="subst">$&#123;err.message&#125;</span>`</span>);</span><br><span class="line">      <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    hilog.<span class="title function_">info</span>(<span class="variable constant_">DOMAIN</span>, <span class="string">&#x27;rdbDataPersistence&#x27;</span>, <span class="string">`ResultSet column names: <span class="subst">$&#123;resultSet.columnNames&#125;</span>, column count: <span class="subst">$&#123;resultSet.columnCount&#125;</span>`</span>);</span><br><span class="line">    <span class="comment">// resultSet是一个数据集合的游标，默认指向第-1个记录，有效的数据从0开始。</span></span><br><span class="line">    <span class="keyword">while</span> (resultSet.<span class="title function_">goToNextRow</span>()) &#123;</span><br><span class="line">      <span class="keyword">const</span> id = resultSet.<span class="title function_">getLong</span>(resultSet.<span class="title function_">getColumnIndex</span>(<span class="string">&#x27;ID&#x27;</span>));</span><br><span class="line">      <span class="keyword">const</span> name = resultSet.<span class="title function_">getString</span>(resultSet.<span class="title function_">getColumnIndex</span>(<span class="string">&#x27;NAME&#x27;</span>));</span><br><span class="line">      <span class="keyword">const</span> age = resultSet.<span class="title function_">getLong</span>(resultSet.<span class="title function_">getColumnIndex</span>(<span class="string">&#x27;AGE&#x27;</span>));</span><br><span class="line">      <span class="keyword">const</span> salary = resultSet.<span class="title function_">getDouble</span>(resultSet.<span class="title function_">getColumnIndex</span>(<span class="string">&#x27;SALARY&#x27;</span>));</span><br><span class="line">      <span class="keyword">const</span> identity = resultSet.<span class="title function_">getValue</span>(resultSet.<span class="title function_">getColumnIndex</span>(<span class="string">&#x27;IDENTITY&#x27;</span>));</span><br><span class="line">      hilog.<span class="title function_">info</span>(<span class="variable constant_">DOMAIN</span>, <span class="string">&#x27;rdbDataPersistence&#x27;</span>, <span class="string">`id=<span class="subst">$&#123;id&#125;</span>, name=<span class="subst">$&#123;name&#125;</span>, age=<span class="subst">$&#123;age&#125;</span>, salary=<span class="subst">$&#123;salary&#125;</span>, identity=<span class="subst">$&#123;identity&#125;</span>`</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 释放数据集的内存</span></span><br><span class="line">    resultSet.<span class="title function_">close</span>();</span><br><span class="line">  &#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>当应用完成查询数据操作, 不再使用结果集(<code>ResultSet</code>)时, 请及时调用<code>close</code>方法关闭结果集, 释放系统为其分配的内存</p>
+</blockquote>
+<p>当前<code>RDB</code>还支持进行<code>FTS</code>全文检索, 可以根据中文或英文进行文本检索, 针对中文分词器支持<code>ICU</code>分词器</p>
+<p>以中文关键字检索为例</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 中文关键字检索，查找数据</span></span><br><span class="line"><span class="keyword">if</span> (store !== <span class="literal">undefined</span> &amp;&amp; tokenTypeSupported) &#123;</span><br><span class="line">  <span class="comment">// 创建全文检索表</span></span><br><span class="line">  <span class="keyword">const</span> <span class="variable constant_">SQL_CREATE_TABLE</span> = <span class="string">&#x27;CREATE VIRTUAL TABLE IF NOT EXISTS example USING fts4(name, content, tokenize=icu zh_CN)&#x27;</span>;</span><br><span class="line">  <span class="keyword">try</span> &#123;</span><br><span class="line">    <span class="keyword">await</span> store.<span class="title function_">execute</span>(<span class="variable constant_">SQL_CREATE_TABLE</span>);</span><br><span class="line">    hilog.<span class="title function_">info</span>(<span class="variable constant_">DOMAIN</span>, <span class="string">&#x27;rdbDataPersistence&#x27;</span>, <span class="string">&#x27;Succeeded in creating fts table.&#x27;</span>);</span><br><span class="line">  &#125; <span class="keyword">catch</span> (error) &#123;</span><br><span class="line">    <span class="keyword">const</span> err = error <span class="keyword">as</span> <span class="title class_">BusinessError</span>;</span><br><span class="line">    hilog.<span class="title function_">error</span>(<span class="variable constant_">DOMAIN</span>, <span class="string">&#x27;rdbDataPersistence&#x27;</span>, <span class="string">`Failed to creating fts table. code: <span class="subst">$&#123;err.code&#125;</span>, message: <span class="subst">$&#123;err.message&#125;</span>.`</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">if</span> (store !== <span class="literal">undefined</span>) &#123;</span><br><span class="line">  <span class="keyword">try</span> &#123;</span><br><span class="line">    <span class="keyword">const</span> resultSet = <span class="keyword">await</span> store.<span class="title function_">querySql</span>(<span class="string">&#x27;SELECT name FROM example WHERE example MATCH ?&#x27;</span>, [<span class="string">&#x27;测试&#x27;</span>]);</span><br><span class="line">    <span class="keyword">while</span> (resultSet.<span class="title function_">goToNextRow</span>()) &#123;</span><br><span class="line">      <span class="keyword">const</span> name = resultSet.<span class="title function_">getValue</span>(resultSet.<span class="title function_">getColumnIndex</span>(<span class="string">&#x27;name&#x27;</span>));</span><br><span class="line">      hilog.<span class="title function_">info</span>(<span class="variable constant_">DOMAIN</span>, <span class="string">&#x27;rdbDataPersistence&#x27;</span>, <span class="string">`name=<span class="subst">$&#123;name&#125;</span>`</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    resultSet.<span class="title function_">close</span>();</span><br><span class="line">  &#125; <span class="keyword">catch</span> (error) &#123;</span><br><span class="line">    <span class="keyword">const</span> err = error <span class="keyword">as</span> <span class="title class_">BusinessError</span>;</span><br><span class="line">    hilog.<span class="title function_">error</span>(<span class="variable constant_">DOMAIN</span>, <span class="string">&#x27;rdbDataPersistence&#x27;</span>, <span class="string">`Query failed. code: <span class="subst">$&#123;err.code&#125;</span>, message: <span class="subst">$&#123;err.message&#125;</span>.`</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>使用事务对象执行数据的插入, 删除和更新操作</p>
+<p>调用<code>createTransaction</code>方法创建事务对象并执行相应操作</p>
+<p>支持配置的事务类型有<code>DEFERRED</code>, <code>IMMEDIATE</code>, <code>EXCLUSIVE</code>, 默认为<code>DEFERRED</code></p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 使用事务对象执行数据的插入、删除和更新操作</span></span><br><span class="line"><span class="keyword">if</span> (store !== <span class="literal">undefined</span>) &#123;</span><br><span class="line">  <span class="comment">// 创建事务对象</span></span><br><span class="line">  <span class="keyword">try</span> &#123;</span><br><span class="line">    <span class="keyword">const</span> transaction = <span class="keyword">await</span> store.<span class="title function_">createTransaction</span>();</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">      <span class="comment">// 使用事务对象插入数据</span></span><br><span class="line">      <span class="keyword">const</span> rowId = <span class="keyword">await</span> transaction.<span class="title function_">insert</span>(</span><br><span class="line">        <span class="string">&#x27;EMPLOYEE&#x27;</span>,</span><br><span class="line">        &#123;</span><br><span class="line">          <span class="attr">NAME</span>: <span class="string">&#x27;Lisa&#x27;</span>,</span><br><span class="line">          <span class="attr">AGE</span>: <span class="number">18</span>,</span><br><span class="line">          <span class="attr">SALARY</span>: <span class="number">100.5</span>,</span><br><span class="line">          <span class="attr">CODES</span>: <span class="keyword">new</span> <span class="title class_">Uint8Array</span>([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>]),</span><br><span class="line">          <span class="attr">IDENTITY</span>: <span class="title class_">BigInt</span>(<span class="string">&#x27;15822401018187971967763&#x27;</span>)</span><br><span class="line">        &#125;,</span><br><span class="line">        relationalStore.<span class="property">ConflictResolution</span>.<span class="property">ON_CONFLICT_REPLACE</span></span><br><span class="line">      );</span><br><span class="line">      hilog.<span class="title function_">info</span>(<span class="variable constant_">DOMAIN</span>, <span class="string">&#x27;rdbDataPersistence&#x27;</span>, <span class="string">`Insert is successful, rowId = <span class="subst">$&#123;rowId&#125;</span>`</span>);</span><br><span class="line"></span><br><span class="line">      <span class="keyword">const</span> predicates = <span class="keyword">new</span> relationalStore.<span class="title class_">RdbPredicates</span>(<span class="string">&#x27;EMPLOYEE&#x27;</span>);</span><br><span class="line">      predicates.<span class="title function_">equalTo</span>(<span class="string">&#x27;NAME&#x27;</span>, <span class="string">&#x27;Lisa&#x27;</span>);</span><br><span class="line">      <span class="comment">// 使用事务对象更新数据</span></span><br><span class="line">      <span class="keyword">const</span> rows = <span class="keyword">await</span> transaction.<span class="title function_">update</span>(</span><br><span class="line">        &#123;</span><br><span class="line">          <span class="attr">NAME</span>: <span class="string">&#x27;Rose&#x27;</span>,</span><br><span class="line">          <span class="attr">AGE</span>: <span class="number">22</span>,</span><br><span class="line">          <span class="attr">SALARY</span>: <span class="number">200.5</span>,</span><br><span class="line">          <span class="attr">CODES</span>: <span class="keyword">new</span> <span class="title class_">Uint8Array</span>([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>]),</span><br><span class="line">          <span class="attr">IDENTITY</span>: <span class="title class_">BigInt</span>(<span class="string">&#x27;15822401018187971967763&#x27;</span>)</span><br><span class="line">        &#125;,</span><br><span class="line">        predicates,</span><br><span class="line">        relationalStore.<span class="property">ConflictResolution</span>.<span class="property">ON_CONFLICT_REPLACE</span></span><br><span class="line">      );</span><br><span class="line">      hilog.<span class="title function_">info</span>(<span class="variable constant_">DOMAIN</span>, <span class="string">&#x27;rdbDataPersistence&#x27;</span>, <span class="string">`Updated row count: <span class="subst">$&#123;rows&#125;</span>`</span>);</span><br><span class="line"></span><br><span class="line">      <span class="comment">// 使用事务对象删除数据</span></span><br><span class="line">      <span class="keyword">await</span> transaction.<span class="title function_">execute</span>(<span class="string">&#x27;DELETE FROM EMPLOYEE WHERE age = ? OR age = ?&#x27;</span>, [<span class="number">21</span>, <span class="number">20</span>]);</span><br><span class="line">      hilog.<span class="title function_">info</span>(<span class="variable constant_">DOMAIN</span>, <span class="string">&#x27;rdbDataPersistence&#x27;</span>, <span class="string">`execute delete success`</span>);</span><br><span class="line"></span><br><span class="line">      <span class="comment">// 提交事务</span></span><br><span class="line">      <span class="keyword">await</span> transaction.<span class="title function_">commit</span>();</span><br><span class="line">      hilog.<span class="title function_">info</span>(<span class="variable constant_">DOMAIN</span>, <span class="string">&#x27;rdbDataPersistence&#x27;</span>, <span class="string">&#x27;Transaction commit success.&#x27;</span>);</span><br><span class="line">    &#125; <span class="keyword">catch</span> (error) &#123;</span><br><span class="line">      <span class="keyword">const</span> err = error <span class="keyword">as</span> <span class="title class_">BusinessError</span>;</span><br><span class="line">      <span class="comment">// 执行失败回滚事务</span></span><br><span class="line">      <span class="keyword">await</span> transaction.<span class="title function_">rollback</span>();</span><br><span class="line">      hilog.<span class="title function_">error</span>(<span class="variable constant_">DOMAIN</span>, <span class="string">&#x27;rdbDataPersistence&#x27;</span>, <span class="string">`Transaction execute failed, code is <span class="subst">$&#123;err.code&#125;</span>, message is <span class="subst">$&#123;err.message&#125;</span>`</span>);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125; <span class="keyword">catch</span> (error) &#123;</span><br><span class="line">    <span class="keyword">const</span> err = error <span class="keyword">as</span> <span class="title class_">BusinessError</span>;</span><br><span class="line">    hilog.<span class="title function_">error</span>(<span class="variable constant_">DOMAIN</span>, <span class="string">&#x27;rdbDataPersistence&#x27;</span>, <span class="string">`createTransaction failed, code is <span class="subst">$&#123;err.code&#125;</span>, message is <span class="subst">$&#123;err.message&#125;</span>`</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>在同路径下备份数据库. 关系型数据库支持手动备份和自动备份(仅系统应用可用)两种方式</p>
+<p>手动备份:</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 在同路径下备份数据库</span></span><br><span class="line"><span class="keyword">if</span> (store !== <span class="literal">undefined</span>) &#123;</span><br><span class="line">  <span class="comment">// &#x27;Backup.db&#x27;为备份数据库文件名，默认在RdbStore同路径下备份。也可指定路径：customDir + &#x27;Backup.db&#x27;</span></span><br><span class="line">  (store <span class="keyword">as</span> relationalStore.<span class="property">RdbStore</span>).<span class="title function_">backup</span>(<span class="string">&#x27;Backup.db&#x27;</span>, <span class="function">(<span class="params"><span class="attr">err</span>: <span class="title class_">BusinessError</span></span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> (err) &#123;</span><br><span class="line">      hilog.<span class="title function_">error</span>(<span class="variable constant_">DOMAIN</span>, <span class="string">&#x27;rdbDataPersistence&#x27;</span>, <span class="string">`Failed to backup RdbStore. Code:<span class="subst">$&#123;err.code&#125;</span>, message:<span class="subst">$&#123;err.message&#125;</span>`</span>);</span><br><span class="line">      <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    hilog.<span class="title function_">info</span>(<span class="variable constant_">DOMAIN</span>, <span class="string">&#x27;rdbDataPersistence&#x27;</span>, <span class="string">`Succeeded in backing up RdbStore.`</span>);</span><br><span class="line">  &#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>从备份数据库中恢复数据. 关系型数据库支持两种方式: 恢复手动备份和恢复自动备份(仅系统应用可用)</p>
+<p>此处以调用<code>restore</code>接口恢复手动备份数据为例：</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 备份数据库中恢复数据</span></span><br><span class="line"><span class="keyword">if</span> (store !== <span class="literal">undefined</span>) &#123;</span><br><span class="line">  (store <span class="keyword">as</span> relationalStore.<span class="property">RdbStore</span>).<span class="title function_">restore</span>(<span class="string">&#x27;Backup.db&#x27;</span>, <span class="function">(<span class="params"><span class="attr">err</span>: <span class="title class_">BusinessError</span></span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> (err) &#123;</span><br><span class="line">      hilog.<span class="title function_">error</span>(<span class="variable constant_">DOMAIN</span>, <span class="string">&#x27;rdbDataPersistence&#x27;</span>, <span class="string">`Failed to restore RdbStore. Code:<span class="subst">$&#123;err.code&#125;</span>, message:<span class="subst">$&#123;err.message&#125;</span>`</span>);</span><br><span class="line">      <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    hilog.<span class="title function_">info</span>(<span class="variable constant_">DOMAIN</span>, <span class="string">&#x27;rdbDataPersistence&#x27;</span>, <span class="string">`Succeeded in restoring RdbStore.`</span>);</span><br><span class="line">  &#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>删除数据库</p>
+<p>调用 <code>deleteRdbStore()</code>方法, 删除数据库及数据库相关文件</p>
+<p><code>Stage</code>模型:</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 删除数据库</span></span><br><span class="line">relationalStore.<span class="title function_">deleteRdbStore</span>(context, <span class="string">&#x27;RdbTest.db&#x27;</span>, <span class="function">(<span class="params"><span class="attr">err</span>: <span class="title class_">BusinessError</span></span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">if</span> (err) &#123;</span><br><span class="line">    hilog.<span class="title function_">error</span>(<span class="variable constant_">DOMAIN</span>, <span class="string">&#x27;rdbDataPersistence&#x27;</span>, <span class="string">`Failed to delete RdbStore. Code:<span class="subst">$&#123;err.code&#125;</span>, message:<span class="subst">$&#123;err.message&#125;</span>`</span>);</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  hilog.<span class="title function_">info</span>(<span class="variable constant_">DOMAIN</span>, <span class="string">&#x27;rdbDataPersistence&#x27;</span>, <span class="string">&#x27;Succeeded in deleting RdbStore.&#x27;</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></li>
+</ol>
+
+                    
+                </div>
+
+                
+
+                <div class="post-bottom-tags-and-share border-box">
+                    <div>
+                        
+                            <ul class="post-tags-box border-box">
+                                
+                                    <li class="tag-item border-box">
+                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/tags/HarmonyOS/">HarmonyOS</a>
+                                    </li>
+                                
+                                    <li class="tag-item border-box">
+                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/tags/ArkTS/">ArkTS</a>
+                                    </li>
+                                
+                            </ul>
+                        
+                    </div>
+                    <div>
+                        
+                    </div>
+                </div>
+
+                
+
+                
+                    <div class="post-nav border-box">
+                        
+                        
+                            <div class="next-post">
+                                <a class="next"
+                                   rel="next"
+                                   href="/2026/06/01/08-HarmonyOS%E5%BC%80%E5%8F%91-%E7%BD%91%E7%BB%9C%E8%AF%B7%E6%B1%82/"
+                                   title="08-HarmonyOS开发-网络请求"
+                                >
+                                    <span class="title flex-center">
+                                        <span class="post-nav-title-item text-ellipsis">08-HarmonyOS开发-网络请求</span>
+                                        <span class="post-nav-item">下一篇</span>
+                                    </span>
+                                    <span class="right arrow-icon flex-center">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        
+                    </div>
+                
+
+                
+                    
+
+
+    <div class="comments-container border-box">
+        <div id="comments-anchor" class="comment-area-title border-box">
+            <i class="fas fa-comments"></i>&nbsp;评论
+        </div>
+        <div class="comment-plugin-fail border-box">
+    <span class="fail-tip">评论插件加载失败</span>
+    <button class="reload keep-button">点击重新加载</button>
+</div>
+<div class="comment-plugin-loading flex-center border-box">
+    <i class="loading-icon fa-solid fa-spinner fa-spin"></i>
+    <span class="load-tip">正在加载评论插件</span>
+</div>
+<script data-pjax>
+  window.KeepCommentPlugin = {}
+  window.KeepCommentPlugin.hideLoading = () => {
+    const cplDom = document.querySelector('.comments-container .comment-plugin-loading')
+    cplDom.style.display = 'none'
+  }
+  window.KeepCommentPlugin.loadFailHandle = () => {
+    window.KeepCommentPlugin.hideLoading()
+    const cpfDom = document.querySelector('.comments-container .comment-plugin-fail')
+    cpfDom.style.display = 'flex'
+    cpfDom.querySelector('.reload').addEventListener('click', () => {
+      window.location.reload()
+    })
+  }
+</script>
+
+        
+            
+
+    <div class="gitalk-comment-container">
+        <div id="gitalk-container"></div>
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css">
+        <script 
+                src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"
+                async
+                onerror="window.KeepCommentPlugin.loadFailHandle()"
+        ></script>
+        <script 
+                async
+                onerror="window.KeepCommentPlugin.loadFailHandle()"
+        >
+          window.KeepCommentPlugin.initGitalk = () => {
+            let gitalkPathname = decodeURI(location.pathname)
+            const gitalkPathnameLength = gitalkPathname.length
+            const gitalkPathnameMaxLength = 50
+            if (gitalkPathnameLength > gitalkPathnameMaxLength) {
+              gitalkPathname = gitalkPathname.substring(0, gitalkPathnameMaxLength - 3) + '...'
+            }
+
+            if (window?.Gitalk) {
+              new Gitalk({
+                clientID: 'Ov23liB5vu3L88g0Gs9c',
+                clientSecret: '2bdfee6dca08c2f5e6391859dfea4444f2e3673d',
+                repo: 'https://VividBloom.github.io',
+                owner: 'VividBloom',
+                admin: 'VividBloom',
+                id: gitalkPathname,
+                proxy: '',
+                language: 'zh-CN'
+              }).render('gitalk-container')
+              window.KeepCommentPlugin.hideLoading()
+            } else {
+              setTimeout(() => {
+                window.KeepCommentPlugin.initGitalk()
+              }, 1000)
+            }
+          }
+
+          if ('false' === 'true') {
+            setTimeout(() => {
+              window.KeepCommentPlugin.initGitalk()
+            }, 1200)
+          } else {
+            window.addEventListener('DOMContentLoaded', window.KeepCommentPlugin.initGitalk)
+          }
+        </script>
+    </div>
+
+
+        
+    </div>
+
+
+
+
+
+                
+            </div>
+        </div>
+
+        
+            <div class="pc-post-toc right-toc">
+                <div class="post-toc-wrap border-box">
+    <div class="post-toc border-box">
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BF%9D%E5%AD%98%E5%BA%94%E7%94%A8%E6%95%B0%E6%8D%AE"><span class="nav-number">1.</span> <span class="nav-text">保存应用数据</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%94%A8%E6%88%B7%E9%A6%96%E9%80%89%E9%A1%B9%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="nav-number">1.1.</span> <span class="nav-text">用户首选项的使用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8A%A8%E4%BD%9C%E6%9C%BA%E5%88%B6"><span class="nav-number">1.1.1.</span> <span class="nav-text">动作机制</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AD%98%E5%82%A8%E6%A8%A1%E5%BC%8F%E8%AF%B4%E6%98%8E"><span class="nav-number">1.1.2.</span> <span class="nav-text">存储模式说明</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#XML%E5%AD%98%E5%82%A8"><span class="nav-number">1.1.2.1.</span> <span class="nav-text">XML存储</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#GSKV%E5%AD%98%E5%82%A8"><span class="nav-number">1.1.2.2.</span> <span class="nav-text">GSKV存储</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BA%A6%E6%9D%9F%E9%99%90%E5%88%B6"><span class="nav-number">1.1.3.</span> <span class="nav-text">约束限制</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%A6%96%E9%80%89%E9%A1%B9%E9%80%9A%E7%94%A8%E9%99%90%E5%88%B6"><span class="nav-number">1.1.3.1.</span> <span class="nav-text">首选项通用限制</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#XML%E6%A8%A1%E5%BC%8F%E7%BA%A6%E6%9D%9F%E9%99%90%E5%88%B6"><span class="nav-number">1.1.3.2.</span> <span class="nav-text">XML模式约束限制</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#GSKV%E6%A8%A1%E5%BC%8F%E7%BA%A6%E6%9D%9F%E9%99%90%E5%88%B6"><span class="nav-number">1.1.3.3.</span> <span class="nav-text">GSKV模式约束限制</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8E%A5%E5%8F%A3%E8%AF%B4%E6%98%8E"><span class="nav-number">1.1.4.</span> <span class="nav-text">接口说明</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BC%80%E5%8F%91%E6%AD%A5%E9%AA%A4"><span class="nav-number">1.1.5.</span> <span class="nav-text">开发步骤</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B3%E7%B3%BB%E5%9E%8B%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="nav-number">1.2.</span> <span class="nav-text">关系型数据库的使用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="nav-number">1.2.1.</span> <span class="nav-text">基本概念</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BF%90%E4%BD%9C%E6%9C%BA%E5%88%B6"><span class="nav-number">1.2.2.</span> <span class="nav-text">运作机制</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BA%A6%E6%9D%9F%E9%99%90%E5%88%B6-1"><span class="nav-number">1.2.3.</span> <span class="nav-text">约束限制</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8E%A5%E5%8F%A3%E8%AF%B4%E6%98%8E-1"><span class="nav-number">1.2.4.</span> <span class="nav-text">接口说明</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BC%80%E5%8F%91%E6%AD%A5%E9%AA%A4-1"><span class="nav-number">1.2.5.</span> <span class="nav-text">开发步骤</span></a></li></ol></li></ol></li></ol>
+    </div>
+</div>
+
+            </div>
+        
+    </div>
+</div>
+
+
+                
+            </div>
+        </div>
+
+        <div class="page-main-content-bottom border-box">
+            
+<footer class="footer border-box">
+    <div class="copyright-info info-item">
+    &copy;&nbsp;2026
+    
+            &nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;&nbsp;<a href="/">Vivid Bloom</a>
+        
+    </div>
+
+    <div class="theme-info info-item">
+        由&nbsp;<a target="_blank" href="https://hexo.io">Hexo</a>&nbsp;驱动&nbsp;&&nbsp;主题&nbsp;<a class="keep-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep</a>
+    </div>
+
+    
+
+    
+
+    
+</footer>
+
+        </div>
+    </div>
+
+    <!-- post tools -->
+    
+        <div class="post-tools right-toc">
+            <div class="post-tools-container border-box">
+    <ul class="post-tools-list border-box">
+        <!-- PC encrypt again -->
+        
+
+        <!-- PC TOC show toggle -->
+        
+            <li class="tools-item flex-center toggle-show-toc">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        <!-- PC go comment -->
+        
+            <li class="tools-item flex-center go-to-comments">
+                <i class="fas fa-comment"></i>
+                <span class="post-comments-count"></span>
+            </li>
+        
+
+        <!-- PC full screen -->
+        <li class="tools-item flex-center full-screen">
+            <i class="fa-solid fa-expand"></i>
+        </li>
+    </ul>
+</div>
+
+        </div>
+    
+
+    <!-- side tools -->
+    <div class="side-tools">
+        <div class="side-tools-container border-box ">
+    <ul class="side-tools-list side-tools-show-handle border-box">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <!-- toggle mode -->
+        
+
+        <!-- rss -->
+        
+
+        <!-- to bottom -->
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list border-box">
+        
+            <li class="tools-item toggle-show-toc-tablet flex-center">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        
+            <li class="tools-item go-to-comments-tablet flex-center">
+                <i class="fas fa-comment"></i>
+            </li>
+        
+
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+
+        <li class="tools-item tool-scroll-to-top flex-center show-arrow">
+            <i class="arrow fas fa-arrow-up"></i>
+            <span class="percent"></span>
+        </li>
+    </ul>
+</div>
+
+    </div>
+
+    <!-- image mask -->
+    <div class="zoom-in-image-mask">
+    <img class="zoom-in-image">
+</div>
+
+
+    <!-- local search -->
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fas fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="搜索..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="close-popup-btn">
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+    <!-- tablet toc -->
+    
+        <div class="tablet-post-toc-mask">
+            <div class="tablet-post-toc">
+                <div class="post-toc-wrap border-box">
+    <div class="post-toc border-box">
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BF%9D%E5%AD%98%E5%BA%94%E7%94%A8%E6%95%B0%E6%8D%AE"><span class="nav-number">1.</span> <span class="nav-text">保存应用数据</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%94%A8%E6%88%B7%E9%A6%96%E9%80%89%E9%A1%B9%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="nav-number">1.1.</span> <span class="nav-text">用户首选项的使用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8A%A8%E4%BD%9C%E6%9C%BA%E5%88%B6"><span class="nav-number">1.1.1.</span> <span class="nav-text">动作机制</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AD%98%E5%82%A8%E6%A8%A1%E5%BC%8F%E8%AF%B4%E6%98%8E"><span class="nav-number">1.1.2.</span> <span class="nav-text">存储模式说明</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#XML%E5%AD%98%E5%82%A8"><span class="nav-number">1.1.2.1.</span> <span class="nav-text">XML存储</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#GSKV%E5%AD%98%E5%82%A8"><span class="nav-number">1.1.2.2.</span> <span class="nav-text">GSKV存储</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BA%A6%E6%9D%9F%E9%99%90%E5%88%B6"><span class="nav-number">1.1.3.</span> <span class="nav-text">约束限制</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%A6%96%E9%80%89%E9%A1%B9%E9%80%9A%E7%94%A8%E9%99%90%E5%88%B6"><span class="nav-number">1.1.3.1.</span> <span class="nav-text">首选项通用限制</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#XML%E6%A8%A1%E5%BC%8F%E7%BA%A6%E6%9D%9F%E9%99%90%E5%88%B6"><span class="nav-number">1.1.3.2.</span> <span class="nav-text">XML模式约束限制</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#GSKV%E6%A8%A1%E5%BC%8F%E7%BA%A6%E6%9D%9F%E9%99%90%E5%88%B6"><span class="nav-number">1.1.3.3.</span> <span class="nav-text">GSKV模式约束限制</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8E%A5%E5%8F%A3%E8%AF%B4%E6%98%8E"><span class="nav-number">1.1.4.</span> <span class="nav-text">接口说明</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BC%80%E5%8F%91%E6%AD%A5%E9%AA%A4"><span class="nav-number">1.1.5.</span> <span class="nav-text">开发步骤</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B3%E7%B3%BB%E5%9E%8B%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="nav-number">1.2.</span> <span class="nav-text">关系型数据库的使用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="nav-number">1.2.1.</span> <span class="nav-text">基本概念</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BF%90%E4%BD%9C%E6%9C%BA%E5%88%B6"><span class="nav-number">1.2.2.</span> <span class="nav-text">运作机制</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BA%A6%E6%9D%9F%E9%99%90%E5%88%B6-1"><span class="nav-number">1.2.3.</span> <span class="nav-text">约束限制</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8E%A5%E5%8F%A3%E8%AF%B4%E6%98%8E-1"><span class="nav-number">1.2.4.</span> <span class="nav-text">接口说明</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BC%80%E5%8F%91%E6%AD%A5%E9%AA%A4-1"><span class="nav-number">1.2.5.</span> <span class="nav-text">开发步骤</span></a></li></ol></li></ol></li></ol>
+    </div>
+</div>
+
+            </div>
+        </div>
+    
+</main>
+
+
+
+
+
+<!-- common js -->
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/header-shrink.js"></script>
+
+<script src="/js/back2top.js"></script>
+
+<script src="/js/toggle-theme.js"></script>
+
+<script src="/js/code-block.js"></script>
+
+<script src="/js/main.js"></script>
+
+<script src="/js/libs/anime.min.js"></script>
+
+
+<!-- local search -->
+
+    
+<script src="/js/local-search.js"></script>
+
+
+
+<!-- lazyload -->
+
+    
+<script src="/js/lazyload.js"></script>
+
+
+
+<div class="">
+    <!-- home page -->
+    
+
+    <!-- post page -->
+    
+        <!-- post-helper -->
+        
+<script src="/js/post/post-helper.js"></script>
+
+
+        <!-- toc -->
+        
+            
+<script src="/js/post/toc.js"></script>
+
+        
+
+        <!-- copyright-info -->
+        
+
+        <!-- share -->
+        
+    
+
+    <!-- categories page -->
+    
+
+    <!-- links page -->
+    
+
+    <!-- photos page -->
+    
+
+    <!-- tools page -->
+    
+</div>
+
+<!-- mermaid -->
+
+
+<!-- pjax -->
+
+
+
+</body>
+</html>
