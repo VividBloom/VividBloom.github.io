@@ -1,0 +1,1048 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="Hexo Theme Keep">
+    <meta name="author" content="Vivid Bloom">
+    
+    <title>
+        
+            10-HarmonyOS开发-从简单的页面开始一 |
+        
+        Vivid Bloom
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    
+        <link rel="shortcut icon" href="/images/logo.webp">
+    
+    
+<link rel="stylesheet" href="/font/css/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/regular.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/solid.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/brands.min.css">
+
+    
+    <script class="keep-theme-configurations">
+    const KEEP = window.KEEP || {}
+    KEEP.hexo_config = {"hostname":"vividbloom.github.io","root":"/","language":"zh-CN","path":"search.json"}
+    KEEP.theme_config = {"base_info":{"title":"Vivid Bloom","author":"Vivid Bloom","avatar":"/images/logo.webp","logo":"/images/logo.webp","favicon":"/images/logo.webp","mode":"dark"},"menu":{"home":"/","archives":"/archives","tags":"/tags","categories":"/categories","about":"/about"},"first_screen":{"enable":true,"header_transparent":true,"background_img":"/images/bg.jpg","description":"桃之夭夭, 灼灼其华","hitokoto":true,"scroll":{"progress_bar":true,"percent":true}},"social_contact":{"enable":true,"links":{"github":"https://github.com/VividBloom"}},"scroll":{"progress_bar":false,"percent":false,"hide_header":true},"home":{"announcement":null,"category":true,"tag":true,"post_datetime":"updated","post_datetime_format":"ago"},"post":{"author_label":{"enable":true,"auto":false,"custom_label_list":["魔法师"]},"datetime_format":"YYYY-MM-DD HH:mm:ss"},"code_block":{"tools":{"enable":false,"style":"default"},"highlight_theme":"default"},"toc":{"enable":true,"number":true,"expand_all":false,"init_open":true,"layout":"right"},"website_count":{"busuanzi_count":{"enable":false,"site_uv":false,"site_pv":false,"page_pv":false}},"local_search":{"enable":true,"preload":true},"comment":{"enable":true,"use":"gitalk","gitalk":{"github_id":"VividBloom","repository":"https://VividBloom.github.io","client_id":"Ov23liB5vu3L88g0Gs9c","client_secret":"2bdfee6dca08c2f5e6391859dfea4444f2e3673d"}},"rss":{"enable":false},"lazyload":{"enable":true},"cdn":{"enable":false,"provider":"cdnjs"},"pjax":{"enable":false},"footer":{"since":2026,"word_count":false},"inject":{"enable":false,"css":[null],"js":[null]},"cache":{"enable":true},"minify":false,"custom_file_path":null,"scheme":"Muse","darkmode":true,"lightdark":{"enable":false,"check_supports":true},"favicon":{"small":"/images/favicon-16x16-next.png","medium":"/images/favicon-32x32-next.png","apple_touch_icon":"/images/apple-touch-icon-next.png","safari_pinned_tab":"/images/logo.svg"},"custom_logo":null,"creative_commons":{"license":"by-nc-sa","size":"small","sidebar":false,"post":false,"language":null},"open_graph":{"enable":true,"options":null},"menu_settings":{"icons":true,"badges":false},"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"avatar":{"url":null,"rounded":false,"rotated":false},"site_state":true,"social":null,"social_icons":{"enable":true,"icons_only":false,"transition":false},"links_settings":{"icon":"fa fa-globe","layout":"block"},"links":null,"language_switcher":false,"excerpt_description":true,"read_more_btn":true,"post_meta":{"item_text":true,"created_at":true,"updated_at":{"enable":true,"another_day":true},"categories":true},"symbols_count_time":{"separated_meta":true,"item_text_total":false},"tag_icon":false,"reward_settings":{"enable":false,"animation":false},"reward":null,"follow_me":null,"related_posts":{"enable":false,"icon":"fa fa-signs-post"},"post_edit":{"enable":false,"url":"https://github.com/user-name/repo-name/tree/branch-name/subdirectory-name/"},"post_navigation":"left","tagcloud":{"min":12,"max":30,"amount":200,"orderby":"name","order":1},"calendar":{"calendar_id":"<required>","api_key":"<required>","orderBy":"startTime","showLocation":false,"offsetMax":72,"offsetMin":4,"showDeleted":false,"singleEvents":true,"maxResults":250},"preconnect":false,"text_align":{"desktop":"justify","mobile":"justify"},"mobile_layout_economy":false,"theme_color":{"light":"#222","dark":"#222"},"body_scrollbar":{"overlay":false,"stable":false},"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"reading_progress":{"enable":false,"start_at":"left","position":"top","reversed":false,"color":"#37c6c0","height":"3px"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"github_banner":{"enable":false,"permalink":"https://github.com/yourname"},"font":{"enable":false,"host":null,"global":{"external":true,"family":"Lato","size":null},"title":{"external":true,"family":null,"size":null},"headings":{"external":true,"family":null,"size":null},"posts":{"external":true,"family":null},"codes":{"external":true,"family":null}},"index_with_subtitle":false,"exturl":false,"exturl_icon":true,"google_site_verification":null,"bing_site_verification":null,"yandex_site_verification":null,"baidu_site_verification":null,"note":{"style":"simple","icons":false,"light_bg_offset":0},"tabs":{"sticky":false,"transition":{"tabs":false,"labels":true}},"pdf":{"enable":false,"height":"500px"},"mermaid":{"enable":false,"theme":{"light":"default","dark":"dark"}},"wavedrom":{"enable":false},"math":{"every_page":false,"mathjax":{"enable":false,"tags":"none"},"katex":{"enable":false,"copy_tex":false}},"fancybox":false,"mediumzoom":false,"pangu":false,"quicklink":{"enable":false,"home":true,"archive":false,"delay":true,"timeout":3000,"priority":true},"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"pace":{"enable":false,"color":"blue","theme":"minimal"},"canvas_ribbon":{"enable":false,"size":300,"alpha":0.6,"zIndex":-1},"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"disqus":{"enable":false,"shortname":null,"count":true},"disqusjs":{"enable":false,"api":null,"apikey":null,"shortname":null},"livere_uid":null,"gitalk":{"enable":false,"github_id":null,"repo":null,"client_id":null,"client_secret":null,"admin_user":null,"distraction_free_mode":true,"proxy":"https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token","language":null,"body":null},"utterances":{"enable":false,"repo":"user-name/repo-name","issue_term":"pathname","theme":"github-light"},"isso":null,"addtoany":{"enable":false,"buttons":null},"google_analytics":{"tracking_id":null,"only_pageview":false,"measure_protocol_api_secret":null},"baidu_analytics":null,"cloudflare_analytics":null,"clarity_analytics":null,"matomo":{"enable":false,"server_url":null,"site_id":null},"umami":{"enable":false,"script_url":null,"website_id":null,"host_url":null},"plausible":{"enable":false,"script_url":null,"site_domain":null},"firestore":{"enable":false,"collection":"articles","apiKey":null,"projectId":null},"busuanzi_count":{"enable":false,"total_visitors":true,"total_visitors_icon":"fa fa-user","total_views":true,"total_views_icon":"fa fa-eye","post_views":true,"post_views_icon":"far fa-eye"},"algolia_search":{"enable":false,"hits":{"per_page":10}},"chat":{"enable":false,"icon":"fa fa-comment"},"chatra":{"enable":false,"async":true,"id":null},"tidio":{"enable":false,"key":null},"vendors":{"internal":"local","plugins":"cdnjs","custom_cdn_url":null},"css":"css","js":"js","images":"images","root":"","title":"Vivid Bloom","subtitle":"","description":"","keywords":null,"author":"Vivid Bloom","language":"zh-CN","timezone":"Asia/Shanghai","url":"https://VividBloom.github.io","permalink":":year/:month/:day/:title/","permalink_defaults":null,"pretty_urls":{"trailing_index":true,"trailing_html":true},"style":{"avatar":"/images/logo.webp","logo":"/images/logo.webp","favicon":"/images/logo.webp","mode":"dark"},"home_article":{"category":{"enable":true,"limit":3},"tag":{"enable":true,"limit":5}},"search":{"path":"search.xml","field":"post","content":true,"template":"./search.xml"},"source_dir":"source","public_dir":"public","tag_dir":"tags","archive_dir":"archives","category_dir":"categories","code_dir":"downloads/code","i18n_dir":":lang","skip_render":null,"new_post_name":":title.md","default_layout":"post","titlecase":false,"external_link":{"enable":true,"field":"site","exclude":""},"filename_case":0,"render_drafts":false,"post_asset_folder":false,"relative_link":false,"future":true,"syntax_highlighter":"highlight.js","highlight":{"line_number":true,"auto_detect":false,"tab_replace":"","wrap":true,"hljs":false},"prismjs":{"preprocess":true,"line_number":true,"tab_replace":""},"index_generator":{"path":"","per_page":10,"order_by":"-date"},"default_category":"uncategorized","category_map":null,"tag_map":null,"meta_generator":true,"date_format":"YYYY-MM-DD","time_format":"HH:mm:ss","updated_option":"mtime","per_page":10,"pagination_dir":"page","include":null,"exclude":null,"ignore":null,"theme":"keep","deploy":{"type":"git","repo":"https://github.com/VividBloom/VividBloom.github.io.git","branch":"main","comment":"更新"},"source_data":{},"version":"4.2.5"}
+    KEEP.language_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 个月前","year":"%s 年前"}
+    KEEP.language_code_block = {"copy":"复制代码","copied":"已复制","fold":"折叠代码块","folded":"已折叠"}
+    KEEP.language_copy_copyright = {"copy":"复制版权信息","copied":"已复制","title":"原文标题","author":"原文作者","link":"原文链接"}
+  </script>
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+
+    
+</div>
+
+
+
+<main class="page-container border-box">
+    <!-- home first screen  -->
+    
+
+    <!-- page content -->
+    <div class="page-main-content border-box">
+        <div class="page-main-content-top">
+            
+<header class="header-wrapper">
+
+    <div class="border-box header-content">
+        <div class="left flex-start border-box">
+            
+                <a class="logo-image border-box" href="/">
+                    <img src="/images/logo.webp">
+                </a>
+            
+            <a class="site-name border-box" href="/">
+               Vivid Bloom
+            </a>
+        </div>
+
+        <div class="right border-box">
+            <div class="pc border-box">
+                <ul class="menu-list border-box">
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/">
+                                
+                                首页
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/archives">
+                                
+                                归档
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/tags">
+                                
+                                标签
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/categories">
+                                
+                                分类
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/about">
+                                
+                                关于
+                                
+                            </a>
+                            
+                        </li>
+                    
+                    
+                        <li class="menu-item search search-popup-trigger">
+                            <i class="menu-text-color fas search fa-search"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <div class="mobile border-box flex-start">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div>
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list border-box">
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/">
+                            
+                            首页
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/archives">
+                            
+                            归档
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/tags">
+                            
+                            标签
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/categories">
+                            
+                            分类
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/about">
+                            
+                            关于
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle border-box">
+
+            <div class="main-content border-box">
+                
+
+                    
+<div class="fade-in-down-animation">
+    <div class="post-page-container border-box">
+        <div class="post-content-container border-box">
+            
+
+            <div class="post-content-bottom border-box">
+                
+                    <div class="post-title">
+                        10-HarmonyOS开发-从简单的页面开始一
+                    </div>
+                
+
+                
+                    <div class="post-header border-box">
+                        
+                            <div class="avatar-box border-box">
+                                <img src="/images/logo.webp">
+                            </div>
+                        
+                        <div class="info-box">
+                            <div class="author border-box">
+                                <span class="name">Vivid Bloom</span>
+                                
+                            </div>
+                            <div class="meta-info border-box">
+                                
+
+<div class="post-meta-info-container border-box post">
+    <div class="post-meta-info border-box">
+        
+
+        
+            <span class="meta-info-item post-create-date">
+                <i class="icon fa-solid fa-calendar-plus"></i>&nbsp;
+                <span class="datetime">2026-06-05 09:41:48</span>
+            </span>
+
+            
+                <span class="meta-info-item post-update-date">
+                    <i class="icon fa-solid fa-file-pen"></i>&nbsp;
+                    <span class="datetime" data-updated="Fri Jun 05 2026 12:19:19 GMT+0800">2026-06-05 12:19:19</span>
+                </span>
+            
+        
+
+        
+            <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
+                <ul class="post-category-ul">
+                    
+                            <li class="category-item"><a href="/categories/HarmonyOS/">HarmonyOS</a></li>
+                        
+                    
+                </ul>
+            </span>
+        
+
+        
+            <span class="post-tag meta-info-item border-box">
+                <ul class="post-tag-ul">
+                    
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/HarmonyOS/">HarmonyOS</a></li>
+                        
+                    
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/ArkTS/">ArkTS</a></li>
+                        
+                    
+                </ul>
+            </span>
+        
+
+        
+        
+        
+        
+    </div>
+
+    
+</div>
+
+                            </div>
+                        </div>
+                    </div>
+                
+
+                <div class="post-content keep-markdown-body ">
+                    
+
+                    
+                         <h1 id="HarmonyOS开发-从简单的页面开始一"><a href="#HarmonyOS开发-从简单的页面开始一" class="headerlink" title="HarmonyOS开发-从简单的页面开始一"></a>HarmonyOS开发-从简单的页面开始一</h1><p><code>ArkUI</code>(方舟<code>UI</code>框架)为应用的<code>UI</code>开发提供了完整的基础设施, 包括简洁的<code>UI</code>语法, 丰富的<code>UI</code>功能(组件, 布局, 动画, 交互事件), 以及实时界面预览工具等, 可以支持开发者进行可视化界面开发</p>
+<h2 id="ArkUI简介"><a href="#ArkUI简介" class="headerlink" title="ArkUI简介"></a><code>ArkUI</code>简介</h2><h3 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h3><ul>
+<li><code>UI</code>: 即用户界面. 开发者可以将应用的用户界面设计为多个功能页面<code>NavDestination</code>, 页面通过栈结构管理, 并通过导航容器<code>Navigation</code>完成页面间的调度管理如跳转, 回退等操作, 以实现应用内的功能解耦</li>
+<li>组件: <code>UI</code>构建与显示的最小单位, 如列表, 网格, 按钮, 单选框, 文本, 进度条. 开发者通过多种组件的组合, 构建出满足自身应用诉求的完整界面</li>
+</ul>
+<h3 id="两种开发范式"><a href="#两种开发范式" class="headerlink" title="两种开发范式"></a>两种开发范式</h3><p>针对不同的应用场景及技术背景, 方舟<code>UI</code>框架提供了两种开发范式, 分别是基于<code>ArkTS</code>的声明式开发范式和兼容<code>JS</code>的类<code>Web</code>开发范式</p>
+<ul>
+<li>声明式开发范式: 采用基于<code>TypeScript</code>声明式<code>UI</code>语法扩展而来的<code>ArkTS</code>语言, 从组件, 动画和状态管理三个维度提供<code>UI</code>绘制能力</li>
+<li>类<code>Web</code>开发范式: 采用经典的<code>HTML</code>, <code>CSS</code>, <code>JavaScript</code>三段式开发范式, 即使用<code>HTML</code>标签文件搭建布局, 使用<code>CSS</code>文件描述样式, 使用<code>JavaScript</code>文件处理逻辑. 该范式更符合<code>Web</code>前端开发者的使用习惯, 便于快速将已有的<code>Web</code>应用改造成方舟<code>UI</code>框架应用.</li>
+</ul>
+<p>在开发一款新应用时, 推荐采用声明式开发范式来构建<code>UI</code>, 主要基于以下几点考虑:</p>
+<ul>
+<li>开发效率: 声明式开发范式更接近自然语义的编程方式, 开发者可以直观地描述<code>UI</code>, 无需关心如何实现<code>UI</code>绘制和渲染, 开发高效简洁</li>
+<li>应用性能: 如下图所示, 两种开发范式的<code>UI</code>后端引擎和语言运行时是共用的, 但是相比类<code>Web</code>开发范式, 声明式开发范式无需<code>JS</code>框架进行页面<code>DOM</code>管理, 渲染更新链路更为精简, 占用内存更少, 应用性能更佳</li>
+<li>发展趋势: 声明式开发范式后续会作为主推的开发范式持续演进, 为开发者提供更丰富, 更强大的能力</li>
+</ul>
+<p><img  
+                       lazyload
+                       alt="image"
+                       data-src="https://vividbloom.github.io/picx-images-hosting/HarmonyOS/image.5q82bupfv8.webp"
+                        alt="方舟UI框架示意图"
+                 ></p>
+<h3 id="不同应用类型支持的开发范式"><a href="#不同应用类型支持的开发范式" class="headerlink" title="不同应用类型支持的开发范式"></a>不同应用类型支持的开发范式</h3><p>根据所选应用模型(<code>Stage</code>模型, <code>FA</code>模型)和页面形态(应用或服务的普通页面, 卡片)的不同, 对应用支持的<code>UI</code>开发范式也有所差异</p>
+<table>
+<thead>
+<tr>
+<th align="left">应用模型</th>
+<th align="left">页面形态</th>
+<th align="left">支持的UI开发范式</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">Stage模型（推荐）</td>
+<td align="left">应用或服务的页面</td>
+<td align="left">声明式开发范式（推荐）</td>
+</tr>
+<tr>
+<td align="left">Stage模型（推荐）</td>
+<td align="left">卡片</td>
+<td align="left">声明式开发范式（推荐）类Web开发范式</td>
+</tr>
+<tr>
+<td align="left">FA模型</td>
+<td align="left">应用或服务的页面</td>
+<td align="left">声明式开发范式类Web开发范式</td>
+</tr>
+<tr>
+<td align="left">FA模型</td>
+<td align="left">卡片</td>
+<td align="left">类Web开发范式</td>
+</tr>
+</tbody></table>
+<h2 id="声明式UI语法"><a href="#声明式UI语法" class="headerlink" title="声明式UI语法"></a>声明式<code>UI</code>语法</h2><h3 id="基本语法概述"><a href="#基本语法概述" class="headerlink" title="基本语法概述"></a>基本语法概述</h3><p>本示例中，<code>ArkTS</code>的基本组成如下所示</p>
+<p><img  
+                       lazyload
+                       alt="image"
+                       data-src="https://vividbloom.github.io/picx-images-hosting/HarmonyOS/image.1vzaswzmlc.webp"
+                        alt="ArkTS的基本组成"
+                 ></p>
+<blockquote>
+<p>自定义变量不能与基础通用属性&#x2F;事件名重复</p>
+</blockquote>
+<ul>
+<li><code>UI</code>装饰器: 用于装饰类, 结构, 方法以及变量, 并赋予其特殊的含义. 如上述示例中<code>@Entry</code>, <code>@Component</code>, <code>@State</code>都是装饰器, <code>@Component</code>表示自定义组件, <code>@Entry</code>表示该自定义组件为入口组件, <code>@State</code>表示组件中的状态变量, 状态变量变化会触发<code>UI</code>刷新</li>
+<li><code>UI</code>描述: 以声明式的方式来描述<code>UI</code>结构, 例如<code>build()</code>方法中的代码块</li>
+<li>自定义组件: 可复用的<code>UI</code>单元, 可组合其他组件, 如上述被<code>@Component</code>装饰的<code>struct Hello</code></li>
+<li>系统组件: <code>ArkUI</code>框架中默认内置的基础和容器组件, 可以直接调用, 例如示例中的<code>Column</code>, <code>Text</code>, <code>Divider</code>, <code>Button</code></li>
+<li>属性方法: 组件可以通过链式调用配置多项属性, 如<code>fontSize()</code>, <code>width()</code>, <code>height()</code>, <code>backgroundColor()</code>等</li>
+<li>事件方法: 组件可以通过链式调用设置多个事件的响应逻辑, 如跟随在<code>Button</code>后面的<code>onClick()</code></li>
+</ul>
+<p>除此之外, <code>ArkTS</code>扩展了多种语法范式来使开发更加便捷</p>
+<ul>
+<li><code>@Builder/@BuilderParam</code>: 特殊的封装<code>UI</code>描述方法, 细粒度的封装和复用<code>UI</code>描述</li>
+<li><code>@Extend/@Styles</code>: 扩展系统组件和封装属性样式, 更灵活的组合系统组件</li>
+<li><code>stateStyles</code>: 多态样式, 可以依据组件的内部状态的不同, 设置不同的样式</li>
+</ul>
+<h3 id="声明式UI描述"><a href="#声明式UI描述" class="headerlink" title="声明式UI描述"></a>声明式<code>UI</code>描述</h3><p><code>ArkTS</code>以声明方式组合和扩展组件来描述应用程序的<code>UI</code>, 同时还提供了基本属性, 事件, 子组件配置方法, 帮助开发者实现应用交互逻辑</p>
+<h4 id="创建组件"><a href="#创建组件" class="headerlink" title="创建组件"></a>创建组件</h4><p>根据组件构造方法的不同, 创建组件包含有参数和无参数两种方式 </p>
+<blockquote>
+<p>创建组件不需要使用<code>new</code>关键字</p>
+</blockquote>
+<h5 id="无参数"><a href="#无参数" class="headerlink" title="无参数"></a>无参数</h5><p>如果组件接口定义不包含改选构造参数, 则组件后面的<code>()</code>不需要配置任何内容, 例如: <code>Divider</code>组件不包含构造参数</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="title class_">Column</span>() &#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">  <span class="title class_">Divider</span>()</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="有参数"><a href="#有参数" class="headerlink" title="有参数"></a>有参数</h5><p>如果组件接口定义包含构造参数, 则在组件后的<code>()</code>中配置相应参数</p>
+<ul>
+<li><p><code>Image</code>组件的必选参数<code>src</code></p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title class_">Image</span>(<span class="string">&#x27;https://xyz/test.jpg&#x27;</span>)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>Text</code>组件的非必选参数<code>content</code></p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// string类型的参数</span></span><br><span class="line"><span class="title class_">Text</span>(<span class="string">&#x27;test&#x27;</span>)</span><br><span class="line"><span class="comment">// $r形式引入应用资源，可应用于多语言场景</span></span><br><span class="line"><span class="title class_">Text</span>($r(<span class="string">&#x27;app.string.title_value&#x27;</span>))</span><br><span class="line"><span class="comment">// 无参数形式</span></span><br><span class="line"><span class="title class_">Text</span>()</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>变量或表达式可以用于参数赋值, 表达式结果类型必须符合参数要求</p>
+<p>设置变量或表达式来构造Image和Text组件的参数。</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="title class_">Image</span>(<span class="variable language_">this</span>.<span class="property">imagePath</span>)</span><br><span class="line"><span class="comment">// 此处需要替换为开发者所需的正确url</span></span><br><span class="line"><span class="title class_">Image</span>(<span class="string">&#x27;https://&#x27;</span> + <span class="variable language_">this</span>.<span class="property">imageUrl</span>)</span><br><span class="line"><span class="title class_">Text</span>(<span class="string">`count: <span class="subst">$&#123;<span class="variable language_">this</span>.count&#125;</span>`</span>)</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="配置属性"><a href="#配置属性" class="headerlink" title="配置属性"></a>配置属性</h3><p>属性方法以<code>.</code>链式调用配置组件样式和其他属性, 建议每个属性方法单独一行</p>
+<ul>
+<li><p>配置<code>Text</code>组件的字体大小</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="title class_">Text</span>(<span class="string">&#x27;test&#x27;</span>)</span><br><span class="line">  .<span class="title function_">fontSize</span>(<span class="number">12</span>)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>配置组件的多个属性</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="title class_">Image</span>(<span class="string">&#x27;test.jpg&#x27;</span>)</span><br><span class="line">  .<span class="title function_">alt</span>(<span class="string">&#x27;error.jpg&#x27;</span>)</span><br><span class="line">  .<span class="title function_">width</span>(<span class="number">100</span>)</span><br><span class="line">  .<span class="title function_">height</span>(<span class="number">100</span>)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>除了直接传递常量参数, 还可以传递变量或表达式</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="title class_">Text</span>(<span class="string">&#x27;hello&#x27;</span>)</span><br><span class="line">  .<span class="title function_">fontSize</span>(<span class="variable language_">this</span>.<span class="property">fontSize</span>)</span><br><span class="line"><span class="title class_">Image</span>(<span class="string">&#x27;test.jpg&#x27;</span>)</span><br><span class="line">  .<span class="title function_">width</span>(<span class="variable language_">this</span>.<span class="property">count</span> % <span class="number">2</span> === <span class="number">0</span> ? <span class="number">100</span> : <span class="number">200</span>)</span><br><span class="line">  .<span class="title function_">height</span>(<span class="variable language_">this</span>.<span class="property">offsetNum</span> + <span class="number">100</span>)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>对于系统组件, <code>ArkUI</code>还为其属性预定义了一些枚举型供开发者调用, 枚举类型可以作为参数传递, 但必须满足参数类型要求</p>
+<p>可以按以下方式配置Text组件的颜色和字体样式</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="title class_">Text</span>(<span class="string">&#x27;hello&#x27;</span>)</span><br><span class="line">  .<span class="title function_">fontSize</span>(<span class="number">20</span>)</span><br><span class="line">  .<span class="title function_">fontColor</span>(<span class="title class_">Color</span>.<span class="property">Red</span>)</span><br><span class="line">  .<span class="title function_">fontWeight</span>(<span class="title class_">FontWeight</span>.<span class="property">Bold</span>)</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="配置事件"><a href="#配置事件" class="headerlink" title="配置事件"></a>配置事件</h3><p>事件方法以<code>.</code>链式调用的方式配置系统组件支持的事件, 建议每个事件方法单独写一行</p>
+<ul>
+<li><p>使用箭头函数配置组件事件方法</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="title class_">Button</span>(<span class="string">&#x27;Click me&#x27;</span>)</span><br><span class="line">  .<span class="title function_">onClick</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">myText</span> = <span class="string">&#x27;ArkUI&#x27;</span>;</span><br><span class="line">  &#125;)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>使用箭头函数表达式配置组件的事件方法, 要求使用<code>() =&gt; &#123;...&#125;</code>, 以确保函数与组件绑定, 同时符合<code>ArkTS</code>语法规范</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="title class_">Button</span>(<span class="string">&#x27;add counter&#x27;</span>)</span><br><span class="line">  .<span class="title function_">onClick</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">counter</span> += <span class="number">2</span>;</span><br><span class="line">  &#125;)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>使用组件的成员函数配置组件的事件方法, 需要<code>bind this</code>. <code>ArkTS</code>语法不建议使用成员函数配合<code>bind this</code>来配置组件的事件方法</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">  <span class="title function_">myClickHandler</span>(): <span class="built_in">void</span> &#123;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">counter</span> += <span class="number">2</span>;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// ···</span></span><br><span class="line">   <span class="title class_">Button</span>(<span class="string">&#x27;add counter&#x27;</span>)</span><br><span class="line">     .<span class="title function_">onClick</span>(<span class="variable language_">this</span>.<span class="property">myClickHandler</span>.<span class="title function_">bind</span>(<span class="variable language_">this</span>))</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>使用声明的箭头函数时可以直接调用, 不需要<code>bind this</code></p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">  fn = <span class="function">() =&gt;</span> &#123;</span><br><span class="line">    hilog.<span class="title function_">info</span>(<span class="number">0x0000</span>, <span class="string">&#x27;Declarative UI Description&#x27;</span>, <span class="string">`counter: <span class="subst">$&#123;<span class="variable language_">this</span>.counter&#125;</span>`</span>);</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">counter</span>++;</span><br><span class="line">  &#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// ···</span></span><br><span class="line">   <span class="title class_">Button</span>(<span class="string">&#x27;add counter&#x27;</span>)</span><br><span class="line">     .<span class="title function_">onClick</span>(<span class="variable language_">this</span>.<span class="property">fn</span>)</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>箭头函数内部的<code>this</code>是词法作用域, 由上下文确定. 匿名函数可能会出现<code>this</code>指向不明确的问题, 因此在<code>ArkTS</code>中不允许使用</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="配置子组件"><a href="#配置子组件" class="headerlink" title="配置子组件"></a>配置子组件</h3><p>如果组件支持子组件配置, 则需要在尾随闭包<code>&#123;...&#125;</code>中为组件添加子组件的<code>UI</code>描述. <code>Column</code>, <code>Row</code>, <code>Stack</code>, <code>Grid</code>, <code>List</code>等组件都是容器组件</p>
+<ul>
+<li><p>以下是简单的<code>Column</code>组件配置子组件的示例</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="title class_">Column</span>() &#123;</span><br><span class="line">  <span class="title class_">Text</span>(<span class="string">&#x27;Hello&#x27;</span>)</span><br><span class="line">    .<span class="title function_">fontSize</span>(<span class="number">100</span>)</span><br><span class="line">  <span class="title class_">Divider</span>()</span><br><span class="line">  <span class="title class_">Text</span>(<span class="variable language_">this</span>.<span class="property">myText</span>)</span><br><span class="line">    .<span class="title function_">fontSize</span>(<span class="number">100</span>)</span><br><span class="line">    .<span class="title function_">fontColor</span>(<span class="title class_">Color</span>.<span class="property">Red</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>容器组件均支持子组件配置, 可以实现相对复杂的多级嵌套</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="title class_">Column</span>() &#123;</span><br><span class="line">  <span class="title class_">Row</span>() &#123;</span><br><span class="line">    <span class="title class_">Image</span>(<span class="string">&#x27;test1.jpg&#x27;</span>)</span><br><span class="line">      .<span class="title function_">width</span>(<span class="number">100</span>)</span><br><span class="line">      .<span class="title function_">height</span>(<span class="number">100</span>)</span><br><span class="line">    <span class="title class_">Button</span>(<span class="string">&#x27;click +1&#x27;</span>)</span><br><span class="line">      .<span class="title function_">onClick</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">        hilog.<span class="title function_">info</span>(<span class="number">0x0000</span>, <span class="string">&#x27;Declarative UI Description&#x27;</span>, <span class="string">&#x27;+1 clicked!&#x27;</span>);</span><br><span class="line">      &#125;)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="创建自定义组件"><a href="#创建自定义组件" class="headerlink" title="创建自定义组件"></a>创建自定义组件</h2><p>自定义组件具有以下特点:</p>
+<ul>
+<li>可组合: 允许开发者组合使用系统组件及其属性和方法</li>
+<li>可重用: 自定义组件可以被其他组件重用, 并作为不同的实例在不同的父组件或容器中使用</li>
+<li>数据驱动<code>UI</code>更新: 通过状态变量的改变, 来驱动<code>UI</code>的刷新</li>
+</ul>
+<blockquote>
+<p>从<code>API version 24</code>开始, 可通过在应用工程的<code>module.json5</code>配置文件中配置<code>metadata</code>标签来使用自定义组件支持跨<code>Ability</code>迁移. 具体配置方式为: 新增<code>name</code>为<code>enableCustomComponentCrossAbility</code>, <code>value</code>为<code>true</code>. 因为自定义组件提供的是<code>UI</code>能力, 所以这里的<code>Ability</code>也特指<code>UIAbility</code>. 具体示例参考<a class="link"   target="_blank" rel="noopener" href="https://developer.huawei.com/consumer/cn/doc/#%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BB%84%E4%BB%B6%E6%94%AF%E6%8C%81%E8%B7%A8ability%E8%BF%81%E7%A7%BB" >自定义组件支持跨Ability迁移<i class="fas fa-external-link-alt"></i></a></p>
+</blockquote>
+<h3 id="基本用法"><a href="#基本用法" class="headerlink" title="基本用法"></a>基本用法</h3><figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Component</span></span><br><span class="line">struct <span class="title class_">HelloComponent</span> &#123;</span><br><span class="line">  <span class="meta">@State</span> <span class="attr">message</span>: <span class="built_in">string</span> = <span class="string">&#x27;Hello, World!&#x27;</span>;</span><br><span class="line"></span><br><span class="line">  <span class="title function_">build</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="comment">// HelloComponent自定义组件组合系统组件Row和Text</span></span><br><span class="line">    <span class="title class_">Row</span>() &#123;</span><br><span class="line">      <span class="title class_">Text</span>(<span class="variable language_">this</span>.<span class="property">message</span>)</span><br><span class="line">        .<span class="title function_">onClick</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">          <span class="comment">// 状态变量message的改变驱动UI刷新，UI从&#x27;Hello, World!&#x27;刷新为&#x27;Hello, ArkUI!&#x27;</span></span><br><span class="line">          <span class="variable language_">this</span>.<span class="property">message</span> = <span class="string">&#x27;Hello, ArkUI!&#x27;</span>;</span><br><span class="line">        &#125;)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>如果在其他文件中引用自定义组件, 需要使用<code>export</code>关键字导出组件, 并在使用的页面<code>import</code>该自定义组件</p>
+</blockquote>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Entry</span></span><br><span class="line"><span class="meta">@Component</span></span><br><span class="line">struct <span class="title class_">ParentComponent</span> &#123;</span><br><span class="line">  <span class="title function_">build</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="title class_">Column</span>() &#123;</span><br><span class="line">      <span class="comment">// 多次创建HelloComponent，实现自定义组件的重用</span></span><br><span class="line">      <span class="title class_">Text</span>(<span class="string">&#x27;ArkUI message&#x27;</span>)</span><br><span class="line">      <span class="title class_">HelloComponent</span>(&#123; <span class="attr">message</span>: <span class="string">&#x27;Hello World!&#x27;</span> &#125;)</span><br><span class="line">      <span class="title class_">Divider</span>()</span><br><span class="line">      <span class="title class_">HelloComponent</span>(&#123; <span class="attr">message</span>: <span class="string">&#x27;Hello ArkTS!&#x27;</span> &#125;)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="基本结构"><a href="#基本结构" class="headerlink" title="基本结构"></a>基本结构</h3><h4 id="struct"><a href="#struct" class="headerlink" title="struct"></a><code>struct</code></h4><p>自定义组件基于<code>struct</code>实现, <code>struct</code> + 自定义组件名 + <code>&#123;...&#125;</code>的组合构成自定义组件, 不能有继承关系. 对于<code>struct</code>的实例化, 可以省略<code>new</code></p>
+<blockquote>
+<p>自定义组件名, 类名, 函数名不得与系统组件名重复</p>
+</blockquote>
+<h4 id="Entry"><a href="#Entry" class="headerlink" title="@Entry"></a><code>@Entry</code></h4><p><code>@Entry</code>装饰的自定义组件装饰作为<code>UI</code>页面的入口. 在单个<code>UI</code>页面中, 仅允许存在一个由<code>@Entry</code>装饰的自定义组件作为页面的入口</p>
+<blockquote>
+<p>从<code>API version 9</code>开始, 该装饰器支持在<code>ArkTS</code>卡片中使用</p>
+<p>从<code>API version 10</code>开始, <code>@Entry</code>可以接受一个可选的<code>LocalStorage</code>参数或者一个可选的<code>EntryOptions</code>参数</p>
+<p>从<code>API version 11</code>开始, 该装饰器支持在元服务中使用</p>
+</blockquote>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Entry</span></span><br><span class="line"><span class="meta">@Component</span></span><br><span class="line">struct <span class="title class_">MyComponent</span> &#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="EntryOptions"><a href="#EntryOptions" class="headerlink" title="EntryOptions"></a><code>EntryOptions</code></h4><p>命名路由跳转选项</p>
+<table>
+<thead>
+<tr>
+<th align="left">名称</th>
+<th align="left">类型</th>
+<th align="left">只读</th>
+<th align="left">可选</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">routeName</td>
+<td align="left">string</td>
+<td align="left">否</td>
+<td align="left">是</td>
+<td align="left">表示作为命名路由页面的名字。</td>
+</tr>
+<tr>
+<td align="left">storage</td>
+<td align="left"><a class="link"   target="_blank" rel="noopener" href="https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage" >LocalStorage<i class="fas fa-external-link-alt"></i></a></td>
+<td align="left">否</td>
+<td align="left">是</td>
+<td align="left">页面级的UI状态存储。当未传入时，框架会创建一个新的LocalStorage实例作为默认值。</td>
+</tr>
+<tr>
+<td align="left">useSharedStorage</td>
+<td align="left">boolean</td>
+<td align="left">否</td>
+<td align="left">是</td>
+<td align="left">是否使用<a class="link"   target="_blank" rel="noopener" href="https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-windowstage#loadcontent9" >loadContent<i class="fas fa-external-link-alt"></i></a>传入的LocalStorage实例对象。默认值false。true：使用共享的<a class="link"   target="_blank" rel="noopener" href="https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage" >LocalStorage<i class="fas fa-external-link-alt"></i></a>实例对象。false：不使用共享的<a class="link"   target="_blank" rel="noopener" href="https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage" >LocalStorage<i class="fas fa-external-link-alt"></i></a>实例对象。</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>当<code>useSharedStorage</code>设置为<code>true</code>且<code>storage</code>已赋值时, <code>useSharedStorage</code>的值优先级更高</p>
+</blockquote>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Entry</span>(&#123; <span class="attr">routeName</span>: <span class="string">&#x27;myPage&#x27;</span> &#125;)</span><br><span class="line"><span class="meta">@Component</span></span><br><span class="line">struct <span class="title class_">MyComponent</span> &#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="Component"><a href="#Component" class="headerlink" title="@Component"></a><code>@Component</code></h4><p><code>@Component</code>装饰的<code>struct</code>为<code>V1</code>自定义组件, 可以使用状态管理<code>V1</code>版本装饰器的能力</p>
+<blockquote>
+<p>从API version 9开始，该装饰器支持在ArkTS卡片中使用。</p>
+<p>从API version 11开始，@Component可以接受一个<a class="link"   target="_blank" rel="noopener" href="https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-custom-component-parameter#componentoptions" >ComponentOptions参数<i class="fas fa-external-link-alt"></i></a>。</p>
+<p>从API version 11开始，该装饰器支持在元服务中使用。</p>
+</blockquote>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Component</span></span><br><span class="line">struct <span class="title class_">MyComponent</span> &#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="ComponentV2"><a href="#ComponentV2" class="headerlink" title="@ComponentV2"></a><code>@ComponentV2</code></h4><p><code>@ComponentV2</code>装饰的<code>struct</code>为<code>V2</code>自定义组件, 可以使用状态管理<code>V2</code>版本装饰器的能力</p>
+<blockquote>
+<p><code>@ComponentV2</code>装饰器从<code>API version 12</code>开始支持</p>
+<p>从<code>API version 12</code>开始, 该装饰器支持在元服务中使用</p>
+<p>从<code>API version 23</code>开始, 该装饰器支持在<code>ArkTS</code>卡片中使用</p>
+</blockquote>
+<p>和<code>@Component</code>装饰器一样, <code>@ComponentV2</code>装饰器用于装饰自定义组件</p>
+<ul>
+<li><p>在<code>@ComponentV2</code>装饰的自定义组件中, 开发者仅可以使用全新的状态变量装饰器, 包括<code>@Local</code>, <code>@Param</code>, <code>@once</code>, <code>@Event</code>, <code>@Provider</code>, <code>@Consumer</code>等</p>
+</li>
+<li><p><code>@ComponentV2</code>装饰的自定义组件暂不支持<code>LocalStorage</code>等现有自定义组件的能力</p>
+</li>
+<li><p>无法同时使用<code>@ComponentV2</code>与<code>@Component</code>装饰同一个<code>struct</code>结构</p>
+</li>
+<li><p><code>@ComponentV2</code>支持一个可选的<code>ComponentOptions</code>参数, 来实现组件冻结功能</p>
+</li>
+<li><p>一个简单的<code>@ComponentV2</code>装饰的自定义组件应具有以下部分</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Entry</span></span><br><span class="line"><span class="meta">@ComponentV2</span> <span class="comment">// 装饰器</span></span><br><span class="line">struct <span class="title class_">ComponentV2Test</span> &#123; <span class="comment">// struct声明的数据结构</span></span><br><span class="line">  <span class="meta">@Local</span> <span class="attr">message</span>: <span class="built_in">string</span> = <span class="string">&#x27;Hello World&#x27;</span>;</span><br><span class="line">  <span class="title function_">build</span>(<span class="params"></span>) &#123; <span class="comment">// build定义的UI</span></span><br><span class="line">    <span class="title class_">RelativeContainer</span>() &#123;</span><br><span class="line">      <span class="title class_">Text</span>(<span class="variable language_">this</span>.<span class="property">message</span>)</span><br><span class="line">        .<span class="title function_">id</span>(<span class="string">&#x27;HelloWorld&#x27;</span>)</span><br><span class="line">        <span class="comment">// $r(&#x27;app.float.page_text_font_size&#x27;)需要替换为开发者所需的资源文件;</span></span><br><span class="line">        .<span class="title function_">fontSize</span>($r(<span class="string">&#x27;app.float.page_text_font_size&#x27;</span>))</span><br><span class="line">        .<span class="title function_">fontWeight</span>(<span class="title class_">FontWeight</span>.<span class="property">Bold</span>)</span><br><span class="line">        .<span class="title function_">alignRules</span>(&#123;</span><br><span class="line">          <span class="attr">center</span>: &#123; <span class="attr">anchor</span>: <span class="string">&#x27;__container__&#x27;</span>, <span class="attr">align</span>: <span class="title class_">VerticalAlign</span>.<span class="property">Center</span> &#125;,</span><br><span class="line">          <span class="attr">middle</span>: &#123; <span class="attr">anchor</span>: <span class="string">&#x27;__container__&#x27;</span>, <span class="attr">align</span>: <span class="title class_">HorizontalAlign</span>.<span class="property">Center</span> &#125;</span><br><span class="line">        &#125;)</span><br><span class="line">        .<span class="title function_">onClick</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">          <span class="variable language_">this</span>.<span class="property">message</span> = <span class="string">&#x27;Welcome&#x27;</span>;</span><br><span class="line">        &#125;)</span><br><span class="line">    &#125;</span><br><span class="line">    .<span class="title function_">height</span>(<span class="string">&#x27;100%&#x27;</span>)</span><br><span class="line">    .<span class="title function_">width</span>(<span class="string">&#x27;100%&#x27;</span>)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>除非特别说明, <code>@ComponentV2</code>装饰的自定义组件将与<code>@Component</code>装饰的自定义组件保持相同的行为</p>
+</li>
+</ul>
+<h4 id="build-函数"><a href="#build-函数" class="headerlink" title="build()函数"></a><code>build()</code>函数</h4><p><code>build()</code>函数用于定义自定义组件的声明式<code>UI</code>描述, 自定义组件必须定义<code>build()</code>函数 </p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Component</span></span><br><span class="line">struct <span class="title class_">MyComponent</span> &#123;</span><br><span class="line">  <span class="title function_">build</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="comment">// ...</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="Reusable"><a href="#Reusable" class="headerlink" title="@Reusable"></a><code>@Reusable</code></h4><p><code>@Reusable</code>装饰<code>V1</code>自定义组件, 使得该自定义组件具有被复用的能力. 详细请参考：<a class="link"   target="_blank" rel="noopener" href="https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-reusable#%E4%BD%BF%E7%94%A8%E5%9C%BA%E6%99%AF" >@Reusable装饰器：组件复用<i class="fas fa-external-link-alt"></i></a>。</p>
+<blockquote>
+<p>从<code>API version 10</code>开始, 该装饰器支持在<code>ArkTS</code>卡片中使用</p>
+</blockquote>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Reusable</span></span><br><span class="line"><span class="meta">@Component</span></span><br><span class="line">struct <span class="title class_">MyComponent</span> &#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="ReusableV2"><a href="#ReusableV2" class="headerlink" title="@ReusableV2"></a><code>@ReusableV2</code></h4><p><code>@ReusableV2</code>装饰<code>V2</code>自定义组件, 使得该自定义组件具有被复用的能力. 详细请参考：<a class="link"   target="_blank" rel="noopener" href="https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-reusablev2#%E4%BD%BF%E7%94%A8%E5%9C%BA%E6%99%AF" >@ReusableV2装饰器：V2组件复用<i class="fas fa-external-link-alt"></i></a></p>
+<blockquote>
+<p>从<code>API version 18</code>开始, 该装饰器支持在元服务中使用</p>
+</blockquote>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@ReusableV2</span></span><br><span class="line"><span class="meta">@ComponentV2</span></span><br><span class="line">struct <span class="title class_">MyComponent</span> &#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="成员函数-变量"><a href="#成员函数-变量" class="headerlink" title="成员函数&#x2F;变量"></a>成员函数&#x2F;变量</h3><p>自定义组件坠子必须要实现<code>build()</code>函数外, 还可以实现其他成员函数, 成员函数具有以下约束</p>
+<ul>
+<li>自定义组件的成员函数仅组件内部访问, 且不建议声明为静态函数</li>
+</ul>
+<p>自定义组件可以包含成员变量, 成员变量具有以下约束:</p>
+<ul>
+<li>自定义组件的成员变量仅能从组件内部访问, 且不建议声明为静态变量</li>
+<li>自定义组件的成员变量本地初始化有些是可选的, 有些是必选的. 具体是否需要本地初始化, 是否需要从父组件通过参数传递初始化子组件的成员变量, 请参考<a class="link"   target="_blank" rel="noopener" href="https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-state-management-overview" >状态管理<i class="fas fa-external-link-alt"></i></a></li>
+</ul>
+<h3 id="参数规定"><a href="#参数规定" class="headerlink" title="参数规定"></a>参数规定</h3><p>以下示例展示了如何在build方法里创建自定义组件，并在创建自定义组件的过程中，根据装饰器的规则来初始化自定义组件的参数。</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Component</span></span><br><span class="line">struct <span class="title class_">MyComponent</span> &#123;</span><br><span class="line">  <span class="attr">countDownFrom</span>: <span class="built_in">number</span> = <span class="number">0</span>;</span><br><span class="line">  <span class="attr">color</span>: <span class="title class_">Color</span> = <span class="title class_">Color</span>.<span class="property">Blue</span>;</span><br><span class="line"></span><br><span class="line">  <span class="title function_">build</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="title class_">Column</span>() &#123;</span><br><span class="line">      <span class="title class_">Text</span>(<span class="string">`<span class="subst">$&#123;<span class="variable language_">this</span>.countDownFrom&#125;</span>`</span>)</span><br><span class="line">        .<span class="title function_">backgroundColor</span>(<span class="variable language_">this</span>.<span class="property">color</span>)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Entry</span></span><br><span class="line"><span class="meta">@Component</span></span><br><span class="line">struct <span class="title class_">ParentComponent</span> &#123;</span><br><span class="line">  <span class="keyword">private</span> <span class="attr">someColor</span>: <span class="title class_">Color</span> = <span class="title class_">Color</span>.<span class="property">Pink</span>;</span><br><span class="line"></span><br><span class="line">  <span class="title function_">build</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="title class_">Column</span>() &#123;</span><br><span class="line">      <span class="comment">// 创建MyComponent实例，并将创建MyComponent成员变量countDownFrom初始化为10，将成员变量color初始化为this.someColor</span></span><br><span class="line">      <span class="title class_">MyComponent</span>(&#123; <span class="attr">countDownFrom</span>: <span class="number">10</span>, <span class="attr">color</span>: <span class="variable language_">this</span>.<span class="property">someColor</span> &#125;)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>以下示例代码将父组件中的函数传递给子组件，并在子组件中调用。</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Entry</span></span><br><span class="line"><span class="meta">@Component</span></span><br><span class="line">struct <span class="title class_">Parent</span> &#123;</span><br><span class="line">  <span class="meta">@State</span> <span class="attr">cnt</span>: <span class="built_in">number</span> = <span class="number">0</span>;</span><br><span class="line">  <span class="attr">submit</span>: <span class="function">() =&gt;</span> <span class="built_in">void</span> = <span class="function">() =&gt;</span> &#123;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">cnt</span>++;</span><br><span class="line">  &#125;;</span><br><span class="line"></span><br><span class="line">  <span class="title function_">build</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="title class_">Column</span>() &#123;</span><br><span class="line">      <span class="title class_">Text</span>(<span class="string">`<span class="subst">$&#123;<span class="variable language_">this</span>.cnt&#125;</span>`</span>)</span><br><span class="line">      <span class="comment">// 父组件中的函数传递给子组件</span></span><br><span class="line">      <span class="title class_">Son</span>(&#123; <span class="attr">submitArrow</span>: <span class="variable language_">this</span>.<span class="property">submit</span> &#125;)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Component</span></span><br><span class="line">struct <span class="title class_">Son</span> &#123;</span><br><span class="line">  <span class="attr">submitArrow</span>?: <span class="function">() =&gt;</span> <span class="built_in">void</span>;</span><br><span class="line"></span><br><span class="line">  <span class="title function_">build</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="title class_">Row</span>() &#123;</span><br><span class="line">      <span class="title class_">Button</span>(<span class="string">&#x27;add&#x27;</span>)</span><br><span class="line">        .<span class="title function_">width</span>(<span class="number">80</span>)</span><br><span class="line">        .<span class="title function_">onClick</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">          <span class="keyword">if</span> (<span class="variable language_">this</span>.<span class="property">submitArrow</span>) &#123;</span><br><span class="line">            <span class="variable language_">this</span>.<span class="title function_">submitArrow</span>()</span><br><span class="line">          &#125;</span><br><span class="line">        &#125;)</span><br><span class="line">    &#125;</span><br><span class="line">    .<span class="title function_">height</span>(<span class="number">56</span>)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="build-函数实现规则"><a href="#build-函数实现规则" class="headerlink" title="build()函数实现规则"></a><code>build()</code>函数实现规则</h3><p>所有在<code>build()</code>函数中声明的语句统称为<code>UI</code>描述, <code>UI</code>描述需要遵循以下规则:</p>
+<ul>
+<li><p><code>@Entry</code>装饰的自定义组件, 其<code>build()</code>函数下的根节点唯一且必要, 且必须为容器组件, 其中<code>ForEach</code>禁止作为根节点. <code>@Component</code>装饰的自定义组件, 其<code>build()</code>函数的根节点唯一且必要, 可以为非容器组件, 其中<code>ForEach</code>禁止作为根节点</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Entry</span></span><br><span class="line"><span class="meta">@Component</span></span><br><span class="line">struct <span class="title class_">MyComponent</span> &#123;</span><br><span class="line">  <span class="title function_">build</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="comment">// 根节点唯一且必要，必须为容器组件</span></span><br><span class="line">    <span class="title class_">Row</span>() &#123;</span><br><span class="line">      <span class="title class_">ChildComponent</span>()</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Component</span></span><br><span class="line">struct <span class="title class_">ChildComponent</span> &#123;</span><br><span class="line">  <span class="title function_">build</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="comment">// 根节点唯一且必要，可为非容器组件</span></span><br><span class="line">    <span class="comment">// 请将$r(&#x27;app.media.startIcon&#x27;)替换为实际资源文件</span></span><br><span class="line">    <span class="title class_">Image</span>($r(<span class="string">&#x27;app.media.startIcon&#x27;</span>))</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>不允许声明本地变量, 反例如下</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_">build</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="comment">// 反例：不允许声明本地变量</span></span><br><span class="line">  <span class="keyword">let</span> <span class="attr">num</span>: <span class="built_in">number</span> = <span class="number">1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>不允许在<code>UI</code>描述里直接使用<code>console.info</code>, 但允许在方法或者函数里使用, 反倒如下:</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_">build</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="comment">// 反例：不允许console.info</span></span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">info</span>(<span class="string">&#x27;print debug log&#x27;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>不允许创建本地的作用域, 反倒如下:</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_">build</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="comment">// 反例：不允许本地作用域</span></span><br><span class="line">  &#123;</span><br><span class="line">    <span class="comment">// ...</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>不允许调用非<code>@Builder</code>装饰的方法, 但允许将此类方法的返回值作为系统组件的参数使用. 示例如下:</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Component</span></span><br><span class="line">struct <span class="title class_">ParentComponent</span> &#123;</span><br><span class="line">  <span class="title function_">doSomeCalculations</span>(<span class="params"></span>) &#123;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="title function_">build</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="title class_">Column</span>() &#123;</span><br><span class="line">      <span class="comment">// 反例：不能调用没有用@Builder装饰的方法</span></span><br><span class="line">      <span class="variable language_">this</span>.<span class="title function_">doSomeCalculations</span>();</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Component</span></span><br><span class="line">struct <span class="title class_">ParentComponent</span> &#123;</span><br><span class="line">  <span class="title function_">calcTextValue</span>(): <span class="built_in">string</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">&#x27;Hello World&#x27;</span>;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="meta">@Builder</span></span><br><span class="line">  <span class="title function_">doSomeRender</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="title class_">Text</span>(<span class="string">`Hello World`</span>)</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="title function_">build</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="title class_">Column</span>() &#123;</span><br><span class="line">      <span class="comment">// 正例：可以调用</span></span><br><span class="line">      <span class="variable language_">this</span>.<span class="title function_">doSomeRender</span>()</span><br><span class="line">      <span class="comment">// 正例：参数可以为调用TS方法的返回值</span></span><br><span class="line">      <span class="title class_">Text</span>(<span class="variable language_">this</span>.<span class="title function_">calcTextValue</span>())</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>不允许使用<code>switch</code>语法, 当需要使用条件判断时, 请使用<code>if</code></p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_">build</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="title class_">Column</span>() &#123;</span><br><span class="line">    <span class="comment">// 反例：不允许使用switch语法</span></span><br><span class="line">    <span class="keyword">switch</span> (expression) &#123;</span><br><span class="line">      <span class="keyword">case</span> <span class="number">1</span>:</span><br><span class="line">        <span class="title class_">Text</span>(<span class="string">&#x27;...&#x27;</span>)</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">      <span class="keyword">case</span> <span class="number">2</span>:</span><br><span class="line">        <span class="title class_">Image</span>(<span class="string">&#x27;...&#x27;</span>)</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">      <span class="attr">default</span>:</span><br><span class="line">        <span class="title class_">Text</span>(<span class="string">&#x27;...&#x27;</span>)</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_">build</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="title class_">Column</span>() &#123;</span><br><span class="line">    <span class="comment">// 正例：使用if</span></span><br><span class="line">    <span class="keyword">if</span> (<span class="variable language_">this</span>.<span class="property">expression</span> == <span class="number">1</span>) &#123;</span><br><span class="line">      <span class="title class_">Text</span>(<span class="string">&#x27;...&#x27;</span>)</span><br><span class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span> (<span class="variable language_">this</span>.<span class="property">expression</span> == <span class="number">2</span>) &#123;</span><br><span class="line">      <span class="title class_">Image</span>(<span class="string">&#x27;...&#x27;</span>)</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">      <span class="title class_">Text</span>(<span class="string">&#x27;...&#x27;</span>)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>不允许使用表达式, 请使用<code>if</code>组件</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_">build</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="title class_">Column</span>() &#123;</span><br><span class="line">    <span class="comment">// 反例：不允许使用表达式</span></span><br><span class="line">    (<span class="variable language_">this</span>.<span class="property">aVar</span> &gt; <span class="number">10</span>) ? <span class="title class_">Text</span>(<span class="string">&#x27;...&#x27;</span>) : <span class="title class_">Image</span>(<span class="string">&#x27;...&#x27;</span>)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_">build</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="title class_">Column</span>() &#123;</span><br><span class="line">    <span class="comment">// 正例：使用if判断</span></span><br><span class="line">    <span class="keyword">if</span> (<span class="variable language_">this</span>.<span class="property">aVar</span> &gt; <span class="number">10</span>) &#123;</span><br><span class="line">      <span class="title class_">Text</span>(<span class="string">&#x27;...&#x27;</span>)</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">      <span class="title class_">Image</span>(<span class="string">&#x27;...&#x27;</span>)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>不允许直接改变状态变量</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Component</span></span><br><span class="line">struct <span class="title class_">MyComponent</span> &#123;</span><br><span class="line">  <span class="meta">@State</span> <span class="attr">textColor</span>: <span class="title class_">Color</span> = <span class="title class_">Color</span>.<span class="property">Yellow</span>;</span><br><span class="line">  <span class="meta">@State</span> <span class="attr">columnColor</span>: <span class="title class_">Color</span> = <span class="title class_">Color</span>.<span class="property">Green</span>;</span><br><span class="line">  <span class="meta">@State</span> <span class="attr">count</span>: <span class="built_in">number</span> = <span class="number">1</span>;</span><br><span class="line">  <span class="title function_">build</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="title class_">Column</span>() &#123;</span><br><span class="line">      <span class="comment">// 应避免直接在Text组件内改变count的值</span></span><br><span class="line">      <span class="title class_">Text</span>(<span class="string">`<span class="subst">$&#123;<span class="variable language_">this</span>.count++&#125;</span>`</span>)</span><br><span class="line">        .<span class="title function_">width</span>(<span class="number">50</span>)</span><br><span class="line">        .<span class="title function_">height</span>(<span class="number">50</span>)</span><br><span class="line">        .<span class="title function_">fontColor</span>(<span class="variable language_">this</span>.<span class="property">textColor</span>)</span><br><span class="line">        .<span class="title function_">onClick</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">          <span class="variable language_">this</span>.<span class="property">columnColor</span> = <span class="title class_">Color</span>.<span class="property">Red</span>;</span><br><span class="line">        &#125;)</span><br><span class="line">      <span class="title class_">Button</span>(<span class="string">&quot;change textColor&quot;</span>).<span class="title function_">onClick</span>(<span class="function">() =&gt;</span>&#123;</span><br><span class="line">        <span class="variable language_">this</span>.<span class="property">textColor</span> = <span class="title class_">Color</span>.<span class="property">Pink</span>;</span><br><span class="line">      &#125;)</span><br><span class="line">    &#125;</span><br><span class="line">    .<span class="title function_">backgroundColor</span>(<span class="variable language_">this</span>.<span class="property">columnColor</span>)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>在<code>ArkUI</code>状态管理中, 状态驱动<code>UI</code>更新</p>
+<p><code>UI=f(State)</code></p>
+<p>所以, 不能在自定义组件的<code>build()</code>或者<code>@Builder</code>方法里直接改变状态变量, 这可能会造成循环渲染的风险. <code>Text(&#39;$&#123;this.count++&#125;&#39;)</code>在全量提亲或最小化更新会产生不同的影响</p>
+<ul>
+<li>全量更新(<code>API18</code>及以前的版本): <code>ArkUI</code>可能会陷入一个无限的重渲染的循环里, 因为<code>Text</code>组件的每一次渲染都会改变应用的状态, 就会再引起下一轮渲染的开启. 当<code>this.columnColor</code>更改时, 都会执行带个<code>build</code>构建函数, 因此, <code>Text($&#123;this.count++&#125;)</code>绑定的文本也会更改, 每次重新渲染<code>Text($&#123;this.count++&#125;)</code>, 又会使<code>this.count</code>状态变量更新, 导致新一轮的<code>build</code>执行, 从而陷入无限循环</li>
+<li>最小化更新(<code>API19</code>及以上的版本): 当<code>this.columnColor</code>更新时, 仅<code>Column</code>组件更新, <code>Text</code>组件不会更新. 只有当<code>this.textColor</code>更改时, 会去更新整个<code>Text</code>组件, 其所有属性函数都会执行, 所以会看到<code>Text($&#123;this.count++&#125;)</code>自增. 因为目前<code>UI</code>以组件为单位进行更新. 如果组件上某一个属性发生改变, 会更新整个组件. 所以整体的更新链路是: <code>this.textColor = Color.Pink -&gt; Text组件整个更新-&gt;this.count++-&gt;Text组件整个更新</code>. 值得注意的是, 这种写法在初次渲染时会导致<code>Text</code>组件渲染两次, 影响性能</li>
+</ul>
+<p><code>build</code>函数中更改应用状态的行为可能比上面的示例更加隐蔽, 例如:</p>
+<ul>
+<li><p>在<code>@Builder</code>, <code>@Extend</code>, <code>@Styles</code>方法内改变状态变量</p>
+</li>
+<li><p>在计算参数时调用函数中改变应用状态变量, 例如<code>Text(&#39;$&#123;this.calcLable()&#125;&#39;)</code></p>
+</li>
+<li><p>对当前数组做出修改, <code>sort()</code>改变了数组<code>this.arr</code>, 随后的<code>filter</code>方法会返回一个新的数组</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 反例</span></span><br><span class="line"><span class="meta">@State</span> arr : <span class="title class_">Array</span>&lt;...&gt; = [ ... ];</span><br><span class="line"><span class="title class_">ForEach</span>(<span class="variable language_">this</span>.<span class="property">arr</span>.<span class="title function_">sort</span>().<span class="title function_">filter</span>(...),</span><br><span class="line">  <span class="function"><span class="params">item</span> =&gt;</span> &#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 正确的执行方式为：filter返回一个新数组，后面的sort方法才不会改变原数组this.arr</span></span><br><span class="line"><span class="title class_">ForEach</span>(<span class="variable language_">this</span>.<span class="property">arr</span>.<span class="title function_">filter</span>(<span class="function">(<span class="params">item, index</span>) =&gt;</span> index &gt;= <span class="number">2</span>).<span class="title function_">sort</span>(),</span><br><span class="line">  <span class="function">(<span class="params"><span class="attr">item</span>: <span class="built_in">number</span></span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="comment">// ...</span></span><br><span class="line">  &#125;);</span><br></pre></td></tr></table></figure>
+
+<p>该问题可以参考<a class="link"   target="_blank" rel="noopener" href="https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-state-management-faq-inner-component#build%E5%87%BD%E6%95%B0%E4%B8%AD%E6%9B%B4%E6%94%B9%E7%8A%B6%E6%80%81%E5%8F%98%E9%87%8F%E5%AF%BC%E8%87%B4appfreeze" >常见问题：build函数中更改状态变量导致appfreeze<i class="fas fa-external-link-alt"></i></a></p>
+</li>
+</ul>
+<h3 id="通用样式"><a href="#通用样式" class="headerlink" title="通用样式"></a>通用样式</h3><p>自定义组件通过<code>.</code>链式调用设置通用样式</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Component</span></span><br><span class="line">struct <span class="title class_">ChildComponent</span> &#123;</span><br><span class="line">  <span class="title function_">build</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="title class_">Button</span>(<span class="string">`Hello World`</span>)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Entry</span></span><br><span class="line"><span class="meta">@Component</span></span><br><span class="line">struct <span class="title class_">MyComponent</span> &#123;</span><br><span class="line">  <span class="title function_">build</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="title class_">Row</span>() &#123;</span><br><span class="line">      <span class="comment">// 属性设置给ChildComponent而不是ChildComponent中的Button</span></span><br><span class="line">      <span class="title class_">ChildComponent</span>()</span><br><span class="line">        .<span class="title function_">width</span>(<span class="number">200</span>)</span><br><span class="line">        .<span class="title function_">height</span>(<span class="number">300</span>)</span><br><span class="line">        .<span class="title function_">backgroundColor</span>(<span class="title class_">Color</span>.<span class="property">Red</span>)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p><code>ArkUI</code>给自定义组件设置样式时, 相当于给<code>ChildComponent</code>套了一个不可见的容器组件, 这些样式是设置在容器组件上, 而非直接设置给<code>ChildComponent</code>的<code>Button</code>组件. 渲染结果显示, 背景颜色红色并没有直接设置到<code>Button</code>上, 而是设置在<code>Button</code>所在的不可见容器组件上</p>
+</blockquote>
+</li>
+</ul>
+
+                    
+                </div>
+
+                
+
+                <div class="post-bottom-tags-and-share border-box">
+                    <div>
+                        
+                            <ul class="post-tags-box border-box">
+                                
+                                    <li class="tag-item border-box">
+                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/tags/HarmonyOS/">HarmonyOS</a>
+                                    </li>
+                                
+                                    <li class="tag-item border-box">
+                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/tags/ArkTS/">ArkTS</a>
+                                    </li>
+                                
+                            </ul>
+                        
+                    </div>
+                    <div>
+                        
+                    </div>
+                </div>
+
+                
+
+                
+                    <div class="post-nav border-box">
+                        
+                        
+                            <div class="next-post">
+                                <a class="next"
+                                   rel="next"
+                                   href="/2026/06/04/09-HarmonyOS%E5%BC%80%E5%8F%91-%E4%BF%9D%E5%AD%98%E5%BA%94%E7%94%A8%E6%95%B0%E6%8D%AE/"
+                                   title="09-HarmonyOS开发-保存应用数据"
+                                >
+                                    <span class="title flex-center">
+                                        <span class="post-nav-title-item text-ellipsis">09-HarmonyOS开发-保存应用数据</span>
+                                        <span class="post-nav-item">下一篇</span>
+                                    </span>
+                                    <span class="right arrow-icon flex-center">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        
+                    </div>
+                
+
+                
+                    
+
+
+    <div class="comments-container border-box">
+        <div id="comments-anchor" class="comment-area-title border-box">
+            <i class="fas fa-comments"></i>&nbsp;评论
+        </div>
+        <div class="comment-plugin-fail border-box">
+    <span class="fail-tip">评论插件加载失败</span>
+    <button class="reload keep-button">点击重新加载</button>
+</div>
+<div class="comment-plugin-loading flex-center border-box">
+    <i class="loading-icon fa-solid fa-spinner fa-spin"></i>
+    <span class="load-tip">正在加载评论插件</span>
+</div>
+<script data-pjax>
+  window.KeepCommentPlugin = {}
+  window.KeepCommentPlugin.hideLoading = () => {
+    const cplDom = document.querySelector('.comments-container .comment-plugin-loading')
+    cplDom.style.display = 'none'
+  }
+  window.KeepCommentPlugin.loadFailHandle = () => {
+    window.KeepCommentPlugin.hideLoading()
+    const cpfDom = document.querySelector('.comments-container .comment-plugin-fail')
+    cpfDom.style.display = 'flex'
+    cpfDom.querySelector('.reload').addEventListener('click', () => {
+      window.location.reload()
+    })
+  }
+</script>
+
+        
+            
+
+    <div class="gitalk-comment-container">
+        <div id="gitalk-container"></div>
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css">
+        <script 
+                src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"
+                async
+                onerror="window.KeepCommentPlugin.loadFailHandle()"
+        ></script>
+        <script 
+                async
+                onerror="window.KeepCommentPlugin.loadFailHandle()"
+        >
+          window.KeepCommentPlugin.initGitalk = () => {
+            let gitalkPathname = decodeURI(location.pathname)
+            const gitalkPathnameLength = gitalkPathname.length
+            const gitalkPathnameMaxLength = 50
+            if (gitalkPathnameLength > gitalkPathnameMaxLength) {
+              gitalkPathname = gitalkPathname.substring(0, gitalkPathnameMaxLength - 3) + '...'
+            }
+
+            if (window?.Gitalk) {
+              new Gitalk({
+                clientID: 'Ov23liB5vu3L88g0Gs9c',
+                clientSecret: '2bdfee6dca08c2f5e6391859dfea4444f2e3673d',
+                repo: 'https://VividBloom.github.io',
+                owner: 'VividBloom',
+                admin: 'VividBloom',
+                id: gitalkPathname,
+                proxy: '',
+                language: 'zh-CN'
+              }).render('gitalk-container')
+              window.KeepCommentPlugin.hideLoading()
+            } else {
+              setTimeout(() => {
+                window.KeepCommentPlugin.initGitalk()
+              }, 1000)
+            }
+          }
+
+          if ('false' === 'true') {
+            setTimeout(() => {
+              window.KeepCommentPlugin.initGitalk()
+            }, 1200)
+          } else {
+            window.addEventListener('DOMContentLoaded', window.KeepCommentPlugin.initGitalk)
+          }
+        </script>
+    </div>
+
+
+        
+    </div>
+
+
+
+
+
+                
+            </div>
+        </div>
+
+        
+            <div class="pc-post-toc right-toc">
+                <div class="post-toc-wrap border-box">
+    <div class="post-toc border-box">
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#HarmonyOS%E5%BC%80%E5%8F%91-%E4%BB%8E%E7%AE%80%E5%8D%95%E7%9A%84%E9%A1%B5%E9%9D%A2%E5%BC%80%E5%A7%8B%E4%B8%80"><span class="nav-number">1.</span> <span class="nav-text">HarmonyOS开发-从简单的页面开始一</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#ArkUI%E7%AE%80%E4%BB%8B"><span class="nav-number">1.1.</span> <span class="nav-text">ArkUI简介</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="nav-number">1.1.1.</span> <span class="nav-text">基本概念</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%A4%E7%A7%8D%E5%BC%80%E5%8F%91%E8%8C%83%E5%BC%8F"><span class="nav-number">1.1.2.</span> <span class="nav-text">两种开发范式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%8D%E5%90%8C%E5%BA%94%E7%94%A8%E7%B1%BB%E5%9E%8B%E6%94%AF%E6%8C%81%E7%9A%84%E5%BC%80%E5%8F%91%E8%8C%83%E5%BC%8F"><span class="nav-number">1.1.3.</span> <span class="nav-text">不同应用类型支持的开发范式</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A3%B0%E6%98%8E%E5%BC%8FUI%E8%AF%AD%E6%B3%95"><span class="nav-number">1.2.</span> <span class="nav-text">声明式UI语法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E6%A6%82%E8%BF%B0"><span class="nav-number">1.2.1.</span> <span class="nav-text">基本语法概述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A3%B0%E6%98%8E%E5%BC%8FUI%E6%8F%8F%E8%BF%B0"><span class="nav-number">1.2.2.</span> <span class="nav-text">声明式UI描述</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA%E7%BB%84%E4%BB%B6"><span class="nav-number">1.2.2.1.</span> <span class="nav-text">创建组件</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%97%A0%E5%8F%82%E6%95%B0"><span class="nav-number">1.2.2.1.1.</span> <span class="nav-text">无参数</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%9C%89%E5%8F%82%E6%95%B0"><span class="nav-number">1.2.2.1.2.</span> <span class="nav-text">有参数</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE%E5%B1%9E%E6%80%A7"><span class="nav-number">1.2.3.</span> <span class="nav-text">配置属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE%E4%BA%8B%E4%BB%B6"><span class="nav-number">1.2.4.</span> <span class="nav-text">配置事件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE%E5%AD%90%E7%BB%84%E4%BB%B6"><span class="nav-number">1.2.5.</span> <span class="nav-text">配置子组件</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BB%84%E4%BB%B6"><span class="nav-number">1.3.</span> <span class="nav-text">创建自定义组件</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95"><span class="nav-number">1.3.1.</span> <span class="nav-text">基本用法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E7%BB%93%E6%9E%84"><span class="nav-number">1.3.2.</span> <span class="nav-text">基本结构</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#struct"><span class="nav-number">1.3.2.1.</span> <span class="nav-text">struct</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Entry"><span class="nav-number">1.3.2.2.</span> <span class="nav-text">@Entry</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#EntryOptions"><span class="nav-number">1.3.2.3.</span> <span class="nav-text">EntryOptions</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Component"><span class="nav-number">1.3.2.4.</span> <span class="nav-text">@Component</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ComponentV2"><span class="nav-number">1.3.2.5.</span> <span class="nav-text">@ComponentV2</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#build-%E5%87%BD%E6%95%B0"><span class="nav-number">1.3.2.6.</span> <span class="nav-text">build()函数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Reusable"><span class="nav-number">1.3.2.7.</span> <span class="nav-text">@Reusable</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ReusableV2"><span class="nav-number">1.3.2.8.</span> <span class="nav-text">@ReusableV2</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%88%90%E5%91%98%E5%87%BD%E6%95%B0-%E5%8F%98%E9%87%8F"><span class="nav-number">1.3.3.</span> <span class="nav-text">成员函数&#x2F;变量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%82%E6%95%B0%E8%A7%84%E5%AE%9A"><span class="nav-number">1.3.4.</span> <span class="nav-text">参数规定</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#build-%E5%87%BD%E6%95%B0%E5%AE%9E%E7%8E%B0%E8%A7%84%E5%88%99"><span class="nav-number">1.3.5.</span> <span class="nav-text">build()函数实现规则</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%80%9A%E7%94%A8%E6%A0%B7%E5%BC%8F"><span class="nav-number">1.3.6.</span> <span class="nav-text">通用样式</span></a></li></ol></li></ol></li></ol>
+    </div>
+</div>
+
+            </div>
+        
+    </div>
+</div>
+
+
+                
+            </div>
+        </div>
+
+        <div class="page-main-content-bottom border-box">
+            
+<footer class="footer border-box">
+    <div class="copyright-info info-item">
+    &copy;&nbsp;2026
+    
+            &nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;&nbsp;<a href="/">Vivid Bloom</a>
+        
+    </div>
+
+    <div class="theme-info info-item">
+        由&nbsp;<a target="_blank" href="https://hexo.io">Hexo</a>&nbsp;驱动&nbsp;&&nbsp;主题&nbsp;<a class="keep-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep</a>
+    </div>
+
+    
+
+    
+
+    
+</footer>
+
+        </div>
+    </div>
+
+    <!-- post tools -->
+    
+        <div class="post-tools right-toc">
+            <div class="post-tools-container border-box">
+    <ul class="post-tools-list border-box">
+        <!-- PC encrypt again -->
+        
+
+        <!-- PC TOC show toggle -->
+        
+            <li class="tools-item flex-center toggle-show-toc">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        <!-- PC go comment -->
+        
+            <li class="tools-item flex-center go-to-comments">
+                <i class="fas fa-comment"></i>
+                <span class="post-comments-count"></span>
+            </li>
+        
+
+        <!-- PC full screen -->
+        <li class="tools-item flex-center full-screen">
+            <i class="fa-solid fa-expand"></i>
+        </li>
+    </ul>
+</div>
+
+        </div>
+    
+
+    <!-- side tools -->
+    <div class="side-tools">
+        <div class="side-tools-container border-box ">
+    <ul class="side-tools-list side-tools-show-handle border-box">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <!-- toggle mode -->
+        
+
+        <!-- rss -->
+        
+
+        <!-- to bottom -->
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list border-box">
+        
+            <li class="tools-item toggle-show-toc-tablet flex-center">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        
+            <li class="tools-item go-to-comments-tablet flex-center">
+                <i class="fas fa-comment"></i>
+            </li>
+        
+
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+
+        <li class="tools-item tool-scroll-to-top flex-center show-arrow">
+            <i class="arrow fas fa-arrow-up"></i>
+            <span class="percent"></span>
+        </li>
+    </ul>
+</div>
+
+    </div>
+
+    <!-- image mask -->
+    <div class="zoom-in-image-mask">
+    <img class="zoom-in-image">
+</div>
+
+
+    <!-- local search -->
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fas fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="搜索..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="close-popup-btn">
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+    <!-- tablet toc -->
+    
+        <div class="tablet-post-toc-mask">
+            <div class="tablet-post-toc">
+                <div class="post-toc-wrap border-box">
+    <div class="post-toc border-box">
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#HarmonyOS%E5%BC%80%E5%8F%91-%E4%BB%8E%E7%AE%80%E5%8D%95%E7%9A%84%E9%A1%B5%E9%9D%A2%E5%BC%80%E5%A7%8B%E4%B8%80"><span class="nav-number">1.</span> <span class="nav-text">HarmonyOS开发-从简单的页面开始一</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#ArkUI%E7%AE%80%E4%BB%8B"><span class="nav-number">1.1.</span> <span class="nav-text">ArkUI简介</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="nav-number">1.1.1.</span> <span class="nav-text">基本概念</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%A4%E7%A7%8D%E5%BC%80%E5%8F%91%E8%8C%83%E5%BC%8F"><span class="nav-number">1.1.2.</span> <span class="nav-text">两种开发范式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%8D%E5%90%8C%E5%BA%94%E7%94%A8%E7%B1%BB%E5%9E%8B%E6%94%AF%E6%8C%81%E7%9A%84%E5%BC%80%E5%8F%91%E8%8C%83%E5%BC%8F"><span class="nav-number">1.1.3.</span> <span class="nav-text">不同应用类型支持的开发范式</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A3%B0%E6%98%8E%E5%BC%8FUI%E8%AF%AD%E6%B3%95"><span class="nav-number">1.2.</span> <span class="nav-text">声明式UI语法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E6%A6%82%E8%BF%B0"><span class="nav-number">1.2.1.</span> <span class="nav-text">基本语法概述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A3%B0%E6%98%8E%E5%BC%8FUI%E6%8F%8F%E8%BF%B0"><span class="nav-number">1.2.2.</span> <span class="nav-text">声明式UI描述</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA%E7%BB%84%E4%BB%B6"><span class="nav-number">1.2.2.1.</span> <span class="nav-text">创建组件</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%97%A0%E5%8F%82%E6%95%B0"><span class="nav-number">1.2.2.1.1.</span> <span class="nav-text">无参数</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%9C%89%E5%8F%82%E6%95%B0"><span class="nav-number">1.2.2.1.2.</span> <span class="nav-text">有参数</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE%E5%B1%9E%E6%80%A7"><span class="nav-number">1.2.3.</span> <span class="nav-text">配置属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE%E4%BA%8B%E4%BB%B6"><span class="nav-number">1.2.4.</span> <span class="nav-text">配置事件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE%E5%AD%90%E7%BB%84%E4%BB%B6"><span class="nav-number">1.2.5.</span> <span class="nav-text">配置子组件</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BB%84%E4%BB%B6"><span class="nav-number">1.3.</span> <span class="nav-text">创建自定义组件</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95"><span class="nav-number">1.3.1.</span> <span class="nav-text">基本用法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E7%BB%93%E6%9E%84"><span class="nav-number">1.3.2.</span> <span class="nav-text">基本结构</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#struct"><span class="nav-number">1.3.2.1.</span> <span class="nav-text">struct</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Entry"><span class="nav-number">1.3.2.2.</span> <span class="nav-text">@Entry</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#EntryOptions"><span class="nav-number">1.3.2.3.</span> <span class="nav-text">EntryOptions</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Component"><span class="nav-number">1.3.2.4.</span> <span class="nav-text">@Component</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ComponentV2"><span class="nav-number">1.3.2.5.</span> <span class="nav-text">@ComponentV2</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#build-%E5%87%BD%E6%95%B0"><span class="nav-number">1.3.2.6.</span> <span class="nav-text">build()函数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Reusable"><span class="nav-number">1.3.2.7.</span> <span class="nav-text">@Reusable</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ReusableV2"><span class="nav-number">1.3.2.8.</span> <span class="nav-text">@ReusableV2</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%88%90%E5%91%98%E5%87%BD%E6%95%B0-%E5%8F%98%E9%87%8F"><span class="nav-number">1.3.3.</span> <span class="nav-text">成员函数&#x2F;变量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%82%E6%95%B0%E8%A7%84%E5%AE%9A"><span class="nav-number">1.3.4.</span> <span class="nav-text">参数规定</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#build-%E5%87%BD%E6%95%B0%E5%AE%9E%E7%8E%B0%E8%A7%84%E5%88%99"><span class="nav-number">1.3.5.</span> <span class="nav-text">build()函数实现规则</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%80%9A%E7%94%A8%E6%A0%B7%E5%BC%8F"><span class="nav-number">1.3.6.</span> <span class="nav-text">通用样式</span></a></li></ol></li></ol></li></ol>
+    </div>
+</div>
+
+            </div>
+        </div>
+    
+</main>
+
+
+
+
+
+<!-- common js -->
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/header-shrink.js"></script>
+
+<script src="/js/back2top.js"></script>
+
+<script src="/js/toggle-theme.js"></script>
+
+<script src="/js/code-block.js"></script>
+
+<script src="/js/main.js"></script>
+
+<script src="/js/libs/anime.min.js"></script>
+
+
+<!-- local search -->
+
+    
+<script src="/js/local-search.js"></script>
+
+
+
+<!-- lazyload -->
+
+    
+<script src="/js/lazyload.js"></script>
+
+
+
+<div class="">
+    <!-- home page -->
+    
+
+    <!-- post page -->
+    
+        <!-- post-helper -->
+        
+<script src="/js/post/post-helper.js"></script>
+
+
+        <!-- toc -->
+        
+            
+<script src="/js/post/toc.js"></script>
+
+        
+
+        <!-- copyright-info -->
+        
+
+        <!-- share -->
+        
+    
+
+    <!-- categories page -->
+    
+
+    <!-- links page -->
+    
+
+    <!-- photos page -->
+    
+
+    <!-- tools page -->
+    
+</div>
+
+<!-- mermaid -->
+
+
+<!-- pjax -->
+
+
+
+</body>
+</html>
